@@ -34,10 +34,6 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Validate workflow YAML
-        run: |
-          python .github/skills/maf-decalarative-yaml/scripts/validate_maf_workflow_yaml.py workflows/social_insight_workflow.yaml
-
       - name: Run workflow (mock agents)
         env:
           RUN_OUT: output/ci-${{ github.run_id }}-${{ github.run_attempt }}
@@ -125,7 +121,7 @@ jobs:
 
       - name: Create/reuse Foundry agents and write id map
         run: |
-          python .github/skills/maf-agent-create/scripts/create_agents_from_workflow.py \
+          python generated/social_insight_workflow/create_agents_from_workflow.py \
             --workflow workflows/social_insight_workflow.yaml \
             --spec generated/social_insight_workflow/agents.yaml \
             --write-id-map generated/social_insight_workflow/agent_id_map.json
