@@ -1,0 +1,20 @@
+# Core runtime
+--pre
+agent-framework==1.0.0b260114
+agent-framework-azure-ai==1.0.0b260114
+
+# Azure SDK
+azure-identity
+azure-ai-projects==2.0.0b3
+azure-ai-agents==1.2.0b5
+azure-core
+
+# Utilities
+python-dotenv
+PyYAML
+httpx
+openai
+
+# Tech insight ingestion (RSS/Sitemap/HTML)
+feedparser
+beautifulsoup4

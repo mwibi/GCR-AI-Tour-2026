@@ -140,6 +140,6 @@ jobs:
           azure_static_web_apps_api_token: ${{ steps.get_token.outputs.token }}
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           action: "upload"
-          app_location: "frontend"
+          app_location: "lab01/frontend"
           output_location: ""
           api_location: ""
