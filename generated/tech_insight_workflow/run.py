@@ -3,12 +3,14 @@ from __future__ import annotations
 
 import argparse
 import asyncio
+import contextlib
 import importlib.util
 import json
 import os
 import re
 import sys
 import random
+import inspect
 from datetime import datetime
 from pathlib import Path
 from typing import Any
@@ -194,32 +196,152 @@ class AzureAIFoundryAgentInvoker(AgentInvoker):
                 return True
             return False
 
+        def _coerce_text(result: Any) -> str:
+            if result is None:
+                return ""
+            if isinstance(result, str):
+                return result
+            text = getattr(result, "text", None)
+            if isinstance(text, str):
+                return text
+            if isinstance(result, dict) and isinstance(result.get("text"), str):
+                return str(result["text"])
+            return str(result)
+
+        async def _maybe_await(value: Any) -> Any:
+            if inspect.isawaitable(value):
+                return await value
+            return value
+
+        async def _run_agent_handle(agent_handle: Any, prompt_text: str) -> str:
+            async def _run_on(handle: Any) -> str:
+                run_fn = getattr(handle, "run", None)
+                if callable(run_fn):
+                    res = run_fn(prompt_text, additional_chat_options={"stream": False})
+                    res = await _maybe_await(res)
+                    return _coerce_text(res)
+
+                invoke_fn = getattr(handle, "invoke", None)
+                if callable(invoke_fn):
+                    res = invoke_fn(prompt_text)
+                    res = await _maybe_await(res)
+                    return _coerce_text(res)
+
+                raise AttributeError("Agent handle has no runnable method (run/invoke)")
+
+            # Prefer running directly; many handles are already runnable.
+            try:
+                return await _run_on(agent_handle)
+            except AttributeError:
+                pass
+
+            # Some SDKs return an async context manager for an agent handle.
+            aenter = getattr(agent_handle, "__aenter__", None)
+            if callable(aenter) and inspect.iscoroutinefunction(aenter):
+                inner_result: str | None = None
+                try:
+                    async with agent_handle as entered:
+                        inner_result = await _run_on(entered)
+                except RecursionError as exc:
+                    if inner_result is not None:
+                        if self._verbose:
+                            print(f"[AzureAI] WARNING: suppressed RecursionError during agent handle shutdown: {exc}")
+                        return inner_result
+                    raise
+                return inner_result
+
+            enter = getattr(agent_handle, "__enter__", None)
+            if callable(enter):
+                inner_result2: str | None = None
+                try:
+                    with agent_handle as entered:  # type: ignore[func-returns-value]
+                        inner_result2 = await _run_on(entered)
+                except RecursionError as exc:
+                    if inner_result2 is not None:
+                        if self._verbose:
+                            print(f"[AzureAI] WARNING: suppressed RecursionError during agent handle shutdown: {exc}")
+                        return inner_result2
+                    raise
+                return inner_result2
+
+            raise AttributeError("Agent handle has no runnable method (run/invoke) and is not a context manager")
+
         async def _call() -> str:
             async with DefaultAzureCredential(exclude_interactive_browser_credential=False) as credential:
-                async with AzureAIAgentClient(
-                    project_endpoint=self._project_endpoint,
-                    model_deployment_name=(self._model_deployment_name or None),
-                    credential=credential,
-                    # Streaming responses can take a while; keep read timeout generous.
-                    connection_timeout=30,
-                    read_timeout=1200,
-                ) as client:
-                    resolved_id = self._resolve_agent_id(agent_name)
+                result_text: str | None = None
+                try:
+                    async with AzureAIAgentClient(
+                        project_endpoint=self._project_endpoint,
+                        model_deployment_name=(self._model_deployment_name or None),
+                        credential=credential,
+                        # Streaming responses can take a while; keep read timeout generous.
+                        connection_timeout=30,
+                        read_timeout=1200,
+                    ) as client:
+                        resolved_id = self._resolve_agent_id(agent_name)
 
-                    if resolved_id:
-                        agent = client.create_agent(id=resolved_id)
-                    else:
-                        agent = client.create_agent(
-                            name=agent_name or "Agent",
-                            instructions=(
-                                "You are a specialized assistant for a workflow step. "
-                                "Follow the user's prompt exactly and return only what it requests."
-                            ),
+                        instructions = (
+                            "You are a specialized assistant for a workflow step. "
+                            "Follow the user's prompt exactly and return only what it requests."
                         )
-                    async with agent:
-                        # Streaming can be flaky on some networks; request non-streaming.
-                        result = await agent.run(prompt, additional_chat_options={"stream": False})
-                        return result.text
+
+                        # agent-framework versions may differ: some expose client.create_agent(), others expose
+                        # a different API. Try the most specific path first, then fall back.
+                        agent_handle: Any | None = None
+
+                        create_agent = getattr(client, "create_agent", None)
+                        if callable(create_agent):
+                            if resolved_id:
+                                agent_handle = create_agent(id=resolved_id)
+                            else:
+                                agent_handle = create_agent(name=agent_name or "Agent", instructions=instructions)
+                        else:
+                            # Alternative naming patterns.
+                            if resolved_id:
+                                for getter_name in ["get_agent", "agent", "load_agent"]:
+                                    getter = getattr(client, getter_name, None)
+                                    if not callable(getter):
+                                        continue
+                                    try:
+                                        agent_handle = getter(id=resolved_id)
+                                    except TypeError:
+                                        agent_handle = getter(resolved_id)
+                                    if agent_handle is not None:
+                                        break
+
+                        if agent_handle is not None:
+                            result_text = await _run_agent_handle(agent_handle, prompt)
+                            return result_text
+
+                        # Final fallback: run directly on client if supported.
+                        client_run = getattr(client, "run", None)
+                        if callable(client_run):
+                            # Best-effort parameter binding across versions.
+                            for kwargs in [
+                                {"prompt": prompt, "agent_id": resolved_id, "additional_chat_options": {"stream": False}},
+                                {"prompt": prompt, "agent": resolved_id, "additional_chat_options": {"stream": False}},
+                                {"prompt": prompt, "agent_name": agent_name, "additional_chat_options": {"stream": False}},
+                                {"prompt": prompt},
+                            ]:
+                                try:
+                                    res = client_run(**{k: v for k, v in kwargs.items() if v is not None})
+                                    res = await _maybe_await(res)
+                                    result_text = _coerce_text(res)
+                                    return result_text
+                                except TypeError:
+                                    continue
+
+                        raise AttributeError(
+                            "AzureAIAgentClient API mismatch: missing create_agent (and no compatible fallback like get_agent/run). "
+                            "Pin compatible versions of agent-framework and agent-framework-azure-ai, or update the runner to match the installed SDK."
+                        )
+                except RecursionError as exc:
+                    # Known issue in some azure/agent-framework versions: close() can recurse.
+                    if result_text is not None:
+                        if self._verbose:
+                            print(f"[AzureAI] WARNING: suppressed RecursionError during client shutdown: {exc}")
+                        return result_text
+                    raise
 
         import time
 
