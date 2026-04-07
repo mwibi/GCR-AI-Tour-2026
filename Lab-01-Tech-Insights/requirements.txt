@@ -1,20 +1,6 @@
-# Core runtime
---pre
-agent-framework
-agent-framework-azure-ai
-
-# Azure SDK
-azure-identity
-azure-ai-projects
-azure-ai-agents
-azure-core
-
-# Utilities
+# Tech Insight pipeline dependencies
 python-dotenv
 PyYAML
 httpx
-openai
-
-# Tech insight ingestion (RSS/Sitemap/HTML)
 feedparser
 beautifulsoup4

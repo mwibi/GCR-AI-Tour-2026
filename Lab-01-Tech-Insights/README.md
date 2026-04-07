@@ -1,316 +1,338 @@
-# Social Insight Multi-Agent Workflow
+# Lab-01：Tech Insights — GitHub Agentic Workflows 动手实验
 
-> ⚠️ 说明：本仓库已完成向 **Tech Insight Workflow** 的重构落地（RSS/Sitemap/HTML 源聚合 → 技术趋势/公司雷达/工具更新/研究趋势 → 报告）。
-> 
-> - Tech 输入：`input/api/rss_list.json`
-> - 本地快速跑通（mock + 确定性兜底）：`./.venv/bin/python generated/tech_insight_workflow/run.py --mock-agents --non-interactive`
-> - 使用 Azure AI Foundry Agents：`./.venv/bin/python generated/tech_insight_workflow/run.py --azure-ai --non-interactive`
+本实验带你从零跑通一个基于 GitHub Agentic Workflows 的技术洞察流水线。
 
-**一句话概述**: 将「多平台热点信号」→「可追踪的核心热点」→「结构化社会洞察」→「平台级内容投放决策建议」
+实验时长：90 分钟
 
-这是一个基于 Microsoft Agent Framework (MAF) 的**分析型 Agent 工作流（Analysis → Insight → Decision）**，而不是生成型内容工厂。
+你将收获：Fork 仓库 → 配置 gh-aw → 手动触发工作流 → 查看 AI 生成的技术周报 → 自定义数据源和提示词 → 部署到 GitHub Pages。
 
-## 核心设计原则
-
-1. **Agent 只负责"认知决策"，不负责 IO**
-2. **所有关键中间结果必须结构化并落盘**
-3. **每一步都允许 LLM 失败 → 本地工具兜底**
-4. **最终输出是"建议报告"，而不是内容成品**
-
-## 工作流架构
+### 架构图
 
 ```text
-[多平台 APIs]
-    ↓
-SignalIngestionAgent (LocalToolExecutorAgent - 确定性工具)
+RSS/Sitemap/HTML 源 (60+)
+    ↓ 阶段1: 信号抓取
+MCP Scripts (Python 工具)
     ↓ raw_signals.json
-HotspotClusteringAgent (LLM-first + Tool-fallback)
+    ↓ 阶段2: 热点聚类
+LLM (Copilot) + cluster_or_fallback
     ↓ hotspots.json
-InsightAgent (高认知密度 LLM)
+    ↓ 阶段3: 洞察生成
+LLM (Copilot) + insight_or_fallback
     ↓ insights.json
-ContentStrategyAgent (决策转译 Agent)
+    ↓ 阶段4: 报告生成
+LLM (Copilot) + render_report_or_fallback
     ↓ report.md
+GitHub Pages (在线查看)
 ```
 
-### Agent 角色
+---
 
-#### 0️⃣ Orchestrator（隐式 / Workflow 层）
+## Lab 0: 环境准备与 Fork（10 分钟）
 
-通过 YAML 工作流定义执行顺序，注入上下文，决定是否中断或继续 fallback。
+### 前置条件
+- GitHub 账号（需要 GitHub Copilot 订阅）
+- 一台能上网的电脑（macOS / Linux / Windows WSL）
+- Python 3.10+ 已安装
+- VS Code 已安装（推荐）
 
-#### 1️⃣ SignalIngestionAgent（LocalToolExecutorAgent）
+### 步骤
 
-- **类型**: 确定性工具，不调用模型
-- **职责**: 把"外部世界的热度噪声"转成**可回放的原始信号集**
-- **输入**: `input/api/rss_list.json`（Tech Insight）或 `hot_api_list.json`（历史 Social Insight 兼容）
-- **输出**: `raw_signals.json`, `signals/*.json`
+1. Fork 本仓库
+   - 打开 `https://github.com/GitHub-GCR-Cloud-Solution-Architect/GCR-AI-Tour-2026`
+   - 点击右上角 **Fork** 按钮
+   - 保留默认设置，点击 **Create fork**
+   - 等待 Fork 完成
 
-#### 2️⃣ HotspotClusteringAgent
-
-- **类型**: LLM-first + Tool-fallback
-- **职责**: 判断「哪些信号其实在说同一件事」（主题判别 + 热度合并）
-- **输入**: `raw_signals.json`
-- **输出**: `hotspots.json`
-
-#### 3️⃣ InsightAgent
-
-- **类型**: 高认知密度 LLM Agent
-- **职责**: 回答「这件事为什么在此刻、以这种方式火了」
-- **输入**: `hotspots.json`
-- **输出**: `insights.json`
-
-#### 4️⃣ ContentStrategyAgent
-
-- **职责**: 把洞察翻译成「不同平台该不该追、怎么追、追到什么程度」
-- **输入**: `hotspots.json` + `insights.json`
-- **输出**: `report.md`
-
-## Hands-on Lab：用 Azure 订阅在 GitHub Actions 跑通
-
-目标：让学员用自己的 Azure 订阅 + 自己 fork 的仓库，在 GitHub Actions 上自动跑通本工作流（真实 Azure AI Foundry Agents）。
-
-你将得到：
-- GitHub Actions 每次 push 到 `main` 自动生成的报告 `report.md`
-- 可下载的完整输出目录（Artifacts）
-
-本仓库已内置：
-- GitHub Actions workflow（位于仓库根目录）：`.github/workflows/tech_insight_workflow.yml`
-- 一键 OIDC + 变量配置脚本：`./scripts/setup_github_actions_oidc.sh` / `./scripts/setup_github_actions_oidc.ps1`
-- 本地依赖安装脚本：`./scripts/install_deps.sh` / `./scripts/install_deps.ps1`
-
-## 最短路径（推荐）：脚本一键配置 + push 即跑
-
-这个路径尽量避免手动点 Portal；但有一件事目前仍需要你在 Foundry Portal 先做：创建 Project 并拿到 Project endpoint。
-
-### 0) Fork 仓库
-
-在 GitHub 上 fork 本仓库到你自己的账号（后续 OIDC 绑定的是你 fork 后的 `owner/repo`）。
-
-### 0.5) Clone 到本地（必做一次）
-
-在你自己的电脑上把 fork 后的仓库 clone 下来：
-
+2. Clone 到本地
 ```bash
-git clone https://github.com/<your-github-user>/GCR-AI-Tour-2026.git
-cd GCR-AI-Tour-2026/Lab-01-Tech-Insights
+git clone https://github.com/<你的用户名>/GCR-AI-Tour-2026.git
+cd GCR-AI-Tour-2026
 ```
 
-说明：
-- 下面的脚本会优先从本地 `git remote` 自动推断 `owner/repo`，在 `Lab-01-Tech-Insights/` 目录运行即可。
-
-### 0.6) 环境初始化（本地一次，推荐）
-
-这一步的目标：把“跑脚本需要的 CLI + Python 依赖”准备好。
-
-Linux（Debian/Ubuntu，推荐）：
-
+3. 安装 GitHub CLI
 ```bash
-./scripts/install_deps.sh
+# macOS
+brew install gh
 
-# 如果你只想装 Python 依赖（不碰 az/gh）：
-# ./scripts/install_deps.sh --python-only
+# Linux (Debian/Ubuntu)
+sudo apt install gh
+
+# Windows
+winget install GitHub.cli
 ```
 
-说明：
-- `install_deps.sh` 会在检测到 `apt-get` 时，尝试安装 Azure CLI（`az`）和 GitHub CLI（`gh`），然后创建 `Lab-01-Tech-Insights/.venv` 并安装 `Lab-01-Tech-Insights/requirements.txt`。
-- 如果你不是 Debian/Ubuntu（没有 `apt-get`），脚本会跳过 CLI 安装并提示安装链接；你仍可以继续用它安装 Python 依赖。
-
-Windows（PowerShell，推荐）：
-
-```powershell
-# 允许当前会话执行本地脚本（不改系统全局策略）
-Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
-
-# 进入 Lab-01-Tech-Insights 目录（本仓库可运行内容都在这里）
-# Set-Location GCR-AI-Tour-2026\Lab-01-Tech-Insights
-
-./scripts/install_deps.ps1
-
-# 只装 Python 依赖（不安装 az/gh）：
-# ./scripts/install_deps.ps1 -PythonOnly
-```
-
-说明：
-- `install_deps.ps1` 会优先用 `winget` 安装 `az`/`gh`（可选），并创建 `Lab-01-Tech-Insights/.venv` 安装 Python 依赖。
-
-### 1)（必须）在 Azure AI Foundry Portal 创建 Project + 模型部署
-
-1. 打开 https://ai.azure.com
-2. 创建一个 Project（按向导完成即可）
-3. 在 Project 内创建/选择一个模型部署（Deployment）
-   - 默认部署名推荐：`gpt-5-mini`（CI 默认值就是它）
-4. 从 Project 详情页/设置页复制 `AZURE_AI_PROJECT_ENDPOINT`
-   - 形如：`https://<your-foundry-resource>.services.ai.azure.com/api/projects/<your-project>`
-
-说明：
-- 学员不需要手工创建每个 Agent。本工作流会在 CI 运行时按名称创建/复用 agents，并写入 `generated/tech_insight_workflow/agent_id_map.json`。
-
-### 2)（推荐）本地运行脚本：配置 Azure OIDC + 自动写入 GitHub Variables
-
-前置条件：
-- 已完成上一步“环境初始化”（推荐）
-- 或者你已自行安装并能使用：Azure CLI（`az`）与（可选）GitHub CLI（`gh`）
-
-如果你还没装这些 CLI：
-- Azure CLI： https://learn.microsoft.com/cli/azure/install-azure-cli
-- GitHub CLI： https://cli.github.com/
-
-Windows（推荐用 `winget`）：
-
-```powershell
-winget install -e --id Git.Git
-winget install -e --id Microsoft.AzureCLI
-winget install -e --id GitHub.cli
-```
-
-在你 fork 的仓库本地 clone 后（或 Codespaces / Dev Container 中），执行：
-
-重要：不要用 `sudo` 运行下面的脚本。
-- `az login` / `gh auth login` 的认证信息是“当前用户”级别的；用 `sudo` 会切到 root 用户，导致脚本看不到你的登录态。
-
+4. 登录 GitHub CLI
 ```bash
-az login
 gh auth login
-
-# 推荐：将权限收窄到资源组（resource group）
-./scripts/setup_github_actions_oidc.sh \
-  --branch main \
-  --resource-group <your-rg> \
-  --enable-swa \
-  --configure-github \
-  --ai-project-endpoint "https://<your-foundry-resource>.services.ai.azure.com/api/projects/<your-project>"
-
-# 如你的模型部署名不是 gpt-5-mini，再额外传：
-#   --ai-model-deployment-name "<your-model-deployment>"
+# 选择 GitHub.com → HTTPS → 按提示完成浏览器认证
 ```
 
-Windows PowerShell 等价命令（功能一致）：
-
-```powershell
-az login
-gh auth login
-
-./scripts/setup_github_actions_oidc.ps1 \
-  -Branch main \
-  -ResourceGroup <your-rg> \
-  -EnableSwa \
-  -ConfigureGitHub \
-  -AiProjectEndpoint "https://<your-foundry-resource>.services.ai.azure.com/api/projects/<your-project>"
-```
-
-脚本会自动完成：
-- 创建/复用 Entra App + Service Principal
-- 创建 Federated Credential（GitHub Actions OIDC，限定 `main` 分支）
-- 为该 SP 分配 RBAC（默认 `Cognitive Services User`，作用域默认建议用资源组）
-- （可选）为该 SP 分配 Static Web Apps 相关角色（当传入 `--enable-swa` / `-EnableSwa`）
-  - 脚本会优先使用 `Website Contributor`（官方内置角色），并自动回退到 `Contributor`
-  - 如需强制指定角色，可传 `--swa-role "<role name>"` / `-SwaRole "<role name>"`
-- 自动写入 GitHub Actions Variables（不需要 secrets）
-
-新增的 GitHub Actions Variables（用于 SWA 部署）：
-- `AZURE_RESOURCE_GROUP`（来自 `--resource-group` / `-ResourceGroup`）
-
-常见踩坑（会导致“没有自动写入 Variables”）：
-- 忘了加 `--configure-github` / `-ConfigureGitHub`：脚本会只打印“Next step: set GitHub Repository Variables …”的手工步骤。
-- 在错误的目录/错误的 remote 上运行：脚本会从 `git remote get-url origin` 推断目标仓库。
-  - 建议先执行：`git remote get-url origin`，确认指向你 fork 的仓库（而不是上游仓库）。
-  - 如果你不想依赖推断，可以显式指定：
-    - Bash：`--github-repo <your-github-user>/GCR-AI-Tour-2026`
-    - PowerShell：`-GitHubRepo <your-github-user>/GCR-AI-Tour-2026`
-
-### 3) push 到 main，GitHub Actions 自动跑真实 Azure AI
-
-从此开始：
-- push 到 `main` → 自动跑真实 Azure AI（会消耗额度）
-- PR → 只跑 mock（更便宜，且 fork PR 通常拿不到变量/权限）
-
-运行结束后：
-- GitHub → Actions → 进入该 run → Artifacts 下载 `report.md` 和完整 output
-
-### 4)（可选）手动部署前端到 Azure Static Web Apps
-
-本仓库已提供一个手动触发的 workflow：
-- `.github/workflows/deploy_frontend_swa.yml`
-
-使用方式：
-1. 打开 GitHub → Actions → 选择 `deploy-frontend-swa`
-2. 点击 “Run workflow”
-3. 只需填写 `swa_name`（可留空，自动生成随机名称）
-  - 如已通过 OIDC 脚本写入 `AZURE_RESOURCE_GROUP`，则无需再填写 `resource_group`
-
-workflow 会：
-- 若 SWA 不存在则创建（同一个 resource group）
-- 发布 `frontend/` 到 SWA
-- 在 Actions summary 中输出 SWA 名称与 URL（同时暴露 workflow outputs）
-
-## 备选路径：不用 GitHub CLI（仍然尽量少点 Portal）
-
-如果你不想装 `gh`：
-
-1. 仍建议用脚本完成 Azure 侧 OIDC（需要 `az login`）：
-
+5. 安装 gh-aw 扩展
 ```bash
-./scripts/setup_github_actions_oidc.sh --branch main --resource-group <your-rg>
+gh extension install github/gh-aw
 ```
 
-2. 然后在 GitHub 仓库 UI 手动配置 Variables：
-
-Settings → Secrets and variables → Actions → Variables
-
-必填：
-- `AZURE_CLIENT_ID`
-- `AZURE_TENANT_ID`
-- `AZURE_SUBSCRIPTION_ID`
-- `AZURE_AI_PROJECT_ENDPOINT`
-
-可选：
-- `AZURE_AI_MODEL_DEPLOYMENT_NAME`（不填则默认 `gpt-5-mini`）
-
-## 本地验证（可选）：先跑 mock 再上云
-
-如果你希望先本地确认工作流链路没问题：
-
+6. 验证安装
 ```bash
-./scripts/install_deps.sh --python-only
-cp .env.sample .env
-cd generated/tech_insight_workflow
-python run.py --non-interactive --mock-agents
+gh aw --version
+python3 --version  # 确认 3.10+
 ```
 
-Windows PowerShell：
+---
 
-```powershell
-Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+## Lab 1: 理解项目结构（10 分钟）
 
-./scripts/install_deps.ps1 -PythonOnly
-Copy-Item .env.sample .env
-Set-Location generated/tech_insight_workflow
-python run.py --non-interactive --mock-agents
+用 VS Code 打开项目，浏览以下文件：
+
+1. 打开工作流文件：`.github/workflows/tech-insight.md`
+   - YAML frontmatter 结构说明：
+     - `name:` 工作流名称
+     - `on: workflow_dispatch:` 手动触发
+     - `permissions: contents: write` 允许写入文件
+     - `tools:` 列出 7 个 MCP Script Python 工具
+     - `engine: copilot` 使用 GitHub Copilot 作为 AI 引擎
+     - `network: true` 允许网络访问（抓取 RSS）
+   - Markdown 正文是给 AI 的自然语言指令，分为 4 个阶段。
+
+2. 浏览 MCP Scripts 目录：`Lab-01-Tech-Insights/mcp-scripts/`
+   - 核心工具功能如下：
+
+| 脚本 | 功能 |
+|------|------|
+| tech_read_source_list.py | 读取 RSS 源列表配置 |
+| tech_fetch_all_to_disk.py | 并行抓取所有源的内容 |
+| tech_load_articles_from_disk.py | 加载并过滤有效文章 |
+| tech_cluster_or_fallback.py | 对文章进行热点聚类 |
+| tech_insight_or_fallback.py | 生成每个热点的洞察分析 |
+| tech_render_report_or_fallback.py | 渲染 Markdown 报告 |
+| write_text_file.py | 文件写入工具 |
+
+3. 查看数据源：`Lab-01-Tech-Insights/input/api/rss_list.json`
+   - 包含 60+ 个技术新闻源。
+
+4. 查看前端：`Lab-01-Tech-Insights/frontend/`
+   - `index.html` + `main.js` 实现浏览器端 Markdown 渲染为 HTML。
+
+> 💡 **核心概念**：gh-aw 将「Markdown + YAML frontmatter」编译成标准 GitHub Actions 工作流。AI agent 在 Actions runner 中执行，调用你定义的工具（MCP Scripts），完成复杂任务。
+
+---
+
+## Lab 2: 配置认证与首次运行（20 分钟）
+
+这是最重要的一步，成功运行你的第一个 Agentic Workflow！
+
+### 步骤 1: 在 GitHub 上启用 Actions
+- 打开你 Fork 的仓库页面。
+- 点击 **Settings** → 左侧 **Actions** → **General**。
+- 确认 Actions permissions 已开启（Allow all actions）。
+
+### 步骤 2: 设置 Copilot Token（关键步骤）
+- 前往 https://github.com/settings/tokens?type=beta 创建 Fine-grained Personal Access Token。
+  - Token name: `copilot-token`
+  - Expiration: 30 days
+  - Repository access: All repositories
+  - Permissions: 勾选 Copilot 相关的访问权限（或使用 Classic Token 并勾选 `copilot` 范围）。
+- 回到你的 Fork 仓库 → **Settings** → **Secrets and variables** → **Actions**。
+- 点击 **New repository secret**。
+  - Name: `COPILOT_GITHUB_TOKEN`
+  - Value: 粘贴刚才的 Token。
+  - 点击 **Add secret**。
+
+> ⚠️ **注意**：需要你的 GitHub 账号有 Copilot 订阅才能使用 Copilot 引擎。
+
+### 步骤 3: 编译 gh-aw 工作流
+```bash
+cd GCR-AI-Tour-2026
+gh aw compile .github/workflows/tech-insight.md
+```
+- 这会在同目录生成 `tech-insight.md.lock.yml`，即编译后的 GitHub Actions YAML 文件。
+
+### 步骤 4: 推送编译结果
+```bash
+git add .github/workflows/
+git commit -m "chore: compile gh-aw workflow"
+git push origin main
 ```
 
-## 常见问题（排障最短路径）
+### 步骤 5: 手动触发工作流
+- **方法 A（推荐）**：在 GitHub UI 页面。
+  - 打开仓库 → **Actions** 标签页。
+  - 左侧选择 **Tech Insight Workflow**。
+  - 点击 **Run workflow** → **Run workflow**。
+- **方法 B（CLI）**：
+```bash
+gh workflow run "Tech Insight Workflow"
+```
 
-### 1) GitHub Actions 里 Azure 登录失败
+### 步骤 6: 观察运行
+- 在 Actions 页面点击正在运行的 workflow run。
+- 展开 job 查看实时日志。
+- 工作流一般需要 3-5 分钟完成。
 
-- 确认 workflow 顶层有 `permissions: id-token: write`
-- 确认 Entra App 有 Federated Credential，subject 绑定的是你 fork 的仓库与分支：
-  - `repo:<your-github-user>/<your-repo>:ref:refs/heads/main`
+### 步骤 7: 检查输出
+- 运行成功后，拉取最新代码：
+```bash
+git pull origin main
+```
+- 查看生成的文件：
+  - `Lab-01-Tech-Insights/output/raw_signals.json`
+  - `Lab-01-Tech-Insights/output/clusters/hotspots.json`
+  - `Lab-01-Tech-Insights/output/insights/insights.json`
+  - `Lab-01-Tech-Insights/output/report.md`
 
-### 2) 401/403（没权限）
+---
 
-- 确认已给 Service Principal 分配 RBAC：`Cognitive Services User`
-- 如果你把 scope 收窄到资源组，请确保 Foundry 相关资源也在该资源组范围内
+## Lab 3: 查看报告与本地预览（10 分钟）
 
-### 3) 找不到模型部署 / 模型名不对
+1. 在 VS Code 中打开报告：
+```bash
+code Lab-01-Tech-Insights/output/report.md
+```
+- 观察报告结构：24h 摘要 → 趋势 → 重要更新 → 公司雷达。
 
-- 默认部署名：`gpt-5-mini`
-- 如果你的部署名不同，设置 GitHub Variable：`AZURE_AI_MODEL_DEPLOYMENT_NAME`
+2. 本地预览前端：
+```bash
+python3 -m http.server 8000 --directory Lab-01-Tech-Insights/frontend
+```
+- 在浏览器打开 `http://localhost:8000`。
+- 查看 Markdown 渲染成 HTML 的效果。
 
-## 附录：实现与文件索引
+3. 理解渲染流程：
+- `main.js` 使用 `fetch()` 加载 `report.md`。
+- 用 `marked.js` 将 Markdown 转换为 HTML。
 
-- 工作流 YAML：`workflows/tech_insight_workflow.yaml`
-- 生成的可执行 runner：`generated/tech_insight_workflow/run.py`
-- Agents spec / id map：
-  - `generated/tech_insight_workflow/agents.yaml`
-  - `generated/tech_insight_workflow/agent_id_map.json`
-- 输出目录：`output/<timestamp>/report.md`
+> 💡 **思考题**：如果你想更改报告的显示样式，应该修改哪个文件？（答案：`styles.css`）
+
+---
+
+## Lab 4: 实验 — 自定义数据源（15 分钟）
+
+目标：添加你关注的技术博客作为新数据源。
+
+1. 编辑 `Lab-01-Tech-Insights/input/api/rss_list.json`。
+
+2. 在 JSON 数组末尾添加一个新源：
+```json
+{
+  "id": 100,
+  "name": "阮一峰的网络日志",
+  "platform": "custom",
+  "source": "rss",
+  "url": "https://www.ruanyifeng.com/blog/atom.xml"
+}
+```
+
+推荐的中文技术源：
+- InfoQ 中文: `https://www.infoq.cn/feed`
+- 36氪: `https://36kr.com/feed`
+
+3. 提交并推送
+```bash
+git add Lab-01-Tech-Insights/input/api/rss_list.json
+git commit -m "feat: add custom RSS source"
+git push origin main
+```
+
+4. 再次手动触发工作流
+```bash
+gh workflow run "Tech Insight Workflow"
+```
+
+5. 等待运行完成后拉取代码，查看新报告是否包含了新源的内容。
+
+---
+
+## Lab 5: 实验 — 修改工作流提示词（15 分钟）
+
+目标：通过修改自然语言指令，改变 AI 的行为。
+
+1. 打开 `.github/workflows/tech-insight.md`。
+
+2. **实验 A: 修改参数**
+   - 将 `time_window_hours` 从 `24` 改为 `72`。
+   - 将 `top_k` 从 `12` 改为 `5`。
+
+3. **实验 B: 修改报告结构**
+   - 在阶段 4 的报告提示词中添加新的要求，例如在 "结构包含" 列表中添加：
+     ```
+     - 学习资源推荐（每个热点附带 1-2 个学习链接）
+     ```
+
+4. 重新编译并推送
+```bash
+gh aw compile .github/workflows/tech-insight.md
+git add .github/workflows/
+git commit -m "feat: customize workflow prompts"
+git push origin main
+```
+
+5. 触发运行并对比结果。
+
+---
+
+## Lab 6: 实验 — 定时触发与 GitHub Pages（10 分钟）
+
+### 实验 A: 添加定时触发
+
+1. 编辑 `.github/workflows/tech-insight.md` 的 frontmatter 部分。
+2. 将 `on:` 修改为：
+```yaml
+on:
+  workflow_dispatch:
+  schedule: daily around 9am utc+8
+```
+
+3. 重新编译并推送。
+
+### 实验 B: 开启 GitHub Pages
+
+1. 打开仓库 → **Settings** → 左侧 **Pages**。
+2. Source 选择 **GitHub Actions**。
+3. 手动触发 `Deploy GitHub Pages` 工作流：
+```bash
+gh workflow run "Deploy GitHub Pages"
+```
+4. 访问 `https://<你的用户名>.github.io/GCR-AI-Tour-2026/` 查看在线版报告。
+
+---
+
+## 总结与下一步
+
+你在本实验中学到了：
+- ✅ gh-aw 的核心概念：Markdown 工作流 + MCP Scripts + AI Engine。
+- ✅ 如何安装、编译和运行 Agentic Workflows。
+- ✅ 如何自定义数据源和 AI 提示词。
+- ✅ 如何设置定时触发和 GitHub Pages 部署。
+
+延伸探索：
+- 尝试切换 AI 引擎：`engine: claude`。
+- 添加 safe-outputs 自动创建 Issue。
+- 探索更多 gh-aw 设计模式：https://github.github.com/gh-aw/
+
+---
+
+## 附录 A: 目录结构参考
+```text
+GCR-AI-Tour-2026/
+├── .github/workflows/
+│   ├── tech-insight.md           # gh-aw 工作流定义
+│   ├── tech-insight.md.lock.yml  # 编译后的 Actions YAML
+│   └── deploy-pages.yml          # Pages 部署工作流
+├── Lab-01-Tech-Insights/
+│   ├── mcp-scripts/              # MCP Script 工具
+│   ├── input/api/rss_list.json   # 数据源
+│   ├── frontend/                 # 展示前端
+│   └── output/                   # 运行时输出
+```
+
+## 附录 B: 常见问题
+
+1. **`gh aw compile` 报错**：检查 YAML frontmatter 格式，确保三横线 `---` 完整。
+2. **工作流运行失败**：检查 `COPILOT_GITHUB_TOKEN` 是否正确设置在 Secret 中。
+3. **网络抓取超时**：可以在工作流配置中增加 `timeout_seconds`。
+4. **GitHub Pages 404**：确认 Settings → Pages 中的 Source 设置为 GitHub Actions。
+5. **查看思考过程**：在 Actions 日志中展开对应的 agent 步骤即可查看。
+
+## 附录 C: 参考链接
+- gh-aw 官方文档: https://github.github.com/gh-aw/
+- GitHub CLI 安装: https://cli.github.com

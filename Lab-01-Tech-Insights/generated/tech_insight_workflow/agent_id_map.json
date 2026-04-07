@@ -1,6 +1,0 @@
-{
-  "LocalToolExecutorAgent": "LocalToolExecutorAgent:1",
-  "HotspotClusteringAgent": "HotspotClusteringAgent:1",
-  "InsightAgent": "InsightAgent:1",
-  "ContentStrategyAgent": "ContentStrategyAgent:1"
-}

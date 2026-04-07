@@ -1,4 +1,4 @@
-# Frontend (Azure Static Web Apps)
+# Frontend (GitHub Pages)
 
 这是一个极简静态页面：在浏览器端把 `report.md` 渲染成可阅读的 HTML。
 
@@ -6,41 +6,31 @@
 
 仓库根目录执行：
 
-- `python3 -m http.server 8000 --directory frontend`
+- `python3 -m http.server 8000 --directory Lab-01-Tech-Insights/frontend`
 - 浏览器打开：`http://localhost:8000`
 
 > 说明：直接双击打开 `index.html` 在部分浏览器会触发跨域限制，导致 `fetch(report.md)` 失败；用本地静态服务器即可。
 
 ## 使用方式
 
-- 默认渲染：`frontend/report.md`
+- 默认渲染：`report.md`（与 `index.html` 同目录）
 
-## 部署到 Azure Static Web Apps
+## 部署到 GitHub Pages
 
-你不需要在这台机器安装 Node。
+本仓库使用 GitHub Pages 进行部署，无需额外的云服务。
 
-在 Azure Static Web Apps 创建资源并连接到 GitHub 仓库时，设置（或在 GitHub Actions workflow 里设置）类似：
+### 开启方式
 
-- `app_location`: `frontend`
-- `api_location`: (留空)
-- `output_location`: (留空)
+1. 打开仓库 → **Settings** → 左侧 **Pages**。
+2. Source 选择 **GitHub Actions**。
+3. 手动触发 `Deploy GitHub Pages` 工作流（`.github/workflows/deploy-pages.yml`）。
 
-这样 SWA 会把 `frontend/` 作为静态站点根目录进行部署。
+### 自动部署
 
-本仓库已提供两种 GitHub Actions 方式：
+当 `Lab-01-Tech-Insights/frontend/` 下的文件发生变更并推送到 `main` 分支时，`deploy-pages.yml` 会自动触发部署。
 
-- 一次性创建/部署：运行工作流 `deploy-frontend-swa`（.github/workflows/deploy_frontend_swa.yml），它会创建 SWA（如不存在）并部署 `frontend/`。
-- 持续自动部署：`tech-insight-workflow` 在每次生成最新 `frontend/report.md` 后，会自动部署到 SWA。
+Tech Insight Workflow 每次运行后会将最新的 `report.md` 写入 `Lab-01-Tech-Insights/frontend/report.md`，从而自动触发 Pages 重新部署。
 
-为启用持续自动部署，请在仓库 Variables/Secrets 中设置：
+### 访问地址
 
-- `AZURE_RESOURCE_GROUP`: Static Web Apps 所在资源组
-- `SWA_NAME`: Static Web Apps 资源名
-
-### 可选：使用 SWA CLI 初始化（仅在有 Node 的环境）
-
-如果你在另一台机器/CI 上有 Node，可使用：
-
-- `npx swa init --yes`
-
-> 按最佳实践：不要手写 `staticwebapp.config.json` 或 `swa-cli.config.json`；它们应由 SWA CLI 生成。
+部署成功后，访问：`https://<你的用户名>.github.io/<仓库名>/`
