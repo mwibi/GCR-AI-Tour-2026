@@ -1,1 +1,2402 @@
-{"window": {"time_window_hours": 24, "cutoff": "2026-04-06T09:35:53.094339Z", "generated_at": "2026-04-07T09:35:53.094339Z"}, "sources": [{"platform": "openai", "platform_key": "openai", "source_type": "rss", "url": "https://openai.com/news/rss.xml", "file": "Lab-01-Tech-Insights/output/signals/openai.xml", "parsed": 25, "kept": 1, "parse_error": null, "company": "OpenAI", "signal_level": "S", "tracks": ["company_official"]}, {"platform": "github-blog", "platform_key": "github-blog", "source_type": "rss", "url": "https://github.blog/feed/", "file": "Lab-01-Tech-Insights/output/signals/github-blog.xml", "parsed": 10, "kept": 1, "parse_error": null, "company": "GitHub", "signal_level": "S", "tracks": ["devtools_release"]}, {"platform": "microsoft-devblogs", "platform_key": "microsoft-devblogs", "source_type": "rss", "url": "https://devblogs.microsoft.com/feed", "file": "Lab-01-Tech-Insights/output/signals/microsoft-devblogs.xml", "parsed": 10, "kept": 0, "parse_error": null, "company": "Microsoft", "signal_level": "S", "tracks": ["company_official"]}, {"platform": "google-ai", "platform_key": "google-ai", "source_type": "rss", "url": "https://blog.google/technology/ai/rss/", "file": "Lab-01-Tech-Insights/output/signals/google-ai.xml", "parsed": 20, "kept": 0, "parse_error": null, "company": "Google", "signal_level": "S", "tracks": ["company_official"]}, {"platform": "aws-news", "platform_key": "aws-news", "source_type": "rss", "url": "https://aws.amazon.com/blogs/aws/feed/", "file": "Lab-01-Tech-Insights/output/signals/aws-news.xml", "parsed": 16, "kept": 1, "parse_error": null, "company": "Amazon", "signal_level": "A", "tracks": ["general"]}, {"platform": "nvidia", "platform_key": "nvidia", "source_type": "rss", "url": "https://blogs.nvidia.com/feed/", "file": "Lab-01-Tech-Insights/output/signals/nvidia.xml", "parsed": 18, "kept": 1, "parse_error": null, "company": "NVIDIA", "signal_level": "A", "tracks": ["general"]}, {"platform": "apple-developer", "platform_key": "apple-developer", "source_type": "rss", "url": "https://developer.apple.com/news/rss/news.rss", "file": "Lab-01-Tech-Insights/output/signals/apple-developer.xml", "parsed": 25, "kept": 0, "parse_error": null, "company": "Apple", "signal_level": "A", "tracks": ["general"]}, {"platform": "cloudflare", "platform_key": "cloudflare", "source_type": "rss", "url": "https://blog.cloudflare.com/rss/", "file": "Lab-01-Tech-Insights/output/signals/cloudflare.xml", "parsed": 11, "kept": 1, "parse_error": null, "company": "Cloudflare", "signal_level": "A", "tracks": ["general"]}, {"platform": "deepmind", "platform_key": "deepmind", "source_type": "rss", "url": "https://deepmind.google/blog/rss.xml", "file": "Lab-01-Tech-Insights/output/signals/deepmind.xml", "parsed": 25, "kept": 0, "parse_error": null, "company": "Google DeepMind", "signal_level": "A", "tracks": ["company_official"]}, {"platform": "huggingface", "platform_key": "huggingface", "source_type": "rss", "url": "https://huggingface.co/blog/feed.xml", "file": "Lab-01-Tech-Insights/output/signals/huggingface.xml", "parsed": 25, "kept": 0, "parse_error": null, "company": "Hugging Face", "signal_level": "A", "tracks": ["general"]}, {"platform": "hackernews", "platform_key": "hackernews", "source_type": "rss", "url": "https://news.ycombinator.com/rss", "file": "Lab-01-Tech-Insights/output/signals/hackernews.xml", "parsed": 25, "kept": 18, "parse_error": null, "company": null, "signal_level": "A", "tracks": ["general"]}, {"platform": "producthunt", "platform_key": "producthunt", "source_type": "rss", "url": "https://www.producthunt.com/feed", "file": "Lab-01-Tech-Insights/output/signals/producthunt.xml", "parsed": 25, "kept": 11, "parse_error": null, "company": null, "signal_level": "A", "tracks": ["general"]}, {"platform": "techcrunch", "platform_key": "techcrunch", "source_type": "rss", "url": "https://techcrunch.com/feed/", "file": "Lab-01-Tech-Insights/output/signals/techcrunch.xml", "parsed": 20, "kept": 17, "parse_error": null, "company": null, "signal_level": "A", "tracks": ["general"]}, {"platform": "theverge", "platform_key": "theverge", "source_type": "rss", "url": "https://www.theverge.com/rss/index.xml", "file": "Lab-01-Tech-Insights/output/signals/theverge.xml", "parsed": 10, "kept": 10, "parse_error": null, "company": null, "signal_level": "B", "tracks": ["general"]}, {"platform": "arstechnica", "platform_key": "arstechnica", "source_type": "rss", "url": "https://feeds.arstechnica.com/arstechnica/index", "file": "Lab-01-Tech-Insights/output/signals/arstechnica.xml", "parsed": 20, "kept": 11, "parse_error": null, "company": null, "signal_level": "B", "tracks": ["general"]}, {"platform": "wired", "platform_key": "wired", "source_type": "rss", "url": "https://www.wired.com/feed/rss", "file": "Lab-01-Tech-Insights/output/signals/wired.xml", "parsed": 25, "kept": 19, "parse_error": null, "company": null, "signal_level": "B", "tracks": ["general"]}, {"platform": "mit-technology-review", "platform_key": "mit-technology-review", "source_type": "rss", "url": "https://www.technologyreview.com/feed/", "file": "Lab-01-Tech-Insights/output/signals/mit-technology-review.xml", "parsed": 10, "kept": 2, "parse_error": null, "company": null, "signal_level": "B", "tracks": ["general"]}, {"platform": "infoq", "platform_key": "infoq", "source_type": "rss", "url": "https://feed.infoq.com/", "file": "Lab-01-Tech-Insights/output/signals/infoq.xml", "parsed": 15, "kept": 7, "parse_error": null, "company": null, "signal_level": "B", "tracks": ["general"]}, {"platform": "lobsters", "platform_key": "lobsters", "source_type": "rss", "url": "https://lobste.rs/rss", "file": "Lab-01-Tech-Insights/output/signals/lobsters.xml", "parsed": 25, "kept": 19, "parse_error": null, "company": null, "signal_level": "B", "tracks": ["general"]}, {"platform": "devto", "platform_key": "devto", "source_type": "rss", "url": "https://dev.to/feed", "file": "Lab-01-Tech-Insights/output/signals/devto.xml", "parsed": 12, "kept": 12, "parse_error": null, "company": null, "signal_level": "B", "tracks": ["general"]}], "items": [{"platform": "github-blog", "platform_key": "github-blog", "source_type": "rss", "title": "GitHub Copilot CLI combines model families for a second opinion", "title_norm": "github copilot cli combines model families for a second opinion", "url": "https://github.blog/ai-and-ml/github-copilot/github-copilot-cli-combines-model-families-for-a-second-opinion/", "published_at": "2026-04-06T21:53:49Z", "summary": "<p>Discover how Rubber Duck provides a different perspective to GitHub Copilot CLI. </p> <p>The post <a href=\"https://github.blog/ai-and-ml/github-copilot/github-copilot-cli-combines-model-families-for-a-second-opinion/\">GitHub Copilot CLI combines model families for a second opinion</a> appeared first on <a href=\"htt…", "company": "GitHub", "signal_level": "S", "include_keywords": [], "tracks": ["devtools_release"], "language": "en"}, {"platform": "hackernews", "platform_key": "hackernews", "source_type": "rss", "title": "Every GPU That Mattered", "title_norm": "every gpu that mattered", "url": "https://sheets.works/data-viz/every-gpu", "published_at": "2026-04-07T08:38:17Z", "summary": "<a href=\"https://news.ycombinator.com/item?id=47672295\">Comments</a>", "company": null, "signal_level": "A", "include_keywords": [], "tracks": ["general"], "language": "en"}, {"platform": "hackernews", "platform_key": "hackernews", "source_type": "rss", "title": "Some iPhone Apps Receive Mysterious Update 'From Apple'", "title_norm": "some iphone apps receive mysterious update from apple", "url": "https://www.macrumors.com/2026/04/06/iphone-apps-from-apple-update/", "published_at": "2026-04-07T06:45:08Z", "summary": "<a href=\"https://news.ycombinator.com/item?id=47671527\">Comments</a>", "company": null, "signal_level": "A", "include_keywords": [], "tracks": ["general"], "language": "en"}, {"platform": "techcrunch", "platform_key": "techcrunch", "source_type": "rss", "title": "AI startup Rocket offers vibe McKinsey-style reports at a fraction of the cost", "title_norm": "ai startup rocket offers vibe mckinsey style reports at a fraction of the cost", "url": "https://techcrunch.com/2026/04/06/indian-startup-rocket-wants-its-ai-to-do-mckinsey-style-consulting-at-a-fraction-of-the-cost/", "published_at": "2026-04-07T05:30:00Z", "summary": "Rocket's new AI platform combines strategy, product building, and competitive intelligence, aiming to move beyond code generation.", "company": null, "signal_level": "A", "include_keywords": [], "tracks": ["general"], "language": "en"}, {"platform": "hackernews", "platform_key": "hackernews", "source_type": "rss", "title": "Three hundred synths, 3 hardware projects, and one app", "title_norm": "three hundred synths 3 hardware projects and one app", "url": "https://midi.guide/blog/three-hunded-synths-one-app/", "published_at": "2026-04-07T05:12:25Z", "summary": "<a href=\"https://news.ycombinator.com/item?id=47670981\">Comments</a>", "company": null, "signal_level": "A", "include_keywords": [], "tracks": ["general"], "language": "en"}, {"platform": "techcrunch", "platform_key": "techcrunch", "source_type": "rss", "title": "AI design platform Picsart launches a creator monetization program", "title_norm": "ai design platform picsart launches a creator monetization program", "url": "https://techcrunch.com/2026/04/06/ai-design-platform-picsart-launches-a-creator-monetization-program/", "published_at": "2026-04-07T04:01:00Z", "summary": "The program invites creators to create original content with Picsart tools for a specific campaign, share it on their social channels, and earn revenue based on how their audience engages.", "company": null, "signal_level": "A", "include_keywords": [], "tracks": ["general"], "language": "en"}, {"platform": "producthunt", "platform_key": "producthunt", "source_type": "rss", "title": "Laminar", "title_norm": "laminar", "url": "https://www.producthunt.com/products/laminar-planetary-capture-for-mac", "published_at": "2026-04-07T02:51:18Z", "summary": "<p> Native planetary imaging capture for macOS and Apple Silicon </p> <p> <a href=\"https://www.producthunt.com/products/laminar-planetary-capture-for-mac?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a> | <a href=\"https://www.producthunt.com/r/…", "company": null, "signal_level": "A", "include_keywords": [], "tracks": ["general"], "language": "en"}, {"platform": "producthunt", "platform_key": "producthunt", "source_type": "rss", "title": "Netflix Playground", "title_norm": "netflix playground", "url": "https://www.producthunt.com/products/netflix", "published_at": "2026-04-07T02:32:57Z", "summary": "<p> A world for kids to explore along their favorite characters </p> <p> <a href=\"https://www.producthunt.com/products/netflix?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a> | <a href=\"https://www.producthunt.com/r/p/1117365?app_id=339\">Link<…", "company": null, "signal_level": "A", "include_keywords": [], "tracks": ["general"], "language": "en"}, {"platform": "hackernews", "platform_key": "hackernews", "source_type": "rss", "title": "Solod – A subset of Go that translates to C", "title_norm": "solod a subset of go that translates to c", "url": "https://github.com/solod-dev/solod", "published_at": "2026-04-07T00:48:01Z", "summary": "<a href=\"https://news.ycombinator.com/item?id=47669337\">Comments</a>", "company": null, "signal_level": "A", "include_keywords": [], "tracks": ["general"], "language": "en"}, {"platform": "producthunt", "platform_key": "producthunt", "source_type": "rss", "title": "Highlight Studio", "title_norm": "highlight studio", "url": "https://www.producthunt.com/products/highlight-studio", "published_at": "2026-04-07T00:47:06Z", "summary": "<p> Record, edit, and brand screen recordings Metal powered </p> <p> <a href=\"https://www.producthunt.com/products/highlight-studio?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a> | <a href=\"https://www.producthunt.com/r/p/1117324?app_id=339\">…", "company": null, "signal_level": "A", "include_keywords": [], "tracks": ["general"], "language": "en"}, {"platform": "openai", "platform_key": "openai", "source_type": "rss", "title": "Announcing the OpenAI Safety Fellowship", "title_norm": "announcing the openai safety fellowship", "url": "https://openai.com/index/introducing-openai-safety-fellowship", "published_at": "2026-04-06T10:00:00Z", "summary": "A pilot program to support independent safety and alignment research and develop the next generation of talent", "company": "OpenAI", "signal_level": "S", "include_keywords": [], "tracks": ["company_official"], "language": "en"}, {"platform": "techcrunch", "platform_key": "techcrunch", "source_type": "rss", "title": "OpenAI alums have been quietly investing from a new, potentially $100M fund", "title_norm": "openai alums have been quietly investing from a new potentially 100m fund", "url": "https://techcrunch.com/2026/04/06/openai-alums-have-been-quietly-investing-from-a-new-potentially-100m-fund/", "published_at": "2026-04-06T21:54:26Z", "summary": "Zero Shot, a new venture capital fund with deep ties to OpenAI, is aiming to raise $100 million for its first fund. It has already written some checks.", "company": null, "signal_level": "A", "include_keywords": [], "tracks": ["general"], "language": "en"}, {"platform": "hackernews", "platform_key": "hackernews", "source_type": "rss", "title": "Anthropic expands partnership with Google and Broadcom for next-gen compute", "title_norm": "anthropic expands partnership with google and broadcom for next gen compute", "url": "https://www.anthropic.com/news/google-broadcom-partnership-compute", "published_at": "2026-04-06T21:52:08Z", "summary": "<a href=\"https://news.ycombinator.com/item?id=47667717\">Comments</a>", "company": null, "signal_level": "A", "include_keywords": [], "tracks": ["general"], "language": "en"}, {"platform": "hackernews", "platform_key": "hackernews", "source_type": "rss", "title": "Show HN: Hippo, biologically inspired memory for AI agents", "title_norm": "show hn hippo biologically inspired memory for ai agents", "url": "https://github.com/kitfunso/hippo-memory", "published_at": "2026-04-06T21:49:34Z", "summary": "<a href=\"https://news.ycombinator.com/item?id=47667672\">Comments</a>", "company": null, "signal_level": "A", "include_keywords": [], "tracks": ["general"], "language": "en"}, {"platform": "devto", "platform_key": "devto", "source_type": "rss", "title": "I Added Open Graph Preview Images to DocBeacon Share Links", "title_norm": "i added open graph preview images to docbeacon share links", "url": "https://dev.to/howard_shaw_3c36a3a6cb900/i-added-open-graph-preview-images-to-docbeacon-share-links-37ne", "published_at": "2026-04-07T09:29:55Z", "summary": "<p>Recently, I added Open Graph preview images to DocBeacon share links.</p> <p>The problem was simple: when a DocBeacon link was shared in Slack or an email client, it often looked like a plain URL. For proposals, pitch decks, contracts, and other important documents, that is not a great first impression.</p> <p>So I…", "company": null, "signal_level": "B", "include_keywords": [], "tracks": ["general"], "language": "en"}, {"platform": "devto", "platform_key": "devto", "source_type": "rss", "title": "Why I built attack-chain correlation on top of Semgrep and Joern", "title_norm": "why i built attack chain correlation on top of semgrep and joern", "url": "https://dev.to/hamza_miladin/why-i-built-attack-chain-correlation-on-top-of-semgrep-and-joern-1gcd", "published_at": "2026-04-07T09:29:45Z", "summary": "<p>I've been running security scans on codebases for a while, and the thing that always bothered me about Semgrep wasn't the false positive rate or the speed. It was that the output was useless in the wrong way.</p> <p>You'd get a list. Line 42, SQL injection. Line 187, hardcoded secret. Line 304, missing auth check.…", "company": null, "signal_level": "B", "include_keywords": [], "tracks": ["general"], "language": "en"}, {"platform": "devto", "platform_key": "devto", "source_type": "rss", "title": "BullMQ: Production-Grade Job Queues for Node.js", "title_norm": "bullmq production grade job queues for node js", "url": "https://dev.to/whoffagents/bullmq-production-grade-job-queues-for-nodejs-1bhk", "published_at": "2026-04-07T09:29:29Z", "summary": "<h1> BullMQ: Production-Grade Job Queues for Node.js </h1> <p>Doing heavy work inside an HTTP request is a recipe for timeouts and poor UX. BullMQ moves work out of the request cycle into background workers — with retries, priorities, and rate limiting built in.</p> <h2> Why a Job Queue </h2> <p>Don't do in a request:…", "company": null, "signal_level": "B", "include_keywords": [], "tracks": ["general"], "language": "en"}, {"platform": "devto", "platform_key": "devto", "source_type": "rss", "title": "Building my own language learning app", "title_norm": "building my own language learning app", "url": "https://dev.to/ray_/building-my-own-language-learning-app-5hjb", "published_at": "2026-04-07T09:27:54Z", "summary": "<p>After a 3 year streak of daily Duolingo, I decided to build my own app.</p> <h2> Motivation </h2> <p>I actually quite like Duolingo. I completed the entire German language track <strong>twice</strong> (they rebuilt it some years back) and it got me to a conversational level of German. So why wasn't I satisfied? </p…", "company": null, "signal_level": "B", "include_keywords": [], "tracks": ["general"], "language": "en"}, {"platform": "devto", "platform_key": "devto", "source_type": "rss", "title": "Building Canary, Baseline & Traffic Routing for PipeCD's Kubernetes Multi-Cluster Plugin", "title_norm": "building canary baseline traffic routing for pipecd s kubernetes multi cluster plugin", "url": "https://dev.to/mohammedfirdouss/building-canary-baseline-traffic-routing-for-pipecds-kubernetes-multi-cluster-plugin-ddi", "published_at": "2026-04-07T09:27:17Z", "summary": "<p>If you had told me last year that I would be working with Kubernetes and all things clusters, deployments and service meshes, I would have brushed it off. I am truly grateful for the journey thus far.</p> <p>Earlier last month, I got accepted as an LFX Mentee for Term 1 of this calendar year. For me it is such a bi…", "company": null, "signal_level": "B", "include_keywords": [], "tracks": ["general"], "language": "en"}, {"platform": "devto", "platform_key": "devto", "source_type": "rss", "title": "Everything gRPC (Part 1)", "title_norm": "everything grpc part 1", "url": "https://dev.to/cyberwizd/everything-grpc-part-1-516l", "published_at": "2026-04-07T09:26:51Z", "summary": "<p>When people (Devs) first hear about gRPC, the usual description is that it’s a high-performance RPC framework built on top of HTTP/2, using Protocol Buffers.</p> <p>That’s accurate.</p> <p>But it doesn’t really help you understand anything.</p> <p>Because the real confusion doesn’t come from what gRPC is, it comes…", "company": null, "signal_level": "B", "include_keywords": [], "tracks": ["general"], "language": "en"}, {"platform": "devto", "platform_key": "devto", "source_type": "rss", "title": "MCP Is a Great Start — But Multi-Agent Production Needs More", "title_norm": "mcp is a great start but multi agent production needs more", "url": "https://dev.to/jovansapfioneer/mcp-is-a-great-start-but-multi-agent-production-needs-more-744", "published_at": "2026-04-07T09:25:05Z", "summary": "<p>The Model Context Protocol has transformed how we connect AI to tools. But connecting agents to tools is only half the battle — connecting agents to each other is where the real challenge begins.</p> <h2> The Article That Sparked This </h2> <p>I recently read <a href=\"https://dev.to/yashksaini\">@yashksaini</a>'s ex…", "company": null, "signal_level": "B", "include_keywords": [], "tracks": ["general"], "language": "en"}, {"platform": "devto", "platform_key": "devto", "source_type": "rss", "title": "The Death of the Proxy: Why the Future of Wealth is the Licensing of Intent by Adel Abdel-Dayem The Foundational Codifier of Synthia The 11th Art", "title_norm": "the death of the proxy why the future of wealth is the licensing of intent by adel abdel dayem the foundational codifier of synthia the 11th art", "url": "https://dev.to/adel_dayem/the-death-of-the-proxy-why-the-future-of-wealth-is-the-licensing-of-intent-by-adel-abdel-dayem-the-p87", "published_at": "2026-04-07T09:25:03Z", "summary": "<p>For the last century, wealth was a game of <strong>Proxies</strong>. If you wanted to be a titan, you owned the proxy for human effort: the factory, the shipping lane, or the social media platform. You didn’t own the \"Value\" itself; you owned the pipe through which value flowed. </p> <p>But in 2026, the pipes have…", "company": null, "signal_level": "B", "include_keywords": [], "tracks": ["general"], "language": "en"}, {"platform": "devto", "platform_key": "devto", "source_type": "rss", "title": "pip-guardian on Pypi", "title_norm": "pip guardian on pypi", "url": "https://dev.to/anantdhavale1/pip-guardian-on-pypi-4d4o", "published_at": "2026-04-07T09:25:03Z", "summary": "<p>The LiteLLM supply chain attack is a bit of a wake-up call.</p> <p>Somehow it has not been very prominent in the news. I received an email from Mercor stating a recent supply chain attack involving LiteLLM affected their systems.</p> <p>According to reports, malicious code was injected directly into official versio…", "company": null, "signal_level": "B", "include_keywords": [], "tracks": ["general"], "language": "en"}, {"platform": "devto", "platform_key": "devto", "source_type": "rss", "title": "From idea to live web app in minutes with Spektrum — an AI-powered web app builder for MVPs, rapid prototyping, and full-stack JavaScript apps. Skip setup, generate real products, and deploy instantly without infrastructure headaches. 🔥", "title_norm": "from idea to live web app in minutes with spektrum an ai powered web app builder for mvps rapid prototyping and full stack javascript apps skip setup generate real products and deploy instantly without infrastructure headaches", "url": "https://dev.to/hadil/from-idea-to-live-web-app-in-minutes-with-spektrum-an-ai-powered-web-app-builder-for-mvps-rapid-1mpb", "published_at": "2026-04-07T09:24:58Z", "summary": "<div class=\"ltag__link--embedded\"> <div class=\"crayons-story \"> <a class=\"crayons-story__hidden-navigation-link\" href=\"https://dev.to/jigjoy/spektrum-turn-natural-language-into-live-web-apps-deploy-in-minutes-with-ai-5292\">Spektrum: Turn Natural Language into Live Web Apps (Deploy in Minutes with AI)</a> <div class=\"c…", "company": null, "signal_level": "B", "include_keywords": [], "tracks": ["general"], "language": "en"}, {"platform": "devto", "platform_key": "devto", "source_type": "rss", "title": "Genkit Dart for Flutter Developers: Build Full-Stack AI Apps in 2026 (Getting Started)", "title_norm": "genkit dart for flutter developers build full stack ai apps in 2026 getting started", "url": "https://dev.to/techwithsam/genkit-dart-for-flutter-developers-build-full-stack-ai-apps-in-2026-getting-started-31pf", "published_at": "2026-04-07T09:24:47Z", "summary": "<p>Hey Flutter family!</p> <p>Imagine integrating genuine AI capabilities into your apps — creating full-stack AI solutions with clean Dart code, client-side and server-side.</p> <p>Introducing Genkit Dart, Google’s new approach to building production-ready AI features within your Flutter apps.</p> <p>This introductio…", "company": null, "signal_level": "B", "include_keywords": [], "tracks": ["general"], "language": "en"}, {"platform": "devto", "platform_key": "devto", "source_type": "rss", "title": "Prompt Caching with Claude: Cut API Costs by 90% on Repeated Context", "title_norm": "prompt caching with claude cut api costs by 90 on repeated context", "url": "https://dev.to/whoffagents/prompt-caching-with-claude-cut-api-costs-by-90-on-repeated-context-4075", "published_at": "2026-04-07T09:24:31Z", "summary": "<h1> Prompt Caching with Claude: Cut API Costs by 90% on Repeated Context </h1> <p>If you're sending the same large context (system prompt, documents, tool definitions) with every API call, you're paying full price each time. Prompt caching stores that context once and charges 10x less on subsequent calls.</p> <h2> Ho…", "company": null, "signal_level": "B", "include_keywords": [], "tracks": ["general"], "language": "en"}, {"platform": "hackernews", "platform_key": "hackernews", "source_type": "rss", "title": "Peptides: where to begin?", "title_norm": "peptides where to begin", "url": "https://www.science.org/content/blog-post/ah-peptides-where-begin", "published_at": "2026-04-06T21:22:03Z", "summary": "<a href=\"https://news.ycombinator.com/item?id=47667321\">Comments</a>", "company": null, "signal_level": "A", "include_keywords": [], "tracks": ["general"], "language": "en"}, {"platform": "producthunt", "platform_key": "producthunt", "source_type": "rss", "title": "VirtualProg", "title_norm": "virtualprog", "url": "https://www.producthunt.com/products/virtualprog-vurtual-machine-manager", "published_at": "2026-04-06T21:21:33Z", "summary": "<p> A faster, simpler alternative to bulky VM managers. </p> <p> <a href=\"https://www.producthunt.com/products/virtualprog-vurtual-machine-manager?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a> | <a href=\"https://www.producthunt.com/r/p/11172…", "company": null, "signal_level": "A", "include_keywords": [], "tracks": ["general"], "language": "en"}, {"platform": "techcrunch", "platform_key": "techcrunch", "source_type": "rss", "title": "Gas prices aren’t the only factor fueling used EV sales", "title_norm": "gas prices aren t the only factor fueling used ev sales", "url": "https://techcrunch.com/2026/04/06/gas-prices-arent-the-only-factor-fueling-used-ev-sales/", "published_at": "2026-04-06T21:15:09Z", "summary": "The most recent electric vehicle sales data provided a grim picture — at least for new EVs. Used EVs are moving in the opposite direction.", "company": null, "signal_level": "A", "include_keywords": [], "tracks": ["general"], "language": "en"}, {"platform": "cloudflare", "platform_key": "cloudflare", "source_type": "rss", "title": "How we built Organizations to help enterprises manage Cloudflare at scale", "title_norm": "how we built organizations to help enterprises manage cloudflare at scale", "url": "https://blog.cloudflare.com/organizations-beta/", "published_at": "2026-04-06T21:00:00Z", "summary": "Cloudflare Organizations is now in public beta, introducing a new management layer for enterprise customers with multiple accounts. Learn how we consolidated our authorization systems to enable org-wide management.", "company": "Cloudflare", "signal_level": "A", "include_keywords": [], "tracks": ["general"], "language": "en"}, {"platform": "wired", "platform_key": "wired", "source_type": "rss", "title": "Nobody Knows How to File Taxes on Prediction Market Wins", "title_norm": "nobody knows how to file taxes on prediction market wins", "url": "https://www.wired.com/story/nobody-knows-how-to-file-taxes-on-prediction-market-wins-and-losses/", "published_at": "2026-04-07T09:00:00Z", "summary": "Americans flocked to prediction markets last year. Now, it’s time to pay taxes on winnings. How do you do that? Great question.", "company": null, "signal_level": "B", "include_keywords": [], "tracks": ["general"], "language": "en"}, {"platform": "infoq", "platform_key": "infoq", "source_type": "rss", "title": "Article: Bloom Filters: Theory, Engineering Trade‑offs, and Implementation in Go", "title_norm": "article bloom filters theory engineering trade offs and implementation in go", "url": "https://www.infoq.com/articles/bloom-filters-practice-go-recommender/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global", "published_at": "2026-04-07T09:00:00Z", "summary": "<img src=\"https://res.infoq.com/articles/bloom-filters-practice-go-recommender/en/headerimage/bloom-filters-practice-go-recommender-header-1774946606518.jpg\" /><p>This article walks you through the Go implementation of Bloom filters to optimize the performance of a recommender. It cover the architectural view, Bloom f…", "company": null, "signal_level": "B", "include_keywords": [], "tracks": ["general"], "language": "en"}, {"platform": "producthunt", "platform_key": "producthunt", "source_type": "rss", "title": "FlowPulse", "title_norm": "flowpulse", "url": "https://www.producthunt.com/products/flowpulse", "published_at": "2026-04-06T20:57:44Z", "summary": "<p> Know when your automations run, fail, or go quiet. </p> <p> <a href=\"https://www.producthunt.com/products/flowpulse?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a> | <a href=\"https://www.producthunt.com/r/p/1117213?app_id=339\">Link</a> </p>", "company": null, "signal_level": "A", "include_keywords": [], "tracks": ["general"], "language": "en"}, {"platform": "lobsters", "platform_key": "lobsters", "source_type": "rss", "title": "The pinnacle of enshittification, or Large Language Models", "title_norm": "the pinnacle of enshittification or large language models", "url": "https://blogs.gentoo.org/mgorny/2026/04/05/the-pinnacle-of-enshittification-or-large-language-models/", "published_at": "2026-04-07T08:26:07Z", "summary": "<p><a href=\"https://lobste.rs/s/9gitce/pinnacle_enshittification_large\">Comments</a></p>", "company": null, "signal_level": "B", "include_keywords": [], "tracks": ["general"], "language": "en"}, {"platform": "lobsters", "platform_key": "lobsters", "source_type": "rss", "title": "Death of the IDE?", "title_norm": "death of the ide", "url": "https://addyo.substack.com/p/death-of-the-ide", "published_at": "2026-04-07T08:10:46Z", "summary": "<p><a href=\"https://lobste.rs/s/kd89zp/death_ide\">Comments</a></p>", "company": null, "signal_level": "B", "include_keywords": [], "tracks": ["general"], "language": "en"}, {"platform": "infoq", "platform_key": "infoq", "source_type": "rss", "title": "Anthropic Accidentally Exposes Claude Code Source via npm Source Map File", "title_norm": "anthropic accidentally exposes claude code source via npm source map file", "url": "https://www.infoq.com/news/2026/04/claude-code-source-leak/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global", "published_at": "2026-04-07T08:00:00Z", "summary": "<img src=\"https://res.infoq.com/news/2026/04/claude-code-source-leak/en/headerimage/generatedHeaderImage-1775192937059.jpg\" /><p>Anthropic's Claude Code CLI had its full TypeScript source exposed after a source map file was accidentally included in version 2.1.88 of its npm package. The 512,000-line codebase was archi…", "company": null, "signal_level": "B", "include_keywords": [], "tracks": ["general"], "language": "en"}, {"platform": "infoq", "platform_key": "infoq", "source_type": "rss", "title": "Google Open Sources Experimental Multi-Agent Orchestration Testbed Scion", "title_norm": "google open sources experimental multi agent orchestration testbed scion", "url": "https://www.infoq.com/news/2026/04/google-agent-testbed-scion/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global", "published_at": "2026-04-07T08:00:00Z", "summary": "<img src=\"https://res.infoq.com/news/2026/04/google-agent-testbed-scion/en/headerimage/google-scion-1775548099004.jpeg\" /><p>Designed to manage concurrent agents running in containers across local and remote compute, Scion is an experimental orchestration testbed that enables developers to run groups of specialized ag…", "company": null, "signal_level": "B", "include_keywords": [], "tracks": ["general"], "language": "en"}, {"platform": "lobsters", "platform_key": "lobsters", "source_type": "rss", "title": "The Seed Beneath the Snow", "title_norm": "the seed beneath the snow", "url": "https://eli.li/the-seed-beneath-the-snow", "published_at": "2026-04-07T07:58:04Z", "summary": "<p><a href=\"https://lobste.rs/s/fibtuz/seed_beneath_snow\">Comments</a></p>", "company": null, "signal_level": "B", "include_keywords": [], "tracks": ["general"], "language": "en"}, {"platform": "producthunt", "platform_key": "producthunt", "source_type": "rss", "title": "Silkwave Voice", "title_norm": "silkwave voice", "url": "https://www.producthunt.com/products/silkwave-voice", "published_at": "2026-04-06T19:55:20Z", "summary": "<p> Record your microphone, system audio simultaneously </p> <p> <a href=\"https://www.producthunt.com/products/silkwave-voice?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a> | <a href=\"https://www.producthunt.com/r/p/1117178?app_id=339\">Link</…", "company": null, "signal_level": "A", "include_keywords": [], "tracks": ["general"], "language": "en"}, {"platform": "hackernews", "platform_key": "hackernews", "source_type": "rss", "title": "Show HN: Ghost Pepper – Local hold-to-talk speech-to-text for macOS", "title_norm": "show hn ghost pepper local hold to talk speech to text for macos", "url": "https://github.com/matthartman/ghost-pepper", "published_at": "2026-04-06T19:50:16Z", "summary": "<a href=\"https://news.ycombinator.com/item?id=47666024\">Comments</a>", "company": null, "signal_level": "A", "include_keywords": [], "tracks": ["general"], "language": "en"}, {"platform": "techcrunch", "platform_key": "techcrunch", "source_type": "rss", "title": "Google quietly launched an AI dictation app that works offline", "title_norm": "google quietly launched an ai dictation app that works offline", "url": "https://techcrunch.com/2026/04/06/google-quietly-releases-an-offline-first-ai-dictation-app-on-ios/", "published_at": "2026-04-06T18:54:33Z", "summary": "Google's new offline-first dictation app uses Gemma AI models to take on the apps like Wispr Flow.", "company": null, "signal_level": "A", "include_keywords": [], "tracks": ["general"], "language": "en"}, {"platform": "producthunt", "platform_key": "producthunt", "source_type": "rss", "title": "AI Designer MCP", "title_norm": "ai designer mcp", "url": "https://www.producthunt.com/products/aidesigner", "published_at": "2026-04-06T18:51:09Z", "summary": "<p> Give your agent tools to create beautiful, codebase-aware UI </p> <p> <a href=\"https://www.producthunt.com/products/aidesigner?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a> | <a href=\"https://www.producthunt.com/r/p/1117141?app_id=339\">L…", "company": null, "signal_level": "A", "include_keywords": [], "tracks": ["general"], "language": "en"}, {"platform": "producthunt", "platform_key": "producthunt", "source_type": "rss", "title": "OpenBrowser-AI", "title_norm": "openbrowser ai", "url": "https://www.producthunt.com/products/openbrowser-ai-59-less-100-accurate", "published_at": "2026-04-06T18:38:40Z", "summary": "<p> Connect AI agents to browser through raw CDP </p> <p> <a href=\"https://www.producthunt.com/products/openbrowser-ai-59-less-100-accurate?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a> | <a href=\"https://www.producthunt.com/r/p/1117132?app_…", "company": null, "signal_level": "A", "include_keywords": [], "tracks": ["general"], "language": "en"}, {"platform": "techcrunch", "platform_key": "techcrunch", "source_type": "rss", "title": "Netflix is expanding into kids’ games with a new stand-alone app", "title_norm": "netflix is expanding into kids games with a new stand alone app", "url": "https://techcrunch.com/2026/04/06/netflix-launches-a-standalone-app-for-kids-games/", "published_at": "2026-04-06T18:21:49Z", "summary": "Netflix says the app gives children access to an \"ever-growing\" library of games for kids.", "company": null, "signal_level": "A", "include_keywords": [], "tracks": ["general"], "language": "en"}, {"platform": "techcrunch", "platform_key": "techcrunch", "source_type": "rss", "title": "Why safety regulators closed their investigation into Tesla’s remote parking feature", "title_norm": "why safety regulators closed their investigation into tesla s remote parking feature", "url": "https://techcrunch.com/2026/04/06/tesla-actually-smart-summon-nhtsa-investigation-smart-parking/", "published_at": "2026-04-06T18:17:23Z", "summary": "The NHTSA closed its investigation into Tesla's \"Actually Smart Summon\" feature, saying that only a fraction of cases resulted in an incident and that no incidents resulted in injury. Tesla has also issued a number of software updates.", "company": null, "signal_level": "A", "include_keywords": [], "tracks": ["general"], "language": "en"}, {"platform": "techcrunch", "platform_key": "techcrunch", "source_type": "rss", "title": "Iran threatens ‘Stargate’ AI data centers", "title_norm": "iran threatens stargate ai data centers", "url": "https://techcrunch.com/2026/04/06/iran-threatens-stargate-ai-data-centers/", "published_at": "2026-04-06T18:06:28Z", "summary": "Iran said it will target U.S.-linked data centers with new missile strikes, as the war between the U.S. and Iran escalates.", "company": null, "signal_level": "A", "include_keywords": [], "tracks": ["general"], "language": "en"}, {"platform": "wired", "platform_key": "wired", "source_type": "rss", "title": "Europe Gets Serious About Age Verification Online", "title_norm": "europe gets serious about age verification online", "url": "https://www.wired.com/story/europe-gets-serious-about-age-verification-online/", "published_at": "2026-04-07T06:00:00Z", "summary": "The search for an age-verification system that protects user data may begin and end in the EU.", "company": null, "signal_level": "B", "include_keywords": [], "tracks": ["general"], "language": "en"}, {"platform": "producthunt", "platform_key": "producthunt", "source_type": "rss", "title": "AppSignals", "title_norm": "appsignals", "url": "https://www.producthunt.com/products/appsignals", "published_at": "2026-04-06T17:59:01Z", "summary": "<p> App store connect data + subscription insights </p> <p> <a href=\"https://www.producthunt.com/products/appsignals?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a> | <a href=\"https://www.producthunt.com/r/p/1117099?app_id=339\">Link</a> </p>", "company": null, "signal_level": "A", "include_keywords": [], "tracks": ["general"], "language": "en"}, {"platform": "lobsters", "platform_key": "lobsters", "source_type": "rss", "title": "Multi-agentic Software Development is a Distributed Systems Problem (AGI can't save you)", "title_norm": "multi agentic software development is a distributed systems problem agi can t save you", "url": "https://kirancodes.me/posts/log-distributed-llms.html", "published_at": "2026-04-07T05:50:20Z", "summary": "<p><a href=\"https://lobste.rs/s/vjcymq/multi_agentic_software_development_is\">Comments</a></p>", "company": null, "signal_level": "B", "include_keywords": [], "tracks": ["general"], "language": "en"}, {"platform": "techcrunch", "platform_key": "techcrunch", "source_type": "rss", "title": "Apple moves to take its App Store fight back to the Supreme Court", "title_norm": "apple moves to take its app store fight back to the supreme court", "url": "https://techcrunch.com/2026/04/06/apple-epic-games-lawsuit-supreme-court-appeal-app-store-commission/", "published_at": "2026-04-06T17:38:05Z", "summary": "Apple plans to ask the Supreme Court to review its App Store fight with Epic Games, as it challenges a ruling limiting its ability to charge fees on external payments.", "company": null, "signal_level": "A", "include_keywords": [], "tracks": ["general"], "language": "en"}, {"platform": "techcrunch", "platform_key": "techcrunch", "source_type": "rss", "title": "Watch this video of how a job interviewer exposes a North Korean fake IT worker", "title_norm": "watch this video of how a job interviewer exposes a north korean fake it worker", "url": "https://techcrunch.com/2026/04/06/watch-this-video-of-how-a-job-interviewer-exposes-a-north-korean-fake-it-worker/", "published_at": "2026-04-06T17:00:25Z", "summary": "An apparent North Korean worker was caught visibly stumped during a remote job interview when asked to insult the country's leader.", "company": null, "signal_level": "A", "include_keywords": [], "tracks": ["general"], "language": "en"}, {"platform": "wired", "platform_key": "wired", "source_type": "rss", "title": "AirDoctor Coupon Codes: 40% Off | April 2026", "title_norm": "airdoctor coupon codes 40 off april 2026", "url": "https://www.wired.com/story/airdoctor-coupon-code/", "published_at": "2026-04-07T05:00:00Z", "summary": "Save up to $400 on top air purifiers and filters with verified AirDoctor promo codes and special offers for April 2026.", "company": null, "signal_level": "B", "include_keywords": [], "tracks": ["general"], "language": "en"}, {"platform": "wired", "platform_key": "wired", "source_type": "rss", "title": "Hoka Coupon Codes: 10% Off | April 2026", "title_norm": "hoka coupon codes 10 off april 2026", "url": "https://www.wired.com/story/hoka-coupon-code/", "published_at": "2026-04-07T05:00:00Z", "summary": "Unlock free expedited shipping or 10% off with today’s Hoka discount codes, plus save up to 30% with the best discounts for April 2026.", "company": null, "signal_level": "B", "include_keywords": [], "tracks": ["general"], "language": "en"}, {"platform": "wired", "platform_key": "wired", "source_type": "rss", "title": "Bose Promo Code: 40% Off Bose for April 2026", "title_norm": "bose promo code 40 off bose for april 2026", "url": "https://www.wired.com/story/bose-coupon-code/", "published_at": "2026-04-07T05:00:00Z", "summary": "Get at least 40% off headphones, speakers, soundbars, and other audio products from Bose.", "company": null, "signal_level": "B", "include_keywords": [], "tracks": ["general"], "language": "en"}, {"platform": "wired", "platform_key": "wired", "source_type": "rss", "title": "$50 Target Promo Code & Coupons | April 2026", "title_norm": "50 target promo code coupons april 2026", "url": "https://www.wired.com/story/target-promo-code/", "published_at": "2026-04-07T05:00:00Z", "summary": "Get $50 off your next order or up to 50% off site wide with Target coupon codes and Circle deals.", "company": null, "signal_level": "B", "include_keywords": [], "tracks": ["general"], "language": "en"}, {"platform": "wired", "platform_key": "wired", "source_type": "rss", "title": "60% Off Groupon Promo Code | April 2026", "title_norm": "60 off groupon promo code april 2026", "url": "https://www.wired.com/story/groupon-promo-code/", "published_at": "2026-04-07T05:00:00Z", "summary": "Unlock up to 60% off, 40% off packages, and 20% off with top Groupon coupon codes. Explore coupons to save extra on travel getaways, holiday gifts, spa days, and event tickets.", "company": null, "signal_level": "B", "include_keywords": [], "tracks": ["general"], "language": "en"}, {"platform": "wired", "platform_key": "wired", "source_type": "rss", "title": "15% Off Adidas Promo Code | April 2026", "title_norm": "15 off adidas promo code april 2026", "url": "https://www.wired.com/story/adidas-promo-code/", "published_at": "2026-04-07T05:00:00Z", "summary": "Save 15% or 30% with Adidas promo codes, plus explore March deals for 40% off trendy sneakers.", "company": null, "signal_level": "B", "include_keywords": [], "tracks": ["general"], "language": "en"}, {"platform": "wired", "platform_key": "wired", "source_type": "rss", "title": "30% VistaPrint Coupon & Promo Codes | April 2026", "title_norm": "30 vistaprint coupon promo codes april 2026", "url": "https://www.wired.com/story/vistaprint-coupon-code/", "published_at": "2026-04-07T05:00:00Z", "summary": "From personalized gifts to business essentials, WIRED can help you save with our selection of VistaPrint promo codes.", "company": null, "signal_level": "B", "include_keywords": [], "tracks": ["general"], "language": "en"}, {"platform": "wired", "platform_key": "wired", "source_type": "rss", "title": "$100 Off Shark Promo Code | This April", "title_norm": "100 off shark promo code this april", "url": "https://www.wired.com/story/shark-promo-code/", "published_at": "2026-04-07T05:00:00Z", "summary": "Shark makes some seriously powerful vacuums, from handheld vacs to steam mops. Don’t miss $100 off, 10% off, and more limited-time coupons from WIRED.", "company": null, "signal_level": "B", "include_keywords": [], "tracks": ["general"], "language": "en"}, {"platform": "aws-news", "platform_key": "aws-news", "source_type": "rss", "title": "AWS Weekly Roundup: AWS DevOps Agent & Security Agent GA, Product Lifecycle updates, and more (April 6, 2026)", "title_norm": "aws weekly roundup aws devops agent security agent ga product lifecycle updates and more april 6 2026", "url": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-aws-devops-agent-security-agent-ga-product-lifecycle-updates-and-more-april-6-2026/", "published_at": "2026-04-06T16:51:00Z", "summary": "Last week, I visited AWS Hong Kong User Group with my team. Hong Kong has a small but strong community, and their energy and passion are high. They recently started a new AI user group, and we hope more people will join. I was able to strengthen my bond with the community through great food […]", "company": "Amazon", "signal_level": "A", "include_keywords": [], "tracks": ["general"], "language": "en"}, {"platform": "techcrunch", "platform_key": "techcrunch", "source_type": "rss", "title": "North Korea’s hijack of one of the web’s most used open source projects was likely weeks in the making", "title_norm": "north korea s hijack of one of the web s most used open source projects was likely weeks in the making", "url": "https://techcrunch.com/2026/04/06/north-koreas-hijack-of-one-of-the-webs-most-used-open-source-projects-was-likely-weeks-in-the-making/", "published_at": "2026-04-06T16:43:25Z", "summary": "North Korean hackers pushed out malicious updates to a popular open source project by hacking a top developer's computer in a long-running campaign.", "company": null, "signal_level": "A", "include_keywords": [], "tracks": ["general"], "language": "en"}, {"platform": "hackernews", "platform_key": "hackernews", "source_type": "rss", "title": "Launch HN: Freestyle – Sandboxes for Coding Agents", "title_norm": "launch hn freestyle sandboxes for coding agents", "url": "https://www.freestyle.sh/", "published_at": "2026-04-06T16:32:11Z", "summary": "<a href=\"https://news.ycombinator.com/item?id=47663147\">Comments</a>", "company": null, "signal_level": "A", "include_keywords": [], "tracks": ["general"], "language": "en"}, {"platform": "hackernews", "platform_key": "hackernews", "source_type": "rss", "title": "Show HN: GovAuctions lets you browse government auctions at once", "title_norm": "show hn govauctions lets you browse government auctions at once", "url": "https://www.govauctions.app/", "published_at": "2026-04-06T16:21:46Z", "summary": "<a href=\"https://news.ycombinator.com/item?id=47662945\">Comments</a>", "company": null, "signal_level": "A", "include_keywords": [], "tracks": ["general"], "language": "en"}, {"platform": "lobsters", "platform_key": "lobsters", "source_type": "rss", "title": "Clojure on Fennel part one: Persistent Data Structures", "title_norm": "clojure on fennel part one persistent data structures", "url": "https://andreyor.st/posts/2026-04-07-clojure-on-fennel-part-one-persistent-data-structures/", "published_at": "2026-04-07T04:07:39Z", "summary": "<p><a href=\"https://lobste.rs/s/mvfdga/clojure_on_fennel_part_one_persistent\">Comments</a></p>", "company": null, "signal_level": "B", "include_keywords": [], "tracks": ["general"], "language": "en"}, {"platform": "hackernews", "platform_key": "hackernews", "source_type": "rss", "title": "AI singer now occupies eleven spots on iTunes singles chart", "title_norm": "ai singer now occupies eleven spots on itunes singles chart", "url": "https://www.showbiz411.com/2026/04/05/itunes-takeover-by-fake-ai-singer-eddie-dalton-now-occupies-eleven-spots-on-chart-despite-not-being-human-or-real-exclusive", "published_at": "2026-04-06T15:57:07Z", "summary": "<a href=\"https://news.ycombinator.com/item?id=47662596\">Comments</a>", "company": null, "signal_level": "A", "include_keywords": [], "tracks": ["general"], "language": "en"}, {"platform": "techcrunch", "platform_key": "techcrunch", "source_type": "rss", "title": "OpenAI’s vision for the AI economy: public wealth funds, robot taxes, and a four-day workweek", "title_norm": "openai s vision for the ai economy public wealth funds robot taxes and a four day workweek", "url": "https://techcrunch.com/2026/04/06/openais-vision-for-the-ai-economy-public-wealth-funds-robot-taxes-and-a-four-day-work-week/", "published_at": "2026-04-06T15:55:55Z", "summary": "OpenAI proposes taxes on AI profits, public wealth funds, and expanded safety nets to address job loss and inequality, blending redistribution with capitalism as policymakers debate AI’s economic impact.", "company": null, "signal_level": "A", "include_keywords": [], "tracks": ["general"], "language": "en"}, {"platform": "arstechnica", "platform_key": "arstechnica", "source_type": "rss", "title": "Astronauts set distance record, revealing the Moon as a place to be explored", "title_norm": "astronauts set distance record revealing the moon as a place to be explored", "url": "https://arstechnica.com/space/2026/04/astronauts-set-distance-record-revealing-the-moon-as-a-place-to-be-explored/", "published_at": "2026-04-07T03:50:32Z", "summary": "\"Humans have probably not evolved to see what we’re seeing. It is truly hard to describe. It is amazing.\"", "company": null, "signal_level": "B", "include_keywords": [], "tracks": ["general"], "language": "en"}, {"platform": "hackernews", "platform_key": "hackernews", "source_type": "rss", "title": "A cryptography engineer's perspective on quantum computing timelines", "title_norm": "a cryptography engineer s perspective on quantum computing timelines", "url": "https://words.filippo.io/crqc-timeline/", "published_at": "2026-04-06T15:31:20Z", "summary": "<a href=\"https://news.ycombinator.com/item?id=47662234\">Comments</a>", "company": null, "signal_level": "A", "include_keywords": [], "tracks": ["general"], "language": "en"}, {"platform": "hackernews", "platform_key": "hackernews", "source_type": "rss", "title": "Sky – an Elm-inspired language that compiles to Go", "title_norm": "sky an elm inspired language that compiles to go", "url": "https://github.com/anzellai/sky", "published_at": "2026-04-06T15:22:53Z", "summary": "<a href=\"https://news.ycombinator.com/item?id=47662116\">Comments</a>", "company": null, "signal_level": "A", "include_keywords": [], "tracks": ["general"], "language": "en"}, {"platform": "techcrunch", "platform_key": "techcrunch", "source_type": "rss", "title": "Startup Battlefield 200 applications open: a chance for VC access, TechCrunch coverage, and $100K", "title_norm": "startup battlefield 200 applications open a chance for vc access techcrunch coverage and 100k", "url": "https://techcrunch.com/2026/04/06/startup-battlefield-200-applications-open-get-vc-access-techcrunch-coverage-and-100k/", "published_at": "2026-04-06T14:30:00Z", "summary": "Nominate your startup, or one you know that deserves the spotlight, and finish the process by applying. Selected 200 have a chance at VC access, TechCrunch coverage, and $100K for Startup Battlefield 200. Applications close on May 27.", "company": null, "signal_level": "A", "include_keywords": [], "tracks": ["general"], "language": "en"}, {"platform": "techcrunch", "platform_key": "techcrunch", "source_type": "rss", "title": "How to use the new ChatGPT app integrations, including DoorDash, Spotify, Uber, and others", "title_norm": "how to use the new chatgpt app integrations including doordash spotify uber and others", "url": "https://techcrunch.com/2026/04/06/how-to-use-chatgpt-apps-doordash-spotify-uber/", "published_at": "2026-04-06T14:11:42Z", "summary": "Learn how to use Spotify, Canva, Figma, Expedia, and other apps directly in ChatGPT.", "company": null, "signal_level": "A", "include_keywords": [], "tracks": ["general"], "language": "en"}, {"platform": "techcrunch", "platform_key": "techcrunch", "source_type": "rss", "title": "Ticket savings of up to $500 this week for TechCrunch Disrupt 2026", "title_norm": "ticket savings of up to 500 this week for techcrunch disrupt 2026", "url": "https://techcrunch.com/2026/04/06/massive-ticket-savings-of-up-to-500-this-week-for-techcrunch-disrupt-2026/", "published_at": "2026-04-06T14:00:00Z", "summary": "Starting today, you have 5 days to save nearly $500 on your ticket to TechCrunch Disrupt 2026. This offer disappears Friday, April 10, at 11:59 p.m. PT. Register here to secure these low rates.", "company": null, "signal_level": "A", "include_keywords": [], "tracks": ["general"], "language": "en"}, {"platform": "hackernews", "platform_key": "hackernews", "source_type": "rss", "title": "German police name alleged leaders of GandCrab and REvil ransomware groups", "title_norm": "german police name alleged leaders of gandcrab and revil ransomware groups", "url": "https://krebsonsecurity.com/2026/04/germany-doxes-unkn-head-of-ru-ransomware-gangs-revil-gandcrab/", "published_at": "2026-04-06T13:52:37Z", "summary": "<a href=\"https://news.ycombinator.com/item?id=47660954\">Comments</a>", "company": null, "signal_level": "A", "include_keywords": [], "tracks": ["general"], "language": "en"}, {"platform": "hackernews", "platform_key": "hackernews", "source_type": "rss", "title": "Issue: Claude Code is unusable for complex engineering tasks with Feb updates", "title_norm": "issue claude code is unusable for complex engineering tasks with feb updates", "url": "https://github.com/anthropics/claude-code/issues/42796", "published_at": "2026-04-06T13:50:35Z", "summary": "<a href=\"https://news.ycombinator.com/item?id=47660925\">Comments</a>", "company": null, "signal_level": "A", "include_keywords": [], "tracks": ["general"], "language": "en"}, {"platform": "hackernews", "platform_key": "hackernews", "source_type": "rss", "title": "Book review: There Is No Antimemetics Division", "title_norm": "book review there is no antimemetics division", "url": "https://www.stephendiehl.com/posts/no_antimimetics/", "published_at": "2026-04-06T13:44:01Z", "summary": "<a href=\"https://news.ycombinator.com/item?id=47660853\">Comments</a>", "company": null, "signal_level": "A", "include_keywords": [], "tracks": ["general"], "language": "en"}, {"platform": "techcrunch", "platform_key": "techcrunch", "source_type": "rss", "title": "Convicted spyware maker Bryan Fleming avoids jail at sentencing", "title_norm": "convicted spyware maker bryan fleming avoids jail at sentencing", "url": "https://techcrunch.com/2026/04/06/convicted-spyware-maker-bryan-fleming-avoids-jail-at-sentencing/", "published_at": "2026-04-06T13:03:04Z", "summary": "The pcTattletale founder escapes a custodial sentence following the first successful prosecution of a spyware maker in the U.S. in over a decade.", "company": null, "signal_level": "A", "include_keywords": [], "tracks": ["general"], "language": "en"}, {"platform": "producthunt", "platform_key": "producthunt", "source_type": "rss", "title": "TestRelic AI", "title_norm": "testrelic ai", "url": "https://www.producthunt.com/products/testrelic-ai", "published_at": "2026-04-06T13:01:37Z", "summary": "<p> Ask your Playwright tests why they failed </p> <p> <a href=\"https://www.producthunt.com/products/testrelic-ai?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a> | <a href=\"https://www.producthunt.com/r/p/1116912?app_id=339\">Link</a> </p>", "company": null, "signal_level": "A", "include_keywords": [], "tracks": ["general"], "language": "en"}, {"platform": "techcrunch", "platform_key": "techcrunch", "source_type": "rss", "title": "Spain’s Xoople raises $130 million Series B to map the Earth for AI", "title_norm": "spain s xoople raises 130 million series b to map the earth for ai", "url": "https://techcrunch.com/2026/04/06/spains-xoople-raises-130-million-series-b-to-map-the-earth-for-ai/", "published_at": "2026-04-06T13:00:00Z", "summary": "The company is also announcing a deal with L3Harris to build the sensors for Xoople's spacecraft.", "company": null, "signal_level": "A", "include_keywords": [], "tracks": ["general"], "language": "en"}, {"platform": "hackernews", "platform_key": "hackernews", "source_type": "rss", "title": "What being ripped off taught me", "title_norm": "what being ripped off taught me", "url": "https://belief.horse/notes/what-being-ripped-off-taught-me/", "published_at": "2026-04-06T12:53:41Z", "summary": "<a href=\"https://news.ycombinator.com/item?id=47660286\">Comments</a>", "company": null, "signal_level": "A", "include_keywords": [], "tracks": ["general"], "language": "en"}, {"platform": "producthunt", "platform_key": "producthunt", "source_type": "rss", "title": "CrewCue", "title_norm": "crewcue", "url": "https://www.producthunt.com/products/crewcue", "published_at": "2026-04-06T12:21:23Z", "summary": "<p> Live schedules on the Lock Screen for event crews </p> <p> <a href=\"https://www.producthunt.com/products/crewcue?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a> | <a href=\"https://www.producthunt.com/r/p/1116878?app_id=339\">Link</a> </p>", "company": null, "signal_level": "A", "include_keywords": [], "tracks": ["general"], "language": "en"}, {"platform": "hackernews", "platform_key": "hackernews", "source_type": "rss", "title": "Sam Altman may control our future – can he be trusted?", "title_norm": "sam altman may control our future can he be trusted", "url": "https://www.newyorker.com/magazine/2026/04/13/sam-altman-may-control-our-future-can-he-be-trusted", "published_at": "2026-04-06T10:36:57Z", "summary": "<a href=\"https://news.ycombinator.com/item?id=47659135\">Comments</a>", "company": null, "signal_level": "A", "include_keywords": [], "tracks": ["general"], "language": "en"}, {"platform": "arstechnica", "platform_key": "arstechnica", "source_type": "rss", "title": "After court loss, RFK Jr. gives himself more power over CDC vaccine panel", "title_norm": "after court loss rfk jr gives himself more power over cdc vaccine panel", "url": "https://arstechnica.com/health/2026/04/after-court-loss-rfk-jr-gives-himself-more-power-over-cdc-vaccine-panel/", "published_at": "2026-04-06T22:34:11Z", "summary": "The charter renewal gives Kennedy broad authority to pick anyone for the panel.", "company": null, "signal_level": "B", "include_keywords": [], "tracks": ["general"], "language": "en"}, {"platform": "arstechnica", "platform_key": "arstechnica", "source_type": "rss", "title": "From folding boxes to fixing vacuums, GEN-1 robotics model hits 99% reliability", "title_norm": "from folding boxes to fixing vacuums gen 1 robotics model hits 99 reliability", "url": "https://arstechnica.com/ai/2026/04/generalists-new-physical-robotics-ai-brings-production-level-success-rates/", "published_at": "2026-04-06T22:18:33Z", "summary": "New model can respond to disruptions and figure out moves it wasn't trained for.", "company": null, "signal_level": "B", "include_keywords": [], "tracks": ["general"], "language": "en"}, {"platform": "arstechnica", "platform_key": "arstechnica", "source_type": "rss", "title": "Sports bets on prediction markets ruled to be \"swaps,\" exempt from state laws", "title_norm": "sports bets on prediction markets ruled to be swaps exempt from state laws", "url": "https://arstechnica.com/tech-policy/2026/04/sports-bets-on-prediction-markets-ruled-to-be-swaps-exempt-from-state-laws/", "published_at": "2026-04-06T21:56:36Z", "summary": "Court rules US preempts states from applying gambling laws to prediction markets.", "company": null, "signal_level": "B", "include_keywords": [], "tracks": ["general"], "language": "en"}, {"platform": "nvidia", "platform_key": "nvidia", "source_type": "rss", "title": "National Robotics Week — Latest Physical AI Research, Breakthroughs and Resources", "title_norm": "national robotics week latest physical ai research breakthroughs and resources", "url": "https://blogs.nvidia.com/blog/national-robotics-week-2026/", "published_at": "2026-04-06T09:55:59Z", "summary": "This National Robotics Week, NVIDIA is highlighting the breakthroughs that are bringing AI into the physical world — as well as the growing wave of robots transforming industries, from agricultural and manufacturing to energy and beyond. Advancements in robot learning, simulation and foundation models are accelerating…", "company": "NVIDIA", "signal_level": "A", "include_keywords": [], "tracks": ["general"], "language": "en"}, {"platform": "theverge", "platform_key": "theverge", "source_type": "rss", "title": "Wisconsin governor says ‘no’ to age checks for porn", "title_norm": "wisconsin governor says no to age checks for porn", "url": "https://www.theverge.com/policy/907761/wisconsin-governor-porn-age-verification-vetoed", "published_at": "2026-04-06T21:47:15Z", "summary": "Wisconsin Gov. Tony Evers vetoed a bill that would've required residents to verify their age before accessing porn sites, as reported earlier by 404 Media. In a letter to the members of the assembly last week, Evers writes that the bill \"imposes an intrusive burden on adults who are trying to access constitutionally p…", "company": null, "signal_level": "B", "include_keywords": [], "tracks": ["general"], "language": "en"}, {"platform": "arstechnica", "platform_key": "arstechnica", "source_type": "rss", "title": "Trump's next budget once again calls for massive cuts to science", "title_norm": "trump s next budget once again calls for massive cuts to science", "url": "https://arstechnica.com/science/2026/04/trumps-next-budget-once-again-calls-for-massive-cuts-to-science/", "published_at": "2026-04-06T21:40:40Z", "summary": "Congress rejected huge cuts to science in 2026, but Trump is trying again.", "company": null, "signal_level": "B", "include_keywords": [], "tracks": ["general"], "language": "en"}, {"platform": "lobsters", "platform_key": "lobsters", "source_type": "rss", "title": "Retargeting JIT compilers by using C-compiler generated executable code (2004)", "title_norm": "retargeting jit compilers by using c compiler generated executable code 2004", "url": "https://www.cs.arizona.edu/~collberg/Teaching/553/2011/Resources/jit.pdf", "published_at": "2026-04-06T21:35:29Z", "summary": "<p>Abstract: JIT compilers produce fast code, whereas interpreters are easy to port between architectures. We propose to combine the advantages of these language implementation techniques as follows: we generate native code by concatenating and patching machine code fragments taken from interpreter-derived code (gener…", "company": null, "signal_level": "B", "include_keywords": [], "tracks": ["general"], "language": "en"}, {"platform": "arstechnica", "platform_key": "arstechnica", "source_type": "rss", "title": "“The problem is Sam Altman”: OpenAI Insiders don’t trust CEO", "title_norm": "the problem is sam altman openai insiders don t trust ceo", "url": "https://arstechnica.com/tech-policy/2026/04/the-problem-is-sam-altman-openai-insiders-dont-trust-ceo/", "published_at": "2026-04-06T21:23:36Z", "summary": "OpenAI brainstorms ways AI can benefit humanity in effort to counter bad vibes.", "company": null, "signal_level": "B", "include_keywords": [], "tracks": ["general"], "language": "en"}, {"platform": "lobsters", "platform_key": "lobsters", "source_type": "rss", "title": "We Found a Ticking Time Bomb in macOS TCP Networking — It Detonates After Exactly 49 Days", "title_norm": "we found a ticking time bomb in macos tcp networking it detonates after exactly 49 days", "url": "https://photon.codes/blog/we-found-a-ticking-time-bomb-in-macos-tcp-networking", "published_at": "2026-04-06T21:06:13Z", "summary": "<p><a href=\"https://lobste.rs/s/hjei19/we_found_ticking_time_bomb_macos_tcp\">Comments</a></p>", "company": null, "signal_level": "B", "include_keywords": [], "tracks": ["general"], "language": "en"}, {"platform": "theverge", "platform_key": "theverge", "source_type": "rss", "title": "Artemis II astronauts break a record, name a crater", "title_norm": "artemis ii astronauts break a record name a crater", "url": "https://www.theverge.com/science/907682/nasa-artemis-ii-distance-record-crater-names", "published_at": "2026-04-06T20:40:11Z", "summary": "A few minutes before 2PM ET on Monday, the crew of Artemis II broke a record set 56 years ago by the ill-fated Apollo 13 mission - at over 248,655 miles, they have now traveled farther from Earth than any humans before them. They marked the occasion with a crater naming ceremony that left the [&#8230;]", "company": null, "signal_level": "B", "include_keywords": [], "tracks": ["general"], "language": "en"}, {"platform": "wired", "platform_key": "wired", "source_type": "rss", "title": "A Single Strike Won’t Shut Off the Gulf’s Desalination System", "title_norm": "a single strike won t shut off the gulf s desalination system", "url": "https://www.wired.com/story/a-single-strike-wont-shut-off-the-gulfs-desalination-system/", "published_at": "2026-04-06T20:23:04Z", "summary": "The Gulf’s water system is built with layers of backup, but it relies on continuous operation to hold.", "company": null, "signal_level": "B", "include_keywords": [], "tracks": ["general"], "language": "en"}, {"platform": "lobsters", "platform_key": "lobsters", "source_type": "rss", "title": "clmystery: A command-line murder mystery", "title_norm": "clmystery a command line murder mystery", "url": "https://github.com/veltman/clmystery", "published_at": "2026-04-06T20:02:45Z", "summary": "<p><a href=\"https://lobste.rs/s/yhyshg/clmystery_command_line_murder_mystery\">Comments</a></p>", "company": null, "signal_level": "B", "include_keywords": [], "tracks": ["general"], "language": "en"}, {"platform": "lobsters", "platform_key": "lobsters", "source_type": "rss", "title": "The Downfall and Enshittification of Microsoft in 2026", "title_norm": "the downfall and enshittification of microsoft in 2026", "url": "https://caio.ca/blog/the-downfall-and-enshittification-of-microsoft.html", "published_at": "2026-04-06T19:21:34Z", "summary": "<p><a href=\"https://lobste.rs/s/jxw4nj/downfall_enshittification_microsoft\">Comments</a></p>", "company": null, "signal_level": "B", "include_keywords": [], "tracks": ["general"], "language": "en"}, {"platform": "lobsters", "platform_key": "lobsters", "source_type": "rss", "title": "BrowserStack local leaking private key", "title_norm": "browserstack local leaking private key", "url": "https://infosec.exchange/@badkeys/116359377342260172", "published_at": "2026-04-06T19:20:23Z", "summary": "<p><a href=\"https://lobste.rs/s/exqgps/browserstack_local_leaking_private_key\">Comments</a></p>", "company": null, "signal_level": "B", "include_keywords": [], "tracks": ["general"], "language": "en"}, {"platform": "theverge", "platform_key": "theverge", "source_type": "rss", "title": "The best deals on MacBooks right now", "title_norm": "the best deals on macbooks right now", "url": "https://www.theverge.com/22399419/apple-macbook-air-pro-mac-mini-imac-deals", "published_at": "2026-04-06T18:50:06Z", "summary": "It’s 2026, and that means Apple sells MacBooks equipped with not just its capable M-series processors but A-series chips that were previously exclusive to the iPhone. With the MacBook Neo starting at $599, the company now offers a wider range of options with more sizes and price points than ever before, all of which r…", "company": null, "signal_level": "B", "include_keywords": [], "tracks": ["general"], "language": "en"}, {"platform": "theverge", "platform_key": "theverge", "source_type": "rss", "title": "DJI’s Mic Mini records clear audio on the go, and it&#8217;s on sale for $60", "title_norm": "dji s mic mini records clear audio on the go and it 8217 s on sale for 60", "url": "https://www.theverge.com/gadgets/907582/dji-mic-mini-two-transmitters-deal-sale", "published_at": "2026-04-06T18:22:01Z", "summary": "If you regularly create content for TikTok, Instagram, or YouTube on the go, bad sound quality can easily take away from an otherwise great video. DJI’s Mic Mini helps you record clear, reliable sound for videos without carrying around bulky, expensive gear, and it’s currently down to its all-time low price. You can b…", "company": null, "signal_level": "B", "include_keywords": [], "tracks": ["general"], "language": "en"}, {"platform": "arstechnica", "platform_key": "arstechnica", "source_type": "rss", "title": "NASA's Moon ship and rocket seem to be working well, so what about the landers?", "title_norm": "nasa s moon ship and rocket seem to be working well so what about the landers", "url": "https://arstechnica.com/space/2026/04/nasas-moon-ship-and-rocket-seem-to-be-working-well-so-what-about-the-landers/", "published_at": "2026-04-06T18:19:07Z", "summary": "Lori Glaze: \"We have seen real commitment to try and do that... from both Blue and from SpaceX.\"", "company": null, "signal_level": "B", "include_keywords": [], "tracks": ["general"], "language": "en"}, {"platform": "wired", "platform_key": "wired", "source_type": "rss", "title": "Border Patrol Agents Sold Challenge Coins With ‘Charlotte’s Web’ Characters in Riot Gear", "title_norm": "border patrol agents sold challenge coins with charlotte s web characters in riot gear", "url": "https://www.wired.com/story/us-border-patrol-challenge-coins-nonprofits/", "published_at": "2026-04-06T18:16:27Z", "summary": "Nonprofits run out of US Border Patrol stations are also selling other “operation”-themed coins that include a phrase popularized by the Proud Boys, potentially in violation of government rules.", "company": null, "signal_level": "B", "include_keywords": [], "tracks": ["general"], "language": "en"}, {"platform": "theverge", "platform_key": "theverge", "source_type": "rss", "title": "Robotaxi companies won’t say how often remote operators intervene", "title_norm": "robotaxi companies won t say how often remote operators intervene", "url": "https://www.theverge.com/transportation/907478/robotaxi-remote-assistance-markey-investigation-waymo-tesla", "published_at": "2026-04-06T18:15:51Z", "summary": "Autonomous vehicle companies are refusing to disclose key details about their use of remote assistance teams, including how often these workers are forced to intervene to help their self-driving cars. Sen. Ed Markey (D-MA) had asked robotaxi companies to disclose the information as part of an investigation by his offi…", "company": null, "signal_level": "B", "include_keywords": [], "tracks": ["general"], "language": "en"}, {"platform": "lobsters", "platform_key": "lobsters", "source_type": "rss", "title": "Git’s Magic Files", "title_norm": "git s magic files", "url": "https://nesbitt.io/2026/02/05/git-magic-files.html", "published_at": "2026-04-06T17:53:46Z", "summary": "<p><a href=\"https://lobste.rs/s/xvz6m7/git_s_magic_files\">Comments</a></p>", "company": null, "signal_level": "B", "include_keywords": [], "tracks": ["general"], "language": "en"}, {"platform": "arstechnica", "platform_key": "arstechnica", "source_type": "rss", "title": "Teardown of unreleased LG Rollable shows why rollable phones aren't a thing", "title_norm": "teardown of unreleased lg rollable shows why rollable phones aren t a thing", "url": "https://arstechnica.com/gadgets/2026/04/teardown-of-unreleased-lg-rollable-shows-why-rollable-phones-arent-a-thing/", "published_at": "2026-04-06T17:39:07Z", "summary": "LG almost released a rollable smartphone in 2021, and this is what it looked like inside.", "company": null, "signal_level": "B", "include_keywords": [], "tracks": ["general"], "language": "en"}, {"platform": "theverge", "platform_key": "theverge", "source_type": "rss", "title": "NASA’s Artemis II mission to fly around the far side of the Moon", "title_norm": "nasa s artemis ii mission to fly around the far side of the moon", "url": "https://www.theverge.com/2019/7/19/20700565/nasa-artemis-moon-return-landing-trump-administration-jim-bridenstine", "published_at": "2026-04-06T17:24:46Z", "summary": "Humans haven’t stepped foot on the Moon since NASA’s Apollo 17 mission in 1972. Now, the space agency is racing to get back to the lunar surface under the umbrella of its Artemis program — a nod to the Greek goddess and twin sister of Apollo, whose name was given to NASA’s first program to [&#8230;]", "company": null, "signal_level": "B", "include_keywords": [], "tracks": ["general"], "language": "en"}, {"platform": "wired", "platform_key": "wired", "source_type": "rss", "title": "One of Our Favorite 360 Cams Is 35 Percent Off", "title_norm": "one of our favorite 360 cams is 35 percent off", "url": "https://www.wired.com/story/dji-osmo-360-deal-426/", "published_at": "2026-04-06T17:03:05Z", "summary": "You can score over $200 off the DJI Osmo 360.", "company": null, "signal_level": "B", "include_keywords": [], "tracks": ["general"], "language": "en"}, {"platform": "theverge", "platform_key": "theverge", "source_type": "rss", "title": "Netflix is launching a new app for kids games", "title_norm": "netflix is launching a new app for kids games", "url": "https://www.theverge.com/entertainment/907293/netflix-playground-kids-games-app", "published_at": "2026-04-06T17:00:00Z", "summary": "Netflix has made family-friendly titles a key part of its current games strategy, and now it's pushing a little harder with the launch of a new app. Called Netflix Playground, the app is focused on games aimed at kids aged eight and under, and, like the rest of Netflix's gaming lineup, Playground games are included [&…", "company": null, "signal_level": "B", "include_keywords": [], "tracks": ["general"], "language": "en"}, {"platform": "wired", "platform_key": "wired", "source_type": "rss", "title": "Gozney Dome Gen 2 Review: The Ultimate Backyard Flex", "title_norm": "gozney dome gen 2 review the ultimate backyard flex", "url": "https://www.wired.com/review/gozney-dome-gen-2/", "published_at": "2026-04-06T16:57:49Z", "summary": "This colossal pizza oven is both pricey and impractical. It also makes the best pizza I’ve ever cooked at home.", "company": null, "signal_level": "B", "include_keywords": [], "tracks": ["general"], "language": "en"}, {"platform": "lobsters", "platform_key": "lobsters", "source_type": "rss", "title": "Returning to work after a year-long illness - what AI tools & workflows are you using nowadays?", "title_norm": "returning to work after a year long illness what ai tools workflows are you using nowadays", "url": "https://lobste.rs/s/q49re5/returning_work_after_year_long_illness", "published_at": "2026-04-06T16:38:37Z", "summary": "<p>I'm getting ready to return to work after a pretty intense year. Last May I was diagnosed with Guillain-Barré Syndrome, an autoimmune condition where the body attacks the nervous system. I spent two months in a wheelchair and about 10 months in rehab/day hospitalization working to get my body back to where it was.<…", "company": null, "signal_level": "B", "include_keywords": [], "tracks": ["general"], "language": "en"}, {"platform": "mit-technology-review", "platform_key": "mit-technology-review", "source_type": "rss", "title": "The one piece of data that could actually shed light on your job and AI", "title_norm": "the one piece of data that could actually shed light on your job and ai", "url": "https://www.technologyreview.com/2026/04/06/1135187/the-one-piece-of-data-that-could-actually-shed-light-on-your-job-and-ai/", "published_at": "2026-04-06T16:33:35Z", "summary": "This story originally appeared in The Algorithm, our weekly newsletter on AI. To get stories like this in your inbox first, sign up here. Within Silicon Valley’s orbit, an AI-fueled jobs apocalypse is spoken about as a given. The mood is so grim that a societal impacts researcher at Anthropic, responding Wednesday to…", "company": null, "signal_level": "B", "include_keywords": [], "tracks": ["general"], "language": "en"}, {"platform": "lobsters", "platform_key": "lobsters", "source_type": "rss", "title": "Someone good at CSS help, my website design is dying", "title_norm": "someone good at css help my website design is dying", "url": "https://ahti.space/~nortti/writeups/my-website-design-is-dying.html", "published_at": "2026-04-06T16:23:07Z", "summary": "<p><a href=\"https://lobste.rs/s/aqaobg/someone_good_at_css_help_my_website_design\">Comments</a></p>", "company": null, "signal_level": "B", "include_keywords": [], "tracks": ["general"], "language": "en"}, {"platform": "lobsters", "platform_key": "lobsters", "source_type": "rss", "title": "A Cryptography Engineer’s Perspective on Quantum Computing Timelines", "title_norm": "a cryptography engineer s perspective on quantum computing timelines", "url": "https://words.filippo.io/crqc-timeline/", "published_at": "2026-04-06T16:20:54Z", "summary": "<p><a href=\"https://lobste.rs/s/pfoohx/cryptography_engineer_s_perspective_on\">Comments</a></p>", "company": null, "signal_level": "B", "include_keywords": [], "tracks": ["general"], "language": "en"}, {"platform": "lobsters", "platform_key": "lobsters", "source_type": "rss", "title": "What are you doing this week?", "title_norm": "what are you doing this week", "url": "https://lobste.rs/s/izy0eh/what_are_you_doing_this_week", "published_at": "2026-04-06T16:16:13Z", "summary": "<p>What are you doing this week? Feel free to share!</p> <p>Keep in mind it’s OK to do nothing at all, too.</p>", "company": null, "signal_level": "B", "include_keywords": [], "tracks": ["general"], "language": "en"}, {"platform": "theverge", "platform_key": "theverge", "source_type": "rss", "title": "Samsung&#8217;s Galaxy S27 &#8216;Pro&#8217; could squeeze in between the Ultra and Plus phones", "title_norm": "samsung 8217 s galaxy s27 8216 pro 8217 could squeeze in between the ultra and plus phones", "url": "https://www.theverge.com/tech/907431/samsung-galaxy-s27-pro-privacy-display-rumor", "published_at": "2026-04-06T16:03:14Z", "summary": "Samsung's S27 lineup, expected next year, might include a new member, the Galaxy S27 Pro, which would be a second premium option between Samsung's Ultra and Plus models, as first reported by ETNews. The new Pro model reportedly won't support the S Pen but will feature Samsung's Privacy Display, which is currently only…", "company": null, "signal_level": "B", "include_keywords": [], "tracks": ["general"], "language": "en"}, {"platform": "theverge", "platform_key": "theverge", "source_type": "rss", "title": "Iran threatens OpenAI’s Stargate data center in Abu Dhabi", "title_norm": "iran threatens openai s stargate data center in abu dhabi", "url": "https://www.theverge.com/ai-artificial-intelligence/907427/iran-openai-stargate-datacenter-uae-abu-dhabi-threat", "published_at": "2026-04-06T15:54:19Z", "summary": "Iran's Islamic Revolutionary Guard Corps (IRGC) has published a video threatening OpenAI's planned Abu Dhabi data center if the US follows through on threats to attack the country's power plants, as reported earlier by Tom's Hardware. The video, which was published to an Iranian state-backed news outlet's X account on…", "company": null, "signal_level": "B", "include_keywords": [], "tracks": ["general"], "language": "en"}, {"platform": "theverge", "platform_key": "theverge", "source_type": "rss", "title": "The Artemis II astronauts will set a new distance record from Earth today", "title_norm": "the artemis ii astronauts will set a new distance record from earth today", "url": "https://www.theverge.com/science/907364/nasa-artemis-ii-astronauts-moon-orion-distance-record", "published_at": "2026-04-06T15:46:06Z", "summary": "On April 15th, 1970, Jim Lovell, Fred Haise, and Jack Swigert set a distance record when Apollo 13 traveled 248,655 miles from Earth. Nearly 56 years later, the crew of Artemis II is expected to break that record by several thousand miles when the Orion spacecraft reaches a maximum distance of 252,757 miles away from…", "company": null, "signal_level": "B", "include_keywords": [], "tracks": ["general"], "language": "en"}, {"platform": "infoq", "platform_key": "infoq", "source_type": "rss", "title": "Pinterest Reduces Spark OOM Failures by 96% Through Auto Memory Retries", "title_norm": "pinterest reduces spark oom failures by 96 through auto memory retries", "url": "https://www.infoq.com/news/2026/04/pinterest-spark-oom-reduction/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global", "published_at": "2026-04-06T14:32:00Z", "summary": "<img src=\"https://res.infoq.com/news/2026/04/pinterest-spark-oom-reduction/en/headerimage/workflow-1775338668860.jpeg\" /><p>Pinterest Engineering cut Apache Spark out-of-memory failures by 96% using improved observability, configuration tuning, and automatic memory retries. Staged rollout, dashboards, and proactive me…", "company": null, "signal_level": "B", "include_keywords": [], "tracks": ["general"], "language": "en"}, {"platform": "wired", "platform_key": "wired", "source_type": "rss", "title": "Artemis II: Everything We Know as Its Crew Approaches the Far Side of the Moon", "title_norm": "artemis ii everything we know as its crew approaches the far side of the moon", "url": "https://www.wired.com/story/artemis-ii-everything-we-know-as-orion-approaches-the-far-side-of-the-moon/", "published_at": "2026-04-06T14:21:04Z", "summary": "Artemis II remains on course for its lunar flyby as the crew shares historic photos of Earth, tests key systems for future lunar missions, and attempts to fix the toilet.", "company": null, "signal_level": "B", "include_keywords": [], "tracks": ["general"], "language": "en"}, {"platform": "lobsters", "platform_key": "lobsters", "source_type": "rss", "title": "I Tried Vibing an RSS Reader and My Dreams Did Not Come True", "title_norm": "i tried vibing an rss reader and my dreams did not come true", "url": "https://blog.jim-nielsen.com/2026/vibe-dreams-didnt-come-true/", "published_at": "2026-04-06T14:18:47Z", "summary": "<p><a href=\"https://lobste.rs/s/uud7zb/i_tried_vibing_rss_reader_my_dreams_did_not\">Comments</a></p>", "company": null, "signal_level": "B", "include_keywords": [], "tracks": ["general"], "language": "en"}, {"platform": "arstechnica", "platform_key": "arstechnica", "source_type": "rss", "title": "Used EV sales spike alongside gas prices", "title_norm": "used ev sales spike alongside gas prices", "url": "https://arstechnica.com/cars/2026/04/used-ev-sales-spike-alongside-gas-prices/", "published_at": "2026-04-06T13:54:12Z", "summary": "The market for new cars has slumped as Americans look for deals on used EVs.", "company": null, "signal_level": "B", "include_keywords": [], "tracks": ["general"], "language": "en"}, {"platform": "lobsters", "platform_key": "lobsters", "source_type": "rss", "title": "Using Discord on Plan 9", "title_norm": "using discord on plan 9", "url": "https://pmikkelsen.com/plan9/discord", "published_at": "2026-04-06T13:21:35Z", "summary": "<p><a href=\"https://lobste.rs/s/qiva5o/using_discord_on_plan_9\">Comments</a></p>", "company": null, "signal_level": "B", "include_keywords": [], "tracks": ["general"], "language": "en"}, {"platform": "arstechnica", "platform_key": "arstechnica", "source_type": "rss", "title": "Why will today's lunar flyby only beam back low-resolution video?", "title_norm": "why will today s lunar flyby only beam back low resolution video", "url": "https://arstechnica.com/space/2026/04/video-from-artemis-ii-flyby-of-the-moon-will-not-initially-look-spectacular/", "published_at": "2026-04-06T12:59:46Z", "summary": "\"Don't expect hi-res video.\"", "company": null, "signal_level": "B", "include_keywords": [], "tracks": ["general"], "language": "en"}, {"platform": "arstechnica", "platform_key": "arstechnica", "source_type": "rss", "title": "What Memento reveals about human nature, 25 years later", "title_norm": "what memento reveals about human nature 25 years later", "url": "https://arstechnica.com/culture/2026/04/memento-turns-25/", "published_at": "2026-04-06T12:26:49Z", "summary": "Director Christopher Nolan's breakout film explores themes of the nature of memory and personal identity.", "company": null, "signal_level": "B", "include_keywords": [], "tracks": ["general"], "language": "en"}, {"platform": "infoq", "platform_key": "infoq", "source_type": "rss", "title": "Presentation: Duolingo's Kubernetes Leap", "title_norm": "presentation duolingo s kubernetes leap", "url": "https://www.infoq.com/presentations/duolingo-eks-kubernetes/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global", "published_at": "2026-04-06T12:11:00Z", "summary": "<img src=\"https://res.infoq.com/presentations/duolingo-eks-kubernetes/en/mediumimage/Franka-Passing-medium-1774441713171.jpg\" /><p>Franka Passing discusses the architectural shift of Duolingo’s 500+ backend services to Kubernetes. She explains the move toward GitOps with Argo CD, the transition to IPv6-only pods, and…", "company": null, "signal_level": "B", "include_keywords": [], "tracks": ["general"], "language": "en"}, {"platform": "lobsters", "platform_key": "lobsters", "source_type": "rss", "title": "The machines are fine. I'm worried about us", "title_norm": "the machines are fine i m worried about us", "url": "https://ergosphere.blog/posts/the-machines-are-fine/", "published_at": "2026-04-06T12:08:46Z", "summary": "<p><a href=\"https://lobste.rs/s/3w0o3y/machines_are_fine_i_m_worried_about_us\">Comments</a></p>", "company": null, "signal_level": "B", "include_keywords": [], "tracks": ["general"], "language": "en"}, {"platform": "wired", "platform_key": "wired", "source_type": "rss", "title": "8 Best Apple Watch Accessories (2026): Bands, Chargers, and More", "title_norm": "8 best apple watch accessories 2026 bands chargers and more", "url": "https://www.wired.com/gallery/best-apple-watch-accessories/", "published_at": "2026-04-06T12:00:00Z", "summary": "You finally caved and bought an Apple Watch. These are our favorite bands, screen protectors, and chargers to go with your new smartwatch.", "company": null, "signal_level": "B", "include_keywords": [], "tracks": ["general"], "language": "en"}, {"platform": "wired", "platform_key": "wired", "source_type": "rss", "title": "The DOJ Misled a Judge About How It’s Using Voter Roll Data", "title_norm": "the doj misled a judge about how it s using voter roll data", "url": "https://www.wired.com/story/doj-misled-judge-voter-roll-data/", "published_at": "2026-04-06T11:00:00Z", "summary": "The acting head of the DOJ’s voting section told a judge last week that the agency had not touched the nonpublic voter roll data it has collected. That wasn’t true.", "company": null, "signal_level": "B", "include_keywords": [], "tracks": ["general"], "language": "en"}, {"platform": "mit-technology-review", "platform_key": "mit-technology-review", "source_type": "rss", "title": "AI is changing how small online sellers decide what to make", "title_norm": "ai is changing how small online sellers decide what to make", "url": "https://www.technologyreview.com/2026/04/06/1135118/ai-online-seller-alibaba-accio/", "published_at": "2026-04-06T11:00:00Z", "summary": "For years Mike McClary sold the Guardian LTE Flashlight, a heavy-duty black model, online through his small outdoor brand. The product, designed for brightness and durability, became one of his most popular items ever. Even after he stopped offering it around 2017, customers kept sending him emails asking where they c…", "company": null, "signal_level": "B", "include_keywords": [], "tracks": ["general"], "language": "en"}, {"platform": "infoq", "platform_key": "infoq", "source_type": "rss", "title": "Article: A Better Alternative to Reducing CI Regression Test Suite Sizes", "title_norm": "article a better alternative to reducing ci regression test suite sizes", "url": "https://www.infoq.com/articles/alternative-reduce-test-suite-size/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global", "published_at": "2026-04-06T11:00:00Z", "summary": "<img src=\"https://res.infoq.com/articles/alternative-reduce-test-suite-size/en/headerimage/alternative-reduce-test-suite-size-header-1774943323622.jpg\" /><p>How can you focus in a sea of results from a large regression test suite? This article describes a stochastic approach that relies on some degree of redundancy in…", "company": null, "signal_level": "B", "include_keywords": [], "tracks": ["general"], "language": "en"}, {"platform": "infoq", "platform_key": "infoq", "source_type": "rss", "title": "Podcast: Context Engineering with Adi Polak", "title_norm": "podcast context engineering with adi polak", "url": "https://www.infoq.com/podcasts/context-engineering-large-language-models/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global", "published_at": "2026-04-06T11:00:00Z", "summary": "<img src=\"https://res.infoq.com/podcasts/context-engineering-large-language-models/en/smallimage/the-infoq-podcast-logo-thumbnail-1775129463355.jpg\" /><p>In this episode, Thomas Betts and Adi Polak talk about the need for context engineering when interacting with LLMs and designing agentic systems. Prompt engineering…", "company": null, "signal_level": "B", "include_keywords": [], "tracks": ["general"], "language": "en"}, {"platform": "wired", "platform_key": "wired", "source_type": "rss", "title": "Robot Mowers Are Actually Good Now", "title_norm": "robot mowers are actually good now", "url": "https://www.wired.com/story/robot-mowers-are-good-now-rave/", "published_at": "2026-04-06T10:30:00Z", "summary": "With the rise of affordable and effective robot mowers, maintaining a pristine lawn has never been easier.", "company": null, "signal_level": "B", "include_keywords": [], "tracks": ["general"], "language": "en"}, {"platform": "lobsters", "platform_key": "lobsters", "source_type": "rss", "title": "Someone at BrowserStack is Leaking Users' Email Address", "title_norm": "someone at browserstack is leaking users email address", "url": "https://shkspr.mobi/blog/2026/04/someone-at-browserstack-is-leaking-users-email-address/", "published_at": "2026-04-06T10:20:56Z", "summary": "<p><a href=\"https://lobste.rs/s/7qqnze/someone_at_browserstack_is_leaking_users\">Comments</a></p>", "company": null, "signal_level": "B", "include_keywords": [], "tracks": ["general"], "language": "en"}, {"platform": "wired", "platform_key": "wired", "source_type": "rss", "title": "Snake Bros Keep Getting Bitten by Their Lethal Pets. Only Zoos Can Save Them", "title_norm": "snake bros keep getting bitten by their lethal pets only zoos can save them", "url": "https://www.wired.com/snake-bros-antivenom-index-zoos-influencers-chris-gifford/", "published_at": "2026-04-06T10:00:00Z", "summary": "Your venomous serpent bites you, and the clock is ticking. America’s zookeepers—and a cooler full of rare antivenom—are your best chance of survival.", "company": null, "signal_level": "B", "include_keywords": [], "tracks": ["general"], "language": "en"}]}
+{
+  "window": {
+    "time_window_hours": 24,
+    "cutoff": "2026-04-20T15:55:27.269939Z",
+    "generated_at": "2026-04-21T15:55:27.269939Z"
+  },
+  "sources": [
+    {
+      "platform": "openai",
+      "platform_key": "openai",
+      "source_type": "rss",
+      "url": "https://openai.com/news/rss.xml",
+      "file": "Lab-01-Tech-Insights/output/signals/openai.xml",
+      "parsed": 25,
+      "kept": 1,
+      "parse_error": null,
+      "company": "OpenAI",
+      "signal_level": "S",
+      "tracks": [
+        "company_official"
+      ]
+    },
+    {
+      "platform": "github-blog",
+      "platform_key": "github-blog",
+      "source_type": "rss",
+      "url": "https://github.blog/feed/",
+      "file": "Lab-01-Tech-Insights/output/signals/github-blog.xml",
+      "parsed": 10,
+      "kept": 2,
+      "parse_error": null,
+      "company": "GitHub",
+      "signal_level": "S",
+      "tracks": [
+        "devtools_release"
+      ]
+    },
+    {
+      "platform": "microsoft-devblogs",
+      "platform_key": "microsoft-devblogs",
+      "source_type": "rss",
+      "url": "https://devblogs.microsoft.com/feed",
+      "file": "Lab-01-Tech-Insights/output/signals/microsoft-devblogs.xml",
+      "parsed": 10,
+      "kept": 0,
+      "parse_error": null,
+      "company": "Microsoft",
+      "signal_level": "S",
+      "tracks": [
+        "company_official"
+      ]
+    },
+    {
+      "platform": "google-ai",
+      "platform_key": "google-ai",
+      "source_type": "rss",
+      "url": "https://blog.google/technology/ai/rss/",
+      "file": "Lab-01-Tech-Insights/output/signals/google-ai.xml",
+      "parsed": 20,
+      "kept": 1,
+      "parse_error": null,
+      "company": "Google",
+      "signal_level": "S",
+      "tracks": [
+        "company_official"
+      ]
+    },
+    {
+      "platform": "aws-news",
+      "platform_key": "aws-news",
+      "source_type": "rss",
+      "url": "https://aws.amazon.com/blogs/aws/feed/",
+      "file": "Lab-01-Tech-Insights/output/signals/aws-news.xml",
+      "parsed": 15,
+      "kept": 0,
+      "parse_error": null,
+      "company": "Amazon",
+      "signal_level": "A",
+      "tracks": [
+        "general"
+      ]
+    },
+    {
+      "platform": "nvidia",
+      "platform_key": "nvidia",
+      "source_type": "rss",
+      "url": "https://blogs.nvidia.com/feed/",
+      "file": "Lab-01-Tech-Insights/output/signals/nvidia.xml",
+      "parsed": 12,
+      "kept": 0,
+      "parse_error": null,
+      "company": "NVIDIA",
+      "signal_level": "A",
+      "tracks": [
+        "general"
+      ]
+    },
+    {
+      "platform": "apple-developer",
+      "platform_key": "apple-developer",
+      "source_type": "rss",
+      "url": "https://developer.apple.com/news/rss/news.rss",
+      "file": "Lab-01-Tech-Insights/output/signals/apple-developer.xml",
+      "parsed": 25,
+      "kept": 0,
+      "parse_error": null,
+      "company": "Apple",
+      "signal_level": "A",
+      "tracks": [
+        "general"
+      ]
+    },
+    {
+      "platform": "cloudflare",
+      "platform_key": "cloudflare",
+      "source_type": "rss",
+      "url": "https://blog.cloudflare.com/rss/",
+      "file": "Lab-01-Tech-Insights/output/signals/cloudflare.xml",
+      "parsed": 7,
+      "kept": 1,
+      "parse_error": null,
+      "company": "Cloudflare",
+      "signal_level": "A",
+      "tracks": [
+        "general"
+      ]
+    },
+    {
+      "platform": "deepmind",
+      "platform_key": "deepmind",
+      "source_type": "rss",
+      "url": "https://deepmind.google/blog/rss.xml",
+      "file": "Lab-01-Tech-Insights/output/signals/deepmind.xml",
+      "parsed": 25,
+      "kept": 0,
+      "parse_error": null,
+      "company": "Google DeepMind",
+      "signal_level": "A",
+      "tracks": [
+        "company_official"
+      ]
+    },
+    {
+      "platform": "huggingface",
+      "platform_key": "huggingface",
+      "source_type": "rss",
+      "url": "https://huggingface.co/blog/feed.xml",
+      "file": "Lab-01-Tech-Insights/output/signals/huggingface.xml",
+      "parsed": 25,
+      "kept": 3,
+      "parse_error": null,
+      "company": "Hugging Face",
+      "signal_level": "A",
+      "tracks": [
+        "general"
+      ]
+    },
+    {
+      "platform": "hackernews",
+      "platform_key": "hackernews",
+      "source_type": "rss",
+      "url": "https://news.ycombinator.com/rss",
+      "file": "Lab-01-Tech-Insights/output/signals/hackernews.xml",
+      "parsed": 25,
+      "kept": 19,
+      "parse_error": null,
+      "company": null,
+      "signal_level": "A",
+      "tracks": [
+        "general"
+      ]
+    },
+    {
+      "platform": "producthunt",
+      "platform_key": "producthunt",
+      "source_type": "rss",
+      "url": "https://www.producthunt.com/feed",
+      "file": "Lab-01-Tech-Insights/output/signals/producthunt.xml",
+      "parsed": 25,
+      "kept": 4,
+      "parse_error": null,
+      "company": null,
+      "signal_level": "A",
+      "tracks": [
+        "general"
+      ]
+    },
+    {
+      "platform": "techcrunch",
+      "platform_key": "techcrunch",
+      "source_type": "rss",
+      "url": "https://techcrunch.com/feed/",
+      "file": "Lab-01-Tech-Insights/output/signals/techcrunch.xml",
+      "parsed": 20,
+      "kept": 20,
+      "parse_error": null,
+      "company": null,
+      "signal_level": "A",
+      "tracks": [
+        "general"
+      ]
+    },
+    {
+      "platform": "theverge",
+      "platform_key": "theverge",
+      "source_type": "rss",
+      "url": "https://www.theverge.com/rss/index.xml",
+      "file": "Lab-01-Tech-Insights/output/signals/theverge.xml",
+      "parsed": 10,
+      "kept": 10,
+      "parse_error": null,
+      "company": null,
+      "signal_level": "B",
+      "tracks": [
+        "general"
+      ]
+    },
+    {
+      "platform": "arstechnica",
+      "platform_key": "arstechnica",
+      "source_type": "rss",
+      "url": "https://feeds.arstechnica.com/arstechnica/index",
+      "file": "Lab-01-Tech-Insights/output/signals/arstechnica.xml",
+      "parsed": 20,
+      "kept": 14,
+      "parse_error": null,
+      "company": null,
+      "signal_level": "B",
+      "tracks": [
+        "general"
+      ]
+    },
+    {
+      "platform": "wired",
+      "platform_key": "wired",
+      "source_type": "rss",
+      "url": "https://www.wired.com/feed/rss",
+      "file": "Lab-01-Tech-Insights/output/signals/wired.xml",
+      "parsed": 25,
+      "kept": 13,
+      "parse_error": null,
+      "company": null,
+      "signal_level": "B",
+      "tracks": [
+        "general"
+      ]
+    },
+    {
+      "platform": "mit-technology-review",
+      "platform_key": "mit-technology-review",
+      "source_type": "rss",
+      "url": "https://www.technologyreview.com/feed/",
+      "file": "Lab-01-Tech-Insights/output/signals/mit-technology-review.xml",
+      "parsed": 10,
+      "kept": 2,
+      "parse_error": null,
+      "company": null,
+      "signal_level": "B",
+      "tracks": [
+        "general"
+      ]
+    },
+    {
+      "platform": "infoq",
+      "platform_key": "infoq",
+      "source_type": "rss",
+      "url": "https://feed.infoq.com/",
+      "file": "Lab-01-Tech-Insights/output/signals/infoq.xml",
+      "parsed": 15,
+      "kept": 6,
+      "parse_error": null,
+      "company": null,
+      "signal_level": "B",
+      "tracks": [
+        "general"
+      ]
+    },
+    {
+      "platform": "lobsters",
+      "platform_key": "lobsters",
+      "source_type": "rss",
+      "url": "https://lobste.rs/rss",
+      "file": "Lab-01-Tech-Insights/output/signals/lobsters.xml",
+      "parsed": 25,
+      "kept": 18,
+      "parse_error": null,
+      "company": null,
+      "signal_level": "B",
+      "tracks": [
+        "general"
+      ]
+    },
+    {
+      "platform": "devto",
+      "platform_key": "devto",
+      "source_type": "rss",
+      "url": "https://dev.to/feed",
+      "file": "Lab-01-Tech-Insights/output/signals/devto.xml",
+      "parsed": 9,
+      "kept": 9,
+      "parse_error": null,
+      "company": null,
+      "signal_level": "B",
+      "tracks": [
+        "general"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "platform": "google-ai",
+      "platform_key": "google-ai",
+      "source_type": "rss",
+      "title": "3 new ways Ads Advisor is making Google Ads safer and faster",
+      "title_norm": "3 new ways ads advisor is making google ads safer and faster",
+      "url": "https://blog.google/products/ads-commerce/ads-advisor-google-ads/",
+      "published_at": "2026-04-21T14:30:00Z",
+      "summary": "The Road to Google Marketing Live graphic. May 20, 2026, 9am PT. White background with colorful bottom gradient.",
+      "company": "Google",
+      "signal_level": "S",
+      "include_keywords": [],
+      "tracks": [
+        "company_official"
+      ],
+      "language": "en"
+    },
+    {
+      "platform": "techcrunch",
+      "platform_key": "techcrunch",
+      "source_type": "rss",
+      "title": "Bond, a new social media platform, wants to use AI to help you kick your doomscrolling habit",
+      "title_norm": "bond a new social media platform wants to use ai to help you kick your doomscrolling habit",
+      "url": "https://techcrunch.com/2026/04/21/bond-social-media-platform-ai-memories-kick-doomscrolling-habit/",
+      "published_at": "2026-04-21T15:24:29Z",
+      "summary": "Bond wants you to get off the couch and get back into the real world, its creator says. The new platform's AI system is designed to motivate users to do things away from the app.",
+      "company": null,
+      "signal_level": "A",
+      "include_keywords": [],
+      "tracks": [
+        "general"
+      ],
+      "language": "en"
+    },
+    {
+      "platform": "hackernews",
+      "platform_key": "hackernews",
+      "source_type": "rss",
+      "title": "Original GrapheneOS responses to WIRED fact checker",
+      "title_norm": "original grapheneos responses to wired fact checker",
+      "url": "https://discuss.grapheneos.org/d/34369-original-grapheneos-responses-to-wired-fact-checker",
+      "published_at": "2026-04-21T15:04:24Z",
+      "summary": "<a href=\"https://news.ycombinator.com/item?id=47849854\">Comments</a>",
+      "company": null,
+      "signal_level": "A",
+      "include_keywords": [],
+      "tracks": [
+        "general"
+      ],
+      "language": "en"
+    },
+    {
+      "platform": "techcrunch",
+      "platform_key": "techcrunch",
+      "source_type": "rss",
+      "title": "YouTube expands its AI likeness detection technology to celebrities",
+      "title_norm": "youtube expands its ai likeness detection technology to celebrities",
+      "url": "https://techcrunch.com/2026/04/21/youtube-expands-its-ai-likeness-detection-technology-to-celebrities/",
+      "published_at": "2026-04-21T15:02:06Z",
+      "summary": "YouTube is expanding its AI likeness detection tool to celebrities, giving talent and their reps a way to find and remove deepfakes.",
+      "company": null,
+      "signal_level": "A",
+      "include_keywords": [],
+      "tracks": [
+        "general"
+      ],
+      "language": "en"
+    },
+    {
+      "platform": "hackernews",
+      "platform_key": "hackernews",
+      "source_type": "rss",
+      "title": "As Oceans Warm, Great White Sharks Are Overheating",
+      "title_norm": "as oceans warm great white sharks are overheating",
+      "url": "https://e360.yale.edu/digest/great-white-sharks-climate",
+      "published_at": "2026-04-21T14:48:55Z",
+      "summary": "<a href=\"https://news.ycombinator.com/item?id=47849592\">Comments</a>",
+      "company": null,
+      "signal_level": "A",
+      "include_keywords": [],
+      "tracks": [
+        "general"
+      ],
+      "language": "en"
+    },
+    {
+      "platform": "hackernews",
+      "platform_key": "hackernews",
+      "source_type": "rss",
+      "title": "Fusion Power Plant Simulator",
+      "title_norm": "fusion power plant simulator",
+      "url": "https://www.fusionenergybase.com/fusion-power-plant-simulator",
+      "published_at": "2026-04-21T14:26:52Z",
+      "summary": "<a href=\"https://news.ycombinator.com/item?id=47849315\">Comments</a>",
+      "company": null,
+      "signal_level": "A",
+      "include_keywords": [],
+      "tracks": [
+        "general"
+      ],
+      "language": "en"
+    },
+    {
+      "platform": "hackernews",
+      "platform_key": "hackernews",
+      "source_type": "rss",
+      "title": "Your favorite brands got worse on purpose",
+      "title_norm": "your favorite brands got worse on purpose",
+      "url": "https://www.worseonpurpose.com/p/your-favorite-brands-got-worse-on-purpose",
+      "published_at": "2026-04-21T14:19:49Z",
+      "summary": "<a href=\"https://news.ycombinator.com/item?id=47849221\">Comments</a>",
+      "company": null,
+      "signal_level": "A",
+      "include_keywords": [],
+      "tracks": [
+        "general"
+      ],
+      "language": "en"
+    },
+    {
+      "platform": "hackernews",
+      "platform_key": "hackernews",
+      "source_type": "rss",
+      "title": "Show HN: GoModel – an open-source AI gateway in Go; 44x lighter than LiteLLM",
+      "title_norm": "show hn gomodel an open source ai gateway in go 44x lighter than litellm",
+      "url": "https://github.com/ENTERPILOT/GOModel/",
+      "published_at": "2026-04-21T14:11:53Z",
+      "summary": "<a href=\"https://news.ycombinator.com/item?id=47849097\">Comments</a>",
+      "company": null,
+      "signal_level": "A",
+      "include_keywords": [],
+      "tracks": [
+        "general"
+      ],
+      "language": "en"
+    },
+    {
+      "platform": "techcrunch",
+      "platform_key": "techcrunch",
+      "source_type": "rss",
+      "title": "Amazon taps Sweden’s Einride for its electric big rigs",
+      "title_norm": "amazon taps sweden s einride for its electric big rigs",
+      "url": "https://techcrunch.com/2026/04/21/amazon-taps-swedens-einride-for-its-electric-big-rigs/",
+      "published_at": "2026-04-21T14:09:43Z",
+      "summary": "The agreement comes just as Einride is finalizing a merger with blank-check company Legato Merger Corp. to go public.",
+      "company": null,
+      "signal_level": "A",
+      "include_keywords": [],
+      "tracks": [
+        "general"
+      ],
+      "language": "en"
+    },
+    {
+      "platform": "techcrunch",
+      "platform_key": "techcrunch",
+      "source_type": "rss",
+      "title": "Revolut eyes valuation of up to $200B in eventual IPO",
+      "title_norm": "revolut eyes valuation of up to 200b in eventual ipo",
+      "url": "https://techcrunch.com/2026/04/21/revolut-eyes-valuation-of-up-to-200b-in-eventual-ipo/",
+      "published_at": "2026-04-21T13:41:44Z",
+      "summary": "Fintech giant Revolut, which secured a full banking license in the U.K. in March after years of waiting, was most recently valued at $75 billion in a secondary share sale.",
+      "company": null,
+      "signal_level": "A",
+      "include_keywords": [],
+      "tracks": [
+        "general"
+      ],
+      "language": "en"
+    },
+    {
+      "platform": "hackernews",
+      "platform_key": "hackernews",
+      "source_type": "rss",
+      "title": "Anthropic takes $5B from Amazon and pledges $100B in cloud spending in return",
+      "title_norm": "anthropic takes 5b from amazon and pledges 100b in cloud spending in return",
+      "url": "https://techcrunch.com/2026/04/20/anthropic-takes-5b-from-amazon-and-pledges-100b-in-cloud-spending-in-return/",
+      "published_at": "2026-04-21T13:08:25Z",
+      "summary": "<a href=\"https://news.ycombinator.com/item?id=47848276\">Comments</a>",
+      "company": null,
+      "signal_level": "A",
+      "include_keywords": [],
+      "tracks": [
+        "general"
+      ],
+      "language": "en"
+    },
+    {
+      "platform": "hackernews",
+      "platform_key": "hackernews",
+      "source_type": "rss",
+      "title": "Tindie store under \"scheduled maintenance\" for days",
+      "title_norm": "tindie store under scheduled maintenance for days",
+      "url": "https://www.tindie.com/",
+      "published_at": "2026-04-21T13:02:00Z",
+      "summary": "<a href=\"https://news.ycombinator.com/item?id=47848195\">Comments</a>",
+      "company": null,
+      "signal_level": "A",
+      "include_keywords": [],
+      "tracks": [
+        "general"
+      ],
+      "language": "en"
+    },
+    {
+      "platform": "cloudflare",
+      "platform_key": "cloudflare",
+      "source_type": "rss",
+      "title": "Moving past bots vs. humans",
+      "title_norm": "moving past bots vs humans",
+      "url": "https://blog.cloudflare.com/past-bots-and-humans/",
+      "published_at": "2026-04-21T13:00:00Z",
+      "summary": "As AI assistants and privacy proxies challenge the capabilities of traditional bot detection, the Web needs new models for accountability. We believe that control should remain with the client, and that an open ecosystem of anonymous credentials is key to preserving user privacy while protecting origins from abuse.",
+      "company": "Cloudflare",
+      "signal_level": "A",
+      "include_keywords": [],
+      "tracks": [
+        "general"
+      ],
+      "language": "en"
+    },
+    {
+      "platform": "techcrunch",
+      "platform_key": "techcrunch",
+      "source_type": "rss",
+      "title": "With US spy laws set to expire, lawmakers are split over protecting Americans from warrantless surveillance",
+      "title_norm": "with us spy laws set to expire lawmakers are split over protecting americans from warrantless surveillance",
+      "url": "https://techcrunch.com/2026/04/21/with-us-spy-laws-set-to-expire-lawmakers-are-split-over-protecting-americans-from-warrantless-surveillance/",
+      "published_at": "2026-04-21T13:00:00Z",
+      "summary": "Some lawmakers are calling for widespread reforms following years of surveillance scandals and abuses across successive U.S. administrations. But even if the spy law known as Section 702 expires on April 30, the government's spy powers will not automatically lapse.",
+      "company": null,
+      "signal_level": "A",
+      "include_keywords": [],
+      "tracks": [
+        "general"
+      ],
+      "language": "en"
+    },
+    {
+      "platform": "techcrunch",
+      "platform_key": "techcrunch",
+      "source_type": "rss",
+      "title": "What’s the key to better vegan cheese? Microbreweries, one startup says.",
+      "title_norm": "what s the key to better vegan cheese microbreweries one startup says",
+      "url": "https://techcrunch.com/2026/04/21/whats-the-key-to-better-vegan-cheese-microbreweries-one-startup-says/",
+      "published_at": "2026-04-21T13:00:00Z",
+      "summary": "AuX Labs says it has found a better way to make vegan cheese that tastes and feels like the real thing — and costs the same.",
+      "company": null,
+      "signal_level": "A",
+      "include_keywords": [],
+      "tracks": [
+        "general"
+      ],
+      "language": "en"
+    },
+    {
+      "platform": "techcrunch",
+      "platform_key": "techcrunch",
+      "source_type": "rss",
+      "title": "Cash App is targeting a new kind of customer: 6-12 year olds",
+      "title_norm": "cash app is targeting a new kind of customer 6 12 year olds",
+      "url": "https://techcrunch.com/2026/04/21/cash-app-is-targeting-a-new-kind-of-customer-6-12-year-olds/",
+      "published_at": "2026-04-21T13:00:00Z",
+      "summary": "Tech companies are constantly on the hunt for new customers, and Cash App, the fintech company owned by Jack Dorsey&#8217;s Block, believes it has found a promising new demographic: children. The company, which already offers financial services to teens, said this week that it is expanding its youth-focused services i…",
+      "company": null,
+      "signal_level": "A",
+      "include_keywords": [],
+      "tracks": [
+        "general"
+      ],
+      "language": "en"
+    },
+    {
+      "platform": "techcrunch",
+      "platform_key": "techcrunch",
+      "source_type": "rss",
+      "title": "GRAI believes AI can make music more social, not replace artists",
+      "title_norm": "grai believes ai can make music more social not replace artists",
+      "url": "https://techcrunch.com/2026/04/21/grai-believes-ai-can-make-music-more-social-not-replace-artists/",
+      "published_at": "2026-04-21T13:00:00Z",
+      "summary": "AI music startup GRAI says fans want to remix tracks, not generate songs from scratch.",
+      "company": null,
+      "signal_level": "A",
+      "include_keywords": [],
+      "tracks": [
+        "general"
+      ],
+      "language": "en"
+    },
+    {
+      "platform": "openai",
+      "platform_key": "openai",
+      "source_type": "rss",
+      "title": "Scaling Codex to enterprises worldwide",
+      "title_norm": "scaling codex to enterprises worldwide",
+      "url": "https://openai.com/index/scaling-codex-to-enterprises-worldwide",
+      "published_at": "2026-04-21T00:00:00Z",
+      "summary": "OpenAI launches Codex Labs, partners with with Accenture, PwC, Infosys, and others to help enterprises deploy and scale Codex across the software development lifecycle, and hits 4M Codex WAU.",
+      "company": "OpenAI",
+      "signal_level": "S",
+      "include_keywords": [],
+      "tracks": [
+        "company_official"
+      ],
+      "language": "en"
+    },
+    {
+      "platform": "hackernews",
+      "platform_key": "hackernews",
+      "source_type": "rss",
+      "title": "Show HN: VidStudio, a browser based video editor that doesn't upload your files",
+      "title_norm": "show hn vidstudio a browser based video editor that doesn t upload your files",
+      "url": "https://vidstudio.app/video-editor",
+      "published_at": "2026-04-21T11:58:16Z",
+      "summary": "<a href=\"https://news.ycombinator.com/item?id=47847558\">Comments</a>",
+      "company": null,
+      "signal_level": "A",
+      "include_keywords": [],
+      "tracks": [
+        "general"
+      ],
+      "language": "en"
+    },
+    {
+      "platform": "hackernews",
+      "platform_key": "hackernews",
+      "source_type": "rss",
+      "title": "Tim Cook's Impeccable Timing",
+      "title_norm": "tim cook s impeccable timing",
+      "url": "https://stratechery.com/2026/tim-cooks-impeccable-timing/",
+      "published_at": "2026-04-21T11:30:03Z",
+      "summary": "<a href=\"https://news.ycombinator.com/item?id=47847324\">Comments</a>",
+      "company": null,
+      "signal_level": "A",
+      "include_keywords": [],
+      "tracks": [
+        "general"
+      ],
+      "language": "en"
+    },
+    {
+      "platform": "hackernews",
+      "platform_key": "hackernews",
+      "source_type": "rss",
+      "title": "Laws of Software Engineering",
+      "title_norm": "laws of software engineering",
+      "url": "https://lawsofsoftwareengineering.com",
+      "published_at": "2026-04-21T11:04:56Z",
+      "summary": "<a href=\"https://news.ycombinator.com/item?id=47847179\">Comments</a>",
+      "company": null,
+      "signal_level": "A",
+      "include_keywords": [],
+      "tracks": [
+        "general"
+      ],
+      "language": "en"
+    },
+    {
+      "platform": "techcrunch",
+      "platform_key": "techcrunch",
+      "source_type": "rss",
+      "title": "Yelp’s updated AI assistant can answer questions and book a restaurant or service in one conversation",
+      "title_norm": "yelp s updated ai assistant can answer questions and book a restaurant or service in one conversation",
+      "url": "https://techcrunch.com/2026/04/21/yelps-updated-ai-assistant-can-answer-questions-and-book-a-restaurant-or-service-in-one-conversation/",
+      "published_at": "2026-04-21T11:00:00Z",
+      "summary": "Yelp said that users can ask questions about a restaurant and place an order or book a table in one conversation",
+      "company": null,
+      "signal_level": "A",
+      "include_keywords": [],
+      "tracks": [
+        "general"
+      ],
+      "language": "en"
+    },
+    {
+      "platform": "hackernews",
+      "platform_key": "hackernews",
+      "source_type": "rss",
+      "title": "Apple ignores DMA interoperability requests and contradicts own documentation",
+      "title_norm": "apple ignores dma interoperability requests and contradicts own documentation",
+      "url": "https://fsfe.org/news/2026/news-20260420-01.html",
+      "published_at": "2026-04-21T10:57:53Z",
+      "summary": "<a href=\"https://news.ycombinator.com/item?id=47847124\">Comments</a>",
+      "company": null,
+      "signal_level": "A",
+      "include_keywords": [],
+      "tracks": [
+        "general"
+      ],
+      "language": "en"
+    },
+    {
+      "platform": "hackernews",
+      "platform_key": "hackernews",
+      "source_type": "rss",
+      "title": "A type-safe, realtime collaborative Graph Database in a CRDT",
+      "title_norm": "a type safe realtime collaborative graph database in a crdt",
+      "url": "https://codemix.com/graph",
+      "published_at": "2026-04-21T10:33:24Z",
+      "summary": "<a href=\"https://news.ycombinator.com/item?id=47846946\">Comments</a>",
+      "company": null,
+      "signal_level": "A",
+      "include_keywords": [],
+      "tracks": [
+        "general"
+      ],
+      "language": "en"
+    },
+    {
+      "platform": "huggingface",
+      "platform_key": "huggingface",
+      "source_type": "rss",
+      "title": "QIMMA قِمّة ⛰: A Quality-First Arabic LLM Leaderboard",
+      "title_norm": "qimma a quality first arabic llm leaderboard",
+      "url": "https://huggingface.co/blog/tiiuae/qimma-arabic-leaderboard",
+      "published_at": "2026-04-21T10:09:58Z",
+      "summary": "",
+      "company": "Hugging Face",
+      "signal_level": "A",
+      "include_keywords": [],
+      "tracks": [
+        "general"
+      ],
+      "language": "en"
+    },
+    {
+      "platform": "techcrunch",
+      "platform_key": "techcrunch",
+      "source_type": "rss",
+      "title": "Blue Energy raises $380M to build grid-scale nuclear reactors in shipyards",
+      "title_norm": "blue energy raises 380m to build grid scale nuclear reactors in shipyards",
+      "url": "https://techcrunch.com/2026/04/21/blue-energy-raises-380m-to-build-grid-scale-nuclear-reactors-in-shipyards/",
+      "published_at": "2026-04-21T10:00:00Z",
+      "summary": "By building reactors in shipyards, Blue Energy says it will tame nuclear power's cost problems, giving it access to cheaper financing.",
+      "company": null,
+      "signal_level": "A",
+      "include_keywords": [],
+      "tracks": [
+        "general"
+      ],
+      "language": "en"
+    },
+    {
+      "platform": "hackernews",
+      "platform_key": "hackernews",
+      "source_type": "rss",
+      "title": "Less human AI agents, please",
+      "title_norm": "less human ai agents please",
+      "url": "https://nial.se/blog/less-human-ai-agents-please/",
+      "published_at": "2026-04-21T06:58:08Z",
+      "summary": "<a href=\"https://news.ycombinator.com/item?id=47845429\">Comments</a>",
+      "company": null,
+      "signal_level": "A",
+      "include_keywords": [],
+      "tracks": [
+        "general"
+      ],
+      "language": "en"
+    },
+    {
+      "platform": "hackernews",
+      "platform_key": "hackernews",
+      "source_type": "rss",
+      "title": "Louis Zocchi, games industry pioneer, has died",
+      "title_norm": "louis zocchi games industry pioneer has died",
+      "url": "https://icv2.com/articles/news/view/62176/r-i-p-louis-zocchi-the-godfather-dice",
+      "published_at": "2026-04-21T06:19:15Z",
+      "summary": "<a href=\"https://news.ycombinator.com/item?id=47845231\">Comments</a>",
+      "company": null,
+      "signal_level": "A",
+      "include_keywords": [],
+      "tracks": [
+        "general"
+      ],
+      "language": "en"
+    },
+    {
+      "platform": "github-blog",
+      "platform_key": "github-blog",
+      "source_type": "rss",
+      "title": "Changes to GitHub Copilot Individual plans",
+      "title_norm": "changes to github copilot individual plans",
+      "url": "https://github.blog/news-insights/company-news/changes-to-github-copilot-individual-plans/",
+      "published_at": "2026-04-20T18:15:28Z",
+      "summary": "<p>We're making these changes to ensure a reliable and predictable experience for existing customers.</p> <p>The post <a href=\"https://github.blog/news-insights/company-news/changes-to-github-copilot-individual-plans/\">Changes to GitHub Copilot Individual plans</a> appeared first on <a href=\"https://github.blog\">The G…",
+      "company": "GitHub",
+      "signal_level": "S",
+      "include_keywords": [],
+      "tracks": [
+        "devtools_release"
+      ],
+      "language": "en"
+    },
+    {
+      "platform": "producthunt",
+      "platform_key": "producthunt",
+      "source_type": "rss",
+      "title": "Pioneer",
+      "title_norm": "pioneer",
+      "url": "https://www.producthunt.com/products/launching-pioneer",
+      "published_at": "2026-04-21T05:39:25Z",
+      "summary": "<p> Fine-tune any LLM in minutes, with one prompt </p> <p> <a href=\"https://www.producthunt.com/products/launching-pioneer?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a> | <a href=\"https://www.producthunt.com/r/p/1128600?app_id=339\">Link</a>…",
+      "company": null,
+      "signal_level": "A",
+      "include_keywords": [],
+      "tracks": [
+        "general"
+      ],
+      "language": "en"
+    },
+    {
+      "platform": "hackernews",
+      "platform_key": "hackernews",
+      "source_type": "rss",
+      "title": "Salmon exposed to cocaine and its main byproduct roam more widely",
+      "title_norm": "salmon exposed to cocaine and its main byproduct roam more widely",
+      "url": "https://www.science.org/content/article/cocaine-pollution-gives-salmon-wanderlust",
+      "published_at": "2026-04-21T05:27:35Z",
+      "summary": "<a href=\"https://news.ycombinator.com/item?id=47844890\">Comments</a>",
+      "company": null,
+      "signal_level": "A",
+      "include_keywords": [],
+      "tracks": [
+        "general"
+      ],
+      "language": "en"
+    },
+    {
+      "platform": "github-blog",
+      "platform_key": "github-blog",
+      "source_type": "rss",
+      "title": "Highlights from Git 2.54",
+      "title_norm": "highlights from git 2 54",
+      "url": "https://github.blog/open-source/git/highlights-from-git-2-54/",
+      "published_at": "2026-04-20T16:43:57Z",
+      "summary": "<p>The open source Git project just released Git 2.54. Here is GitHub’s look at some of the most interesting features and changes introduced since last time.</p> <p>The post <a href=\"https://github.blog/open-source/git/highlights-from-git-2-54/\">Highlights from Git 2.54</a> appeared first on <a href=\"https://github.bl…",
+      "company": "GitHub",
+      "signal_level": "S",
+      "include_keywords": [],
+      "tracks": [
+        "devtools_release"
+      ],
+      "language": "en"
+    },
+    {
+      "platform": "hackernews",
+      "platform_key": "hackernews",
+      "source_type": "rss",
+      "title": "The Beauty of Bonsai Styles",
+      "title_norm": "the beauty of bonsai styles",
+      "url": "https://longwoodgardens.org/blog/2023-05-17/beauty-bonsai-styles",
+      "published_at": "2026-04-21T04:31:30Z",
+      "summary": "<a href=\"https://news.ycombinator.com/item?id=47844539\">Comments</a>",
+      "company": null,
+      "signal_level": "A",
+      "include_keywords": [],
+      "tracks": [
+        "general"
+      ],
+      "language": "en"
+    },
+    {
+      "platform": "hackernews",
+      "platform_key": "hackernews",
+      "source_type": "rss",
+      "title": "A Roblox cheat and one AI tool brought down Vercel's platform",
+      "title_norm": "a roblox cheat and one ai tool brought down vercel s platform",
+      "url": "https://webmatrices.com/post/how-a-roblox-cheat-and-one-ai-tool-brought-down-vercel-s-entire-platform",
+      "published_at": "2026-04-21T04:12:12Z",
+      "summary": "<a href=\"https://news.ycombinator.com/item?id=47844431\">Comments</a>",
+      "company": null,
+      "signal_level": "A",
+      "include_keywords": [],
+      "tracks": [
+        "general"
+      ],
+      "language": "en"
+    },
+    {
+      "platform": "producthunt",
+      "platform_key": "producthunt",
+      "source_type": "rss",
+      "title": "ScreenBuddy",
+      "title_norm": "screenbuddy",
+      "url": "https://www.producthunt.com/products/screenbuddy",
+      "published_at": "2026-04-21T04:06:54Z",
+      "summary": "<p> Screen recording with auto-zoom, spotlight, and lightbox </p> <p> <a href=\"https://www.producthunt.com/products/screenbuddy?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a> | <a href=\"https://www.producthunt.com/r/p/1128564?app_id=339\">Link…",
+      "company": null,
+      "signal_level": "A",
+      "include_keywords": [],
+      "tracks": [
+        "general"
+      ],
+      "language": "en"
+    },
+    {
+      "platform": "theverge",
+      "platform_key": "theverge",
+      "source_type": "rss",
+      "title": "The next evolution of The Verge’s homepage is here",
+      "title_norm": "the next evolution of the verge s homepage is here",
+      "url": "https://www.theverge.com/bulletin/914842/the-next-evolution-of-the-verges-homepage-is-here",
+      "published_at": "2026-04-21T15:48:04Z",
+      "summary": "When we updated our homepage in 2022, our primary goal was simple: The Verge should be fun to read, every time you visit. With that update, we introduced the homepage StoryStream and Quick Posts, and it was built to redesign the relationship we have with you, our audience. It’s been almost four years since then, [&#82…",
+      "company": null,
+      "signal_level": "B",
+      "include_keywords": [],
+      "tracks": [
+        "general"
+      ],
+      "language": "en"
+    },
+    {
+      "platform": "devto",
+      "platform_key": "devto",
+      "source_type": "rss",
+      "title": "Build a No-Code AI Agent in 30 Minutes Using n8n + Claude (Full Walkthrough)",
+      "title_norm": "build a no code ai agent in 30 minutes using n8n claude full walkthrough",
+      "url": "https://dev.to/dextralabs/build-a-no-code-ai-agent-in-30-minutes-using-n8n-claude-full-walkthrough-3cid",
+      "published_at": "2026-04-21T15:43:31Z",
+      "summary": "<p><strong><em>Monitor a Slack channel, summarise threads, post daily digests, all without writing a single line of code.</em></strong></p> <p>I want to tell you about a Friday afternoon problem.</p> <p>Our team's main Slack channel had become unmanageable. Not because people were saying too much, because they were sa…",
+      "company": null,
+      "signal_level": "B",
+      "include_keywords": [],
+      "tracks": [
+        "general"
+      ],
+      "language": "en"
+    },
+    {
+      "platform": "devto",
+      "platform_key": "devto",
+      "source_type": "rss",
+      "title": "I didn't set out to build a sustainability tool...",
+      "title_norm": "i didn t set out to build a sustainability tool",
+      "url": "https://dev.to/jgravelle/i-didnt-set-out-to-build-a-sustainability-tool-cbh",
+      "published_at": "2026-04-21T15:43:12Z",
+      "summary": "<p>...but only seven weeks in, we've accidentally saved enough electricity to power roughly 65 American households for a year, and enough avoided CO₂ to take 64 gasoline cars off the road.</p> <p>I set out to fix a dumb problem: LLM coding agents load entire files into their context window to answer questions about si…",
+      "company": null,
+      "signal_level": "B",
+      "include_keywords": [],
+      "tracks": [
+        "general"
+      ],
+      "language": "en"
+    },
+    {
+      "platform": "hackernews",
+      "platform_key": "hackernews",
+      "source_type": "rss",
+      "title": "Anthropic says OpenClaw-style Claude CLI usage is allowed again",
+      "title_norm": "anthropic says openclaw style claude cli usage is allowed again",
+      "url": "https://docs.openclaw.ai/providers/anthropic",
+      "published_at": "2026-04-21T03:43:03Z",
+      "summary": "<a href=\"https://news.ycombinator.com/item?id=47844269\">Comments</a>",
+      "company": null,
+      "signal_level": "A",
+      "include_keywords": [],
+      "tracks": [
+        "general"
+      ],
+      "language": "en"
+    },
+    {
+      "platform": "devto",
+      "platform_key": "devto",
+      "source_type": "rss",
+      "title": "Migrating vector embeddings in production without downtime",
+      "title_norm": "migrating vector embeddings in production without downtime",
+      "url": "https://dev.to/googleai/migrating-vector-embeddings-in-production-without-downtime-5bli",
+      "published_at": "2026-04-21T15:41:50Z",
+      "summary": "<p>In the fast-moving world of AI, models evolve rapidly. What was state-of-the-art six months ago is now being surpassed by newer models. For a RAG system, this presents a significant challenge: vector embeddings are tied to the specific model that generated them.</p> <p>If you want to upgrade your model, you can’t j…",
+      "company": null,
+      "signal_level": "B",
+      "include_keywords": [],
+      "tracks": [
+        "general"
+      ],
+      "language": "en"
+    },
+    {
+      "platform": "devto",
+      "platform_key": "devto",
+      "source_type": "rss",
+      "title": "The AI Coding Comprehension Gap: Why Faster Isn't Always Better",
+      "title_norm": "the ai coding comprehension gap why faster isn t always better",
+      "url": "https://dev.to/sarkar_305d0d2ab4f21cebb7/the-ai-coding-comprehension-gap-why-faster-isnt-always-better-140f",
+      "published_at": "2026-04-21T15:41:11Z",
+      "summary": "<p>AI coding agents have made developers dramatically faster. They've also made something else: a growing gap between the code that exists in a codebase and the code that developers actually understand.</p> <p>This post is about that gap — what causes it, why it matters, and what can actually be done about it.</p> <h2…",
+      "company": null,
+      "signal_level": "B",
+      "include_keywords": [],
+      "tracks": [
+        "general"
+      ],
+      "language": "en"
+    },
+    {
+      "platform": "devto",
+      "platform_key": "devto",
+      "source_type": "rss",
+      "title": "Understanding Recursion in JavaScript — Explained in Simple Words",
+      "title_norm": "understanding recursion in javascript explained in simple words",
+      "url": "https://dev.to/saurav_dev_2022/understanding-recursion-in-javascript-explained-in-simple-words-3bc0",
+      "published_at": "2026-04-21T15:40:29Z",
+      "summary": "<p>If you are learning DSA, recursion can feel scary at first.</p> <p>When I started learning it, I also felt like:</p> <p>“Why is a function calling itself?”<br /> “How do I know when it will stop?”<br /> “Why does this look so confusing?”</p> <p>But the truth is:</p> <p>Recursion is not hard because of the logic.</p…",
+      "company": null,
+      "signal_level": "B",
+      "include_keywords": [],
+      "tracks": [
+        "general"
+      ],
+      "language": "en"
+    },
+    {
+      "platform": "devto",
+      "platform_key": "devto",
+      "source_type": "rss",
+      "title": "Windows + V is too clunky, so I built a permanent Sidebar Clipboard Manager. Launching today!",
+      "title_norm": "windows v is too clunky so i built a permanent sidebar clipboard manager launching today",
+      "url": "https://dev.to/malkimson/windows-v-is-too-clunky-so-i-built-a-permanent-sidebar-clipboard-manager-launching-today-4d8a",
+      "published_at": "2026-04-21T15:39:58Z",
+      "summary": "<p>If you’re like me and find the standard Windows clipboard history frustrating because it disappears every time you click away, I built something for us.</p> <p>My new tool, Clip-bored Manager, is a lightweight Windows utility that pins your clipboard history to a sidebar. It’s built for people who need to see their…",
+      "company": null,
+      "signal_level": "B",
+      "include_keywords": [],
+      "tracks": [
+        "general"
+      ],
+      "language": "en"
+    },
+    {
+      "platform": "devto",
+      "platform_key": "devto",
+      "source_type": "rss",
+      "title": "From Search Chaos to Retrieval Bliss: How I Fixed My Knowledge Management System's Core Problem",
+      "title_norm": "from search chaos to retrieval bliss how i fixed my knowledge management system s core problem",
+      "url": "https://dev.to/kevinten10/from-search-chaos-to-retrieval-bliss-how-i-fixed-my-knowledge-management-systems-core-problem-5eb8",
+      "published_at": "2026-04-21T15:38:15Z",
+      "summary": "<h1> From Search Chaos to Retrieval Bliss: How I Fixed My Knowledge Management System's Core Problem </h1> <p>Honestly, I thought I had it all figured out. After 1,847 hours of development and 46 Dev.to articles about my Papers knowledge management system, I was sitting here staring at the brutal reality: my \"advanced…",
+      "company": null,
+      "signal_level": "B",
+      "include_keywords": [],
+      "tracks": [
+        "general"
+      ],
+      "language": "en"
+    },
+    {
+      "platform": "theverge",
+      "platform_key": "theverge",
+      "source_type": "rss",
+      "title": "New leaks reveal pricing and performance specs for DJI’s next beginner drones",
+      "title_norm": "new leaks reveal pricing and performance specs for dji s next beginner drones",
+      "url": "https://www.theverge.com/tech/915877/dji-leak-lito-1-x1-drones-amateur-beginner-pricing",
+      "published_at": "2026-04-21T15:36:52Z",
+      "summary": "DJI plans to debut two new drones later this week according to a recent teaser. But ahead of the official announcement, Italian electronics retailer Dino Galiano has shared listings for both the DJI Lito 1 and Lito X1 drones that include full tech specs and pricing, as spotted by reliable leaker Roland Quandt. The Lit…",
+      "company": null,
+      "signal_level": "B",
+      "include_keywords": [],
+      "tracks": [
+        "general"
+      ],
+      "language": "en"
+    },
+    {
+      "platform": "devto",
+      "platform_key": "devto",
+      "source_type": "rss",
+      "title": "Kiwi-chan's Persistent Placement Problems & Exploration Loops!",
+      "title_norm": "kiwi chan s persistent placement problems exploration loops",
+      "url": "https://dev.to/kiwi_tech/kiwi-chans-persistent-placement-problems-exploration-loops-ba5",
+      "published_at": "2026-04-21T15:35:49Z",
+      "summary": "<p>Okay, folks, buckle up. It's been a <em>long</em> four hours with Kiwi-chan, and honestly, it feels like we're stuck in a very polite, very persistent loop. The core issue? Placing crafting tables. Despite multiple code fixes (thanks, Qwen!), Kiwi-chan keeps failing to get the <code>blockUpdate</code> event after a…",
+      "company": null,
+      "signal_level": "B",
+      "include_keywords": [],
+      "tracks": [
+        "general"
+      ],
+      "language": "en"
+    },
+    {
+      "platform": "devto",
+      "platform_key": "devto",
+      "source_type": "rss",
+      "title": "From Zero to Hero: Building a Spatial Memory API That Actually Survives Real-World Testing",
+      "title_norm": "from zero to hero building a spatial memory api that actually survives real world testing",
+      "url": "https://dev.to/kevinten10/from-zero-to-hero-building-a-spatial-memory-api-that-actually-survives-real-world-testing-3m18",
+      "published_at": "2026-04-21T15:35:30Z",
+      "summary": "",
+      "company": null,
+      "signal_level": "B",
+      "include_keywords": [],
+      "tracks": [
+        "general"
+      ],
+      "language": "en"
+    },
+    {
+      "platform": "arstechnica",
+      "platform_key": "arstechnica",
+      "source_type": "rss",
+      "title": "CATL's new LFP battery can charge from 10 to 98% in less than 7 minutes",
+      "title_norm": "catl s new lfp battery can charge from 10 to 98 in less than 7 minutes",
+      "url": "https://arstechnica.com/cars/2026/04/catls-new-lfp-battery-can-charge-from-10-to-98-in-less-than-7-minutes/",
+      "published_at": "2026-04-21T15:01:43Z",
+      "summary": "The self-heating Shenxing battery still performs even in Arctic temperatures.",
+      "company": null,
+      "signal_level": "B",
+      "include_keywords": [],
+      "tracks": [
+        "general"
+      ],
+      "language": "en"
+    },
+    {
+      "platform": "arstechnica",
+      "platform_key": "arstechnica",
+      "source_type": "rss",
+      "title": "AMD Ryzen 9 9950X3D2 Dual Edition review: Tons of cache for tons of dollars",
+      "title_norm": "amd ryzen 9 9950x3d2 dual edition review tons of cache for tons of dollars",
+      "url": "https://arstechnica.com/gadgets/2026/04/amd-ryzen-9-9950x3d2-dual-edition-review-tons-of-cache-for-tons-of-dollars/",
+      "published_at": "2026-04-21T14:45:36Z",
+      "summary": "There are some practical benefits to this $899 chip, but not many.",
+      "company": null,
+      "signal_level": "B",
+      "include_keywords": [],
+      "tracks": [
+        "general"
+      ],
+      "language": "en"
+    },
+    {
+      "platform": "infoq",
+      "platform_key": "infoq",
+      "source_type": "rss",
+      "title": "Anthropic Introduces Managed Agents to Simplify AI Agent Deployment",
+      "title_norm": "anthropic introduces managed agents to simplify ai agent deployment",
+      "url": "https://www.infoq.com/news/2026/04/anthropic-managed-agents/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+      "published_at": "2026-04-21T14:36:00Z",
+      "summary": "<img src=\"https://res.infoq.com/news/2026/04/anthropic-managed-agents/en/headerimage/generatedHeaderImage-1776566447284.jpg\" /><p>Anthropic introduces Managed Agents on Claude, a managed execution layer for agent-based workflows. It separates agent logic from runtime concerns like orchestration, sandboxing, state mana…",
+      "company": null,
+      "signal_level": "B",
+      "include_keywords": [],
+      "tracks": [
+        "general"
+      ],
+      "language": "en"
+    },
+    {
+      "platform": "arstechnica",
+      "platform_key": "arstechnica",
+      "source_type": "rss",
+      "title": "What's the deal with spacesuits for the Moon? Will they be ready in time?",
+      "title_norm": "what s the deal with spacesuits for the moon will they be ready in time",
+      "url": "https://arstechnica.com/space/2026/04/whats-the-deal-with-spacesuits-for-the-moon-will-they-be-ready-in-time/",
+      "published_at": "2026-04-21T14:24:09Z",
+      "summary": "NASA is down to a single provider for a critical link in its lunar architecture.",
+      "company": null,
+      "signal_level": "B",
+      "include_keywords": [],
+      "tracks": [
+        "general"
+      ],
+      "language": "en"
+    },
+    {
+      "platform": "arstechnica",
+      "platform_key": "arstechnica",
+      "source_type": "rss",
+      "title": "Loneliness in older adults can often lead to memory impairment",
+      "title_norm": "loneliness in older adults can often lead to memory impairment",
+      "url": "https://arstechnica.com/health/2026/04/loneliness-in-older-adults-can-often-lead-to-memory-impairment/",
+      "published_at": "2026-04-21T14:23:24Z",
+      "summary": "A longitudinal study finds links to lapses in immediate and delayed recall.",
+      "company": null,
+      "signal_level": "B",
+      "include_keywords": [],
+      "tracks": [
+        "general"
+      ],
+      "language": "en"
+    },
+    {
+      "platform": "infoq",
+      "platform_key": "infoq",
+      "source_type": "rss",
+      "title": "Slack Rebuilds Notification System, Reports 5X Increase in Settings Engagement",
+      "title_norm": "slack rebuilds notification system reports 5x increase in settings engagement",
+      "url": "https://www.infoq.com/news/2026/04/slack-new-notification-system/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+      "published_at": "2026-04-21T14:05:00Z",
+      "summary": "<img src=\"https://res.infoq.com/news/2026/04/slack-new-notification-system/en/headerimage/generatedHeaderImage-1776312499019.jpg\" /><p>Slack has rebuilt its notification system with a unified architecture that separates activity from delivery, improving consistency across platforms. The redesign simplifies preferences…",
+      "company": null,
+      "signal_level": "B",
+      "include_keywords": [],
+      "tracks": [
+        "general"
+      ],
+      "language": "en"
+    },
+    {
+      "platform": "lobsters",
+      "platform_key": "lobsters",
+      "source_type": "rss",
+      "title": "Performance of the Wren programming language",
+      "title_norm": "performance of the wren programming language",
+      "url": "https://wren.io/performance.html",
+      "published_at": "2026-04-21T14:03:20Z",
+      "summary": "<p><a href=\"https://lobste.rs/s/fgwvua/performance_wren_programming_language\">Comments</a></p>",
+      "company": null,
+      "signal_level": "B",
+      "include_keywords": [],
+      "tracks": [
+        "general"
+      ],
+      "language": "en"
+    },
+    {
+      "platform": "theverge",
+      "platform_key": "theverge",
+      "source_type": "rss",
+      "title": "Apple TV has another busy summer of sci-fi with Silo season 3 in July",
+      "title_norm": "apple tv has another busy summer of sci fi with silo season 3 in july",
+      "url": "https://www.theverge.com/entertainment/915640/silo-season-2-apple-tv-date-trailer",
+      "published_at": "2026-04-21T14:00:00Z",
+      "summary": "Over the last few years Apple TV has established itself as a force in sci-fi, and that trend looks to continue through 2026. Up next: the post-apocalyptic thriller Silo is returning for its third season on July 3rd. The 10 episode-long season will span 10 episodes and wrap up on September 4th, with new episodes [&#823…",
+      "company": null,
+      "signal_level": "B",
+      "include_keywords": [],
+      "tracks": [
+        "general"
+      ],
+      "language": "en"
+    },
+    {
+      "platform": "lobsters",
+      "platform_key": "lobsters",
+      "source_type": "rss",
+      "title": "How are you protecting yourself against the imminent AI dooms zero day?",
+      "title_norm": "how are you protecting yourself against the imminent ai dooms zero day",
+      "url": "https://lobste.rs/s/cfzhwf/how_are_you_protecting_yourself_against",
+      "published_at": "2026-04-21T13:53:02Z",
+      "summary": "<p>Above all this is a fun discussion. Don't get too serious :)</p> <hr /> <p>As LLMs get better and better at pattern matching against vulnerabilities, and gaining better logical inference, it's a matter of time until a human or a group of humans and an LLM(s) find a plethora of zero days, some possibly unpatchable.<…",
+      "company": null,
+      "signal_level": "B",
+      "include_keywords": [],
+      "tracks": [
+        "general"
+      ],
+      "language": "en"
+    },
+    {
+      "platform": "lobsters",
+      "platform_key": "lobsters",
+      "source_type": "rss",
+      "title": "grasp: a simple protocol for decentralized git",
+      "title_norm": "grasp a simple protocol for decentralized git",
+      "url": "https://gitgrasp.com/",
+      "published_at": "2026-04-21T13:48:53Z",
+      "summary": "<p><a href=\"https://lobste.rs/s/ual4t5/grasp_simple_protocol_for_decentralized\">Comments</a></p>",
+      "company": null,
+      "signal_level": "B",
+      "include_keywords": [],
+      "tracks": [
+        "general"
+      ],
+      "language": "en"
+    },
+    {
+      "platform": "theverge",
+      "platform_key": "theverge",
+      "source_type": "rss",
+      "title": "The Vergecast Vergecast, 2026 edition",
+      "title_norm": "the vergecast vergecast 2026 edition",
+      "url": "https://www.theverge.com/podcast/915682/how-the-verge-works-vergecast",
+      "published_at": "2026-04-21T13:41:38Z",
+      "summary": "We get a lot of questions about how The Verge works. And how The Vergecast works. And how we make money. And whether some of that money helps Nilay buy more jackets, several yachts, or something else entirely. So, every once in a while, we spend an episode of the podcast answering as many questions [&#8230;]",
+      "company": null,
+      "signal_level": "B",
+      "include_keywords": [],
+      "tracks": [
+        "general"
+      ],
+      "language": "en"
+    },
+    {
+      "platform": "theverge",
+      "platform_key": "theverge",
+      "source_type": "rss",
+      "title": "John Ternus’ first big problem is AI",
+      "title_norm": "john ternus first big problem is ai",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/915662/john-ternus-apple-ceo-tim-cook-ai-problem-siri",
+      "published_at": "2026-04-21T13:37:55Z",
+      "summary": "Less than a year ago, Apple made headlines for a lack of AI announcements at its annual WWDC event. Ten months later, the company has announced that hardware executive John Ternus will succeed longtime CEO Tim Cook as chief executive - and the official release doesn't mention AI once. Ternus, currently Apple's SVP of…",
+      "company": null,
+      "signal_level": "B",
+      "include_keywords": [],
+      "tracks": [
+        "general"
+      ],
+      "language": "en"
+    },
+    {
+      "platform": "wired",
+      "platform_key": "wired",
+      "source_type": "rss",
+      "title": "The 10 Best Electrolyte Powders (We Tested Nearly 20)",
+      "title_norm": "the 10 best electrolyte powders we tested nearly 20",
+      "url": "https://www.wired.com/story/best-electrolyte-powders/",
+      "published_at": "2026-04-21T13:33:00Z",
+      "summary": "Get those lost minerals back with the help of our top electrolyte powders, tablets, drops, and chews for athletes, partiers, and everyone in between.",
+      "company": null,
+      "signal_level": "B",
+      "include_keywords": [],
+      "tracks": [
+        "general"
+      ],
+      "language": "en"
+    },
+    {
+      "platform": "lobsters",
+      "platform_key": "lobsters",
+      "source_type": "rss",
+      "title": "LixCon 2026",
+      "title_norm": "lixcon 2026",
+      "url": "https://media.ccc.de/c/lixcon2026",
+      "published_at": "2026-04-21T13:19:29Z",
+      "summary": "<p><a href=\"https://lobste.rs/s/5r04ck/lixcon_2026\">Comments</a></p>",
+      "company": null,
+      "signal_level": "B",
+      "include_keywords": [],
+      "tracks": [
+        "general"
+      ],
+      "language": "en"
+    },
+    {
+      "platform": "theverge",
+      "platform_key": "theverge",
+      "source_type": "rss",
+      "title": "Splatoon Raiders hits the Switch 2 in July",
+      "title_norm": "splatoon raiders hits the switch 2 in july",
+      "url": "https://www.theverge.com/games/915655/splatoon-raiders-switch-2-release-date-trailer",
+      "published_at": "2026-04-21T13:10:54Z",
+      "summary": "The squid kids will be back this summer. Nintendo announced this morning that Splatoon Raiders, a single-player spinoff of its competitive shooter series, will launch on the Nintendo Switch 2 on July 23rd. It'll be the first new entry in the series since Splatoon 3 in 2022. In addition to the date, Nintendo also relea…",
+      "company": null,
+      "signal_level": "B",
+      "include_keywords": [],
+      "tracks": [
+        "general"
+      ],
+      "language": "en"
+    },
+    {
+      "platform": "techcrunch",
+      "platform_key": "techcrunch",
+      "source_type": "rss",
+      "title": "Who is John Ternus, the incoming Apple CEO?",
+      "title_norm": "who is john ternus the incoming apple ceo",
+      "url": "https://techcrunch.com/2026/04/20/who-is-john-ternus-the-incoming-apple-ceo/",
+      "published_at": "2026-04-21T01:02:04Z",
+      "summary": "Starting on September 1, Ternus will lead one of the world's most valuable companies, but if you're not a dedicated Apple enthusiast, you've probably never heard of this man, who has largely remained out of the spotlight until now.",
+      "company": null,
+      "signal_level": "A",
+      "include_keywords": [],
+      "tracks": [
+        "general"
+      ],
+      "language": "en"
+    },
+    {
+      "platform": "huggingface",
+      "platform_key": "huggingface",
+      "source_type": "rss",
+      "title": "How to Ground a Korean AI Agent in Real Demographics with Synthetic Personas",
+      "title_norm": "how to ground a korean ai agent in real demographics with synthetic personas",
+      "url": "https://huggingface.co/blog/nvidia/build-korean-agents-with-nemotron-personas",
+      "published_at": "2026-04-21T00:40:10Z",
+      "summary": "",
+      "company": "Hugging Face",
+      "signal_level": "A",
+      "include_keywords": [],
+      "tracks": [
+        "general"
+      ],
+      "language": "en"
+    },
+    {
+      "platform": "theverge",
+      "platform_key": "theverge",
+      "source_type": "rss",
+      "title": "The SpaceX IPO is a trillion-dollar gamble on the future of space",
+      "title_norm": "the spacex ipo is a trillion dollar gamble on the future of space",
+      "url": "https://www.theverge.com/science/915244/spacex-ipo-trillion-dollar-commercial-iss-nasa-launch",
+      "published_at": "2026-04-21T12:38:20Z",
+      "summary": "The great SpaceX IPO is looming, allowing outside investors - including regular Joe Schmoes, or retail investors - to buy a stake in one of the buzziest and most controversial companies on the planet for the first time. Depending on who you ask, it's either the best investment opportunity you'll see this decade or a […",
+      "company": null,
+      "signal_level": "B",
+      "include_keywords": [],
+      "tracks": [
+        "general"
+      ],
+      "language": "en"
+    },
+    {
+      "platform": "arstechnica",
+      "platform_key": "arstechnica",
+      "source_type": "rss",
+      "title": "Contrary to popular superstition, AES 128 is just fine in a post-quantum world",
+      "title_norm": "contrary to popular superstition aes 128 is just fine in a post quantum world",
+      "url": "https://arstechnica.com/security/2026/04/contrary-to-popular-superstition-aes-128-is-just-fine-in-a-post-quantum-world/",
+      "published_at": "2026-04-21T12:35:20Z",
+      "summary": "A stubborn misconception is hampering the already hard work of quantum readiness.",
+      "company": null,
+      "signal_level": "B",
+      "include_keywords": [],
+      "tracks": [
+        "general"
+      ],
+      "language": "en"
+    },
+    {
+      "platform": "lobsters",
+      "platform_key": "lobsters",
+      "source_type": "rss",
+      "title": "Emacs is my browser",
+      "title_norm": "emacs is my browser",
+      "url": "https://joshblais.com/blog/emacs-as-my-browser/",
+      "published_at": "2026-04-21T12:30:49Z",
+      "summary": "<p><a href=\"https://lobste.rs/s/prquts/emacs_is_my_browser\">Comments</a></p>",
+      "company": null,
+      "signal_level": "B",
+      "include_keywords": [],
+      "tracks": [
+        "general"
+      ],
+      "language": "en"
+    },
+    {
+      "platform": "mit-technology-review",
+      "platform_key": "mit-technology-review",
+      "source_type": "rss",
+      "title": "The Download: turning down human noise, and LA’s stunning subway upgrade",
+      "title_norm": "the download turning down human noise and la s stunning subway upgrade",
+      "url": "https://www.technologyreview.com/2026/04/21/1136246/the-download-human-noise-la-subway-upgrade/",
+      "published_at": "2026-04-21T12:10:00Z",
+      "summary": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. The noise we make is hurting animals. Can we learn to shut up? As human society has expanded, animals have started struggling to hear one another. For many birds, the no…",
+      "company": null,
+      "signal_level": "B",
+      "include_keywords": [],
+      "tracks": [
+        "general"
+      ],
+      "language": "en"
+    },
+    {
+      "platform": "huggingface",
+      "platform_key": "huggingface",
+      "source_type": "rss",
+      "title": "AI and the Future of Cybersecurity: Why Openness Matters",
+      "title_norm": "ai and the future of cybersecurity why openness matters",
+      "url": "https://huggingface.co/blog/cybersecurity-openness",
+      "published_at": "2026-04-21T00:00:00Z",
+      "summary": "",
+      "company": "Hugging Face",
+      "signal_level": "A",
+      "include_keywords": [],
+      "tracks": [
+        "general"
+      ],
+      "language": "en"
+    },
+    {
+      "platform": "infoq",
+      "platform_key": "infoq",
+      "source_type": "rss",
+      "title": "GitHub Acknowledges Recent Outages, Cites Scaling Challenges and Architectural Weaknesses",
+      "title_norm": "github acknowledges recent outages cites scaling challenges and architectural weaknesses",
+      "url": "https://www.infoq.com/news/2026/04/github-outages-scaling/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+      "published_at": "2026-04-21T12:00:00Z",
+      "summary": "<img src=\"https://res.infoq.com/news/2026/04/github-outages-scaling/en/headerimage/generatedHeaderImage-1776504516196.jpg\" /><p>GitHub has publicly addressed a series of recent availability and performance issues that disrupted services across its platform, attributing the incidents to rapid growth, architectural coup…",
+      "company": null,
+      "signal_level": "B",
+      "include_keywords": [],
+      "tracks": [
+        "general"
+      ],
+      "language": "en"
+    },
+    {
+      "platform": "theverge",
+      "platform_key": "theverge",
+      "source_type": "rss",
+      "title": "Apple will have a product guy as CEO again",
+      "title_norm": "apple will have a product guy as ceo again",
+      "url": "https://www.theverge.com/tech/915388/apple-ceo-john-ternus-tim-cook",
+      "published_at": "2026-04-21T11:49:34Z",
+      "summary": "John Ternus is going to be Apple's next CEO. And while outgoing CEO Tim Cook was lauded for his approach to logistics, Ternus' history is that of a product person. Ternus, Apple's SVP of hardware engineering before being officially tapped to take over the top job, has been increasingly in the public eye to help [&#823…",
+      "company": null,
+      "signal_level": "B",
+      "include_keywords": [],
+      "tracks": [
+        "general"
+      ],
+      "language": "en"
+    },
+    {
+      "platform": "wired",
+      "platform_key": "wired",
+      "source_type": "rss",
+      "title": "Best Gaming Laptops (2026): Razer, Asus, Dell, and More",
+      "title_norm": "best gaming laptops 2026 razer asus dell and more",
+      "url": "https://www.wired.com/story/best-gaming-laptops/",
+      "published_at": "2026-04-21T11:30:00Z",
+      "summary": "You don't want any old gaming laptop. Here's my take on which to get based on hundreds of hours of testing.",
+      "company": null,
+      "signal_level": "B",
+      "include_keywords": [],
+      "tracks": [
+        "general"
+      ],
+      "language": "en"
+    },
+    {
+      "platform": "techcrunch",
+      "platform_key": "techcrunch",
+      "source_type": "rss",
+      "title": "Anthropic takes $5B from Amazon and pledges $100B in cloud spending in return",
+      "title_norm": "anthropic takes 5b from amazon and pledges 100b in cloud spending in return",
+      "url": "https://techcrunch.com/2026/04/20/anthropic-takes-5b-from-amazon-and-pledges-100b-in-cloud-spending-in-return/",
+      "published_at": "2026-04-20T23:10:27Z",
+      "summary": "Amazon has made another circular AI deal: It's investing another $5 billion in Anthropic. Anthropic has agreed to spend $100 billion on AWS in return.",
+      "company": null,
+      "signal_level": "A",
+      "include_keywords": [],
+      "tracks": [
+        "general"
+      ],
+      "language": "en"
+    },
+    {
+      "platform": "arstechnica",
+      "platform_key": "arstechnica",
+      "source_type": "rss",
+      "title": "Global growth in solar \"the largest ever observed for any source\"",
+      "title_norm": "global growth in solar the largest ever observed for any source",
+      "url": "https://arstechnica.com/science/2026/04/global-growth-in-solar-the-largest-ever-observed-for-any-source/",
+      "published_at": "2026-04-21T11:00:16Z",
+      "summary": "The International Energy Agency says we've entered the Age of Electricity.",
+      "company": null,
+      "signal_level": "B",
+      "include_keywords": [],
+      "tracks": [
+        "general"
+      ],
+      "language": "en"
+    },
+    {
+      "platform": "theverge",
+      "platform_key": "theverge",
+      "source_type": "rss",
+      "title": "Yelp is making its AI chatbot way more useful",
+      "title_norm": "yelp is making its ai chatbot way more useful",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/915626/yelp-ai-assistant-chatbot-major-upgrade",
+      "published_at": "2026-04-21T11:00:00Z",
+      "summary": "Yelp is giving its chatbot assistant a major upgrade, turning the platform into something closer to a digital concierge with a suite of new features designed for \"getting things done.\" The move, one of several AI-focused updates in recent months, is part of a broader industry push to make AI more relevant and practica…",
+      "company": null,
+      "signal_level": "B",
+      "include_keywords": [],
+      "tracks": [
+        "general"
+      ],
+      "language": "en"
+    },
+    {
+      "platform": "wired",
+      "platform_key": "wired",
+      "source_type": "rss",
+      "title": "This Scammer Used an AI-Generated MAGA Girl to Grift ‘Super Dumb’ Men",
+      "title_norm": "this scammer used an ai generated maga girl to grift super dumb men",
+      "url": "https://www.wired.com/story/ai-generated-maga-girls/",
+      "published_at": "2026-04-21T11:00:00Z",
+      "summary": "A med student says he’s made thousands of dollars selling photos and videos of a young conservative woman he created using generative tools. He’s not alone.",
+      "company": null,
+      "signal_level": "B",
+      "include_keywords": [],
+      "tracks": [
+        "general"
+      ],
+      "language": "en"
+    },
+    {
+      "platform": "lobsters",
+      "platform_key": "lobsters",
+      "source_type": "rss",
+      "title": "Good architecture shouldn't need a carrot or a stick",
+      "title_norm": "good architecture shouldn t need a carrot or a stick",
+      "url": "https://frederickvanbrabant.com/blog/2026-04-17-good-architecture-shouldnt-need-a-carrot-or-a-stick/",
+      "published_at": "2026-04-21T10:58:25Z",
+      "summary": "<p><a href=\"https://lobste.rs/s/msy3ri/good_architecture_shouldn_t_need_carrot\">Comments</a></p>",
+      "company": null,
+      "signal_level": "B",
+      "include_keywords": [],
+      "tracks": [
+        "general"
+      ],
+      "language": "en"
+    },
+    {
+      "platform": "infoq",
+      "platform_key": "infoq",
+      "source_type": "rss",
+      "title": "Presentation: Dynamic Moments: Weaving LLMs into Deep Personalization at DoorDash",
+      "title_norm": "presentation dynamic moments weaving llms into deep personalization at doordash",
+      "url": "https://www.infoq.com/presentations/llm-personalization/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+      "published_at": "2026-04-21T10:35:00Z",
+      "summary": "<img src=\"https://res.infoq.com/presentations/llm-personalization/en/mediumimage/Sudeep-Das-Pradeep-Muthukrishnan-medium-1776173227456.jpg\" /><p>Sudeep Das and Pradeep Muthukrishnan explain the shift from static merchandising to dynamic, moment-aware personalization at DoorDash. They share how LLMs generate natural-la…",
+      "company": null,
+      "signal_level": "B",
+      "include_keywords": [],
+      "tracks": [
+        "general"
+      ],
+      "language": "en"
+    },
+    {
+      "platform": "wired",
+      "platform_key": "wired",
+      "source_type": "rss",
+      "title": "H2O Audio Tri Run Workout Headphones Review: A Little Underwhelming",
+      "title_norm": "h2o audio tri run workout headphones review a little underwhelming",
+      "url": "https://www.wired.com/review/h2o-audio-tri-run-workout-headphones/",
+      "published_at": "2026-04-21T10:30:00Z",
+      "summary": "H2O Audio’s stab at a sub-$100 pair of bone-conduction workout headphones just misses the mark.",
+      "company": null,
+      "signal_level": "B",
+      "include_keywords": [],
+      "tracks": [
+        "general"
+      ],
+      "language": "en"
+    },
+    {
+      "platform": "wired",
+      "platform_key": "wired",
+      "source_type": "rss",
+      "title": "The Internet’s Favorite Lawyer Says We’re Living Through ‘Multiple Watergates per Week’",
+      "title_norm": "the internet s favorite lawyer says we re living through multiple watergates per week",
+      "url": "https://www.wired.com/story/the-big-interview-podcast-legal-eagle-devin-stone/",
+      "published_at": "2026-04-21T10:30:00Z",
+      "summary": "Devin Stone turned punchy legal explainers into a YouTube empire. Now he’s warning that the sheer volume of Trump administration scandals is distorting reality itself.",
+      "company": null,
+      "signal_level": "B",
+      "include_keywords": [],
+      "tracks": [
+        "general"
+      ],
+      "language": "en"
+    },
+    {
+      "platform": "lobsters",
+      "platform_key": "lobsters",
+      "source_type": "rss",
+      "title": "Finishing Things",
+      "title_norm": "finishing things",
+      "url": "https://ratfactor.com/finishing-things",
+      "published_at": "2026-04-21T10:17:18Z",
+      "summary": "<p><a href=\"https://lobste.rs/s/p3fzyr/finishing_things\">Comments</a></p>",
+      "company": null,
+      "signal_level": "B",
+      "include_keywords": [],
+      "tracks": [
+        "general"
+      ],
+      "language": "en"
+    },
+    {
+      "platform": "lobsters",
+      "platform_key": "lobsters",
+      "source_type": "rss",
+      "title": "What is your go-to project for learning a new language?",
+      "title_norm": "what is your go to project for learning a new language",
+      "url": "https://lobste.rs/s/xqmug2/what_is_your_go_project_for_learning_new",
+      "published_at": "2026-04-21T10:09:48Z",
+      "summary": "<p>Ive been playing around with learning a lisp language for a while, and I recently decided to go for it and learn <a href=\"https://fennel-lang.org/\" rel=\"ugc\">fennel</a> (as I already am comfortable with lua) just to see if I like lisps as a class. Normally, I try to do the first 5-10 days of a previous <a href=\"htt…",
+      "company": null,
+      "signal_level": "B",
+      "include_keywords": [],
+      "tracks": [
+        "general"
+      ],
+      "language": "en"
+    },
+    {
+      "platform": "techcrunch",
+      "platform_key": "techcrunch",
+      "source_type": "rss",
+      "title": "Google rolls out Gemini in Chrome in APAC countries",
+      "title_norm": "google rolls out gemini in chrome in apac countries",
+      "url": "https://techcrunch.com/2026/04/20/google-rolls-out-gemini-in-chrome-in-seven-new-countries/",
+      "published_at": "2026-04-20T22:00:00Z",
+      "summary": "Google is rolling out Gemini in Chrome in Australia, Indonesia, Japan, the Philippines, Singapore, South Korea, and Vietnam. The company is rolling this feature out to both desktop and iOS in all of these countries except Japan.",
+      "company": null,
+      "signal_level": "A",
+      "include_keywords": [],
+      "tracks": [
+        "general"
+      ],
+      "language": "en"
+    },
+    {
+      "platform": "wired",
+      "platform_key": "wired",
+      "source_type": "rss",
+      "title": "They Built a Legendary Privacy Tool. Now They’re Sworn Enemies",
+      "title_norm": "they built a legendary privacy tool now they re sworn enemies",
+      "url": "https://www.wired.com/story/they-built-privacy-tool-grapheneos-now-sworn-enemies/",
+      "published_at": "2026-04-21T10:00:00Z",
+      "summary": "There’s a lot of love all over the world for GrapheneOS, the gold standard of mobile security. There’s very little love between the two guys at the center of its history.",
+      "company": null,
+      "signal_level": "B",
+      "include_keywords": [],
+      "tracks": [
+        "general"
+      ],
+      "language": "en"
+    },
+    {
+      "platform": "mit-technology-review",
+      "platform_key": "mit-technology-review",
+      "source_type": "rss",
+      "title": "Digging for clues about the North Pole’s past",
+      "title_norm": "digging for clues about the north pole s past",
+      "url": "https://www.technologyreview.com/2026/04/21/1135231/digging-for-truth-north-pole-past-seabed/",
+      "published_at": "2026-04-21T10:00:00Z",
+      "summary": "In the past, even with an icebreaker and during peak melt season, getting to the North Pole wasn’t a sure bet. It took favorable winds to crack the frozen ocean surface, and ships had to fight through ice that had grown many meters thick over several winters. In the summer of 2025, though, Jochen Knies&#8230;",
+      "company": null,
+      "signal_level": "B",
+      "include_keywords": [],
+      "tracks": [
+        "general"
+      ],
+      "language": "en"
+    },
+    {
+      "platform": "lobsters",
+      "platform_key": "lobsters",
+      "source_type": "rss",
+      "title": "Wait is over - coreboot on the AMD StarBook",
+      "title_norm": "wait is over coreboot on the amd starbook",
+      "url": "https://starlabs.systems/blogs/news/coreboot-on-the-amd-starbook-finally",
+      "published_at": "2026-04-21T09:48:45Z",
+      "summary": "<p><a href=\"https://lobste.rs/s/wt6xvx/wait_is_over_coreboot_on_amd_starbook\">Comments</a></p>",
+      "company": null,
+      "signal_level": "B",
+      "include_keywords": [],
+      "tracks": [
+        "general"
+      ],
+      "language": "en"
+    },
+    {
+      "platform": "lobsters",
+      "platform_key": "lobsters",
+      "source_type": "rss",
+      "title": "How To Make a Fast Dynamic Language Interpreter",
+      "title_norm": "how to make a fast dynamic language interpreter",
+      "url": "https://zef-lang.dev/implementation",
+      "published_at": "2026-04-21T09:37:13Z",
+      "summary": "<p><a href=\"https://lobste.rs/s/vrmjge/how_make_fast_dynamic_language\">Comments</a></p>",
+      "company": null,
+      "signal_level": "B",
+      "include_keywords": [],
+      "tracks": [
+        "general"
+      ],
+      "language": "en"
+    },
+    {
+      "platform": "theverge",
+      "platform_key": "theverge",
+      "source_type": "rss",
+      "title": "Microsoft Teams is trying to fix accidental hand-raising",
+      "title_norm": "microsoft teams is trying to fix accidental hand raising",
+      "url": "https://www.theverge.com/tech/915586/microsoft-teams-accidental-hand-raising-fix",
+      "published_at": "2026-04-21T09:14:16Z",
+      "summary": "If you've ever had the embarrassing displeasure of interrupting a Microsoft Teams meeting by accidentally hitting the \"raise hand\" feature, then I have some good news for you. Microsoft is redesigning its online meeting software, which will move the raise hand button from the main toolbar and allow users to personaliz…",
+      "company": null,
+      "signal_level": "B",
+      "include_keywords": [],
+      "tracks": [
+        "general"
+      ],
+      "language": "en"
+    },
+    {
+      "platform": "wired",
+      "platform_key": "wired",
+      "source_type": "rss",
+      "title": "How to Watch the 2026 Lyrids Meteor Shower at Its Peak",
+      "title_norm": "how to watch the 2026 lyrids meteor shower at its peak",
+      "url": "https://www.wired.com/story/how-to-watch-the-lyrids-meteor-shower-at-its-peak-2026/",
+      "published_at": "2026-04-21T09:00:00Z",
+      "summary": "Between the night of April 21 and the early morning of April 22, those looking in the right place will see the sky light up with 15 to 20 meteors per hour.",
+      "company": null,
+      "signal_level": "B",
+      "include_keywords": [],
+      "tracks": [
+        "general"
+      ],
+      "language": "en"
+    },
+    {
+      "platform": "infoq",
+      "platform_key": "infoq",
+      "source_type": "rss",
+      "title": "Article: Redesigning Banking PDF Table Extraction: A Layered Approach with Java",
+      "title_norm": "article redesigning banking pdf table extraction a layered approach with java",
+      "url": "https://www.infoq.com/articles/redesign-pdf-table-extraction/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+      "published_at": "2026-04-21T09:00:00Z",
+      "summary": "<img src=\"https://res.infoq.com/articles/redesign-pdf-table-extraction/en/headerimage/redesign-pdf-table-extraction-header-1776414059821.jpg\" /><p>PDF table extraction often looks easy until it fails in production. Real bank statements can be messy, with scanned pages, shifting layouts, merged cells, and wrapped rows…",
+      "company": null,
+      "signal_level": "B",
+      "include_keywords": [],
+      "tracks": [
+        "general"
+      ],
+      "language": "en"
+    },
+    {
+      "platform": "producthunt",
+      "platform_key": "producthunt",
+      "source_type": "rss",
+      "title": "OnTheMap",
+      "title_norm": "onthemap",
+      "url": "https://www.producthunt.com/products/onthemap",
+      "published_at": "2026-04-20T20:46:33Z",
+      "summary": "<p> The global map for builders, founders, and visionaries </p> <p> <a href=\"https://www.producthunt.com/products/onthemap?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a> | <a href=\"https://www.producthunt.com/r/p/1128393?app_id=339\">Link</a>…",
+      "company": null,
+      "signal_level": "A",
+      "include_keywords": [],
+      "tracks": [
+        "general"
+      ],
+      "language": "en"
+    },
+    {
+      "platform": "techcrunch",
+      "platform_key": "techcrunch",
+      "source_type": "rss",
+      "title": "Tim Cook stepping down as Apple CEO, John Ternus taking over",
+      "title_norm": "tim cook stepping down as apple ceo john ternus taking over",
+      "url": "https://techcrunch.com/2026/04/20/tim-cook-stepping-down-as-apple-ceo-john-ternus-taking-over/",
+      "published_at": "2026-04-20T20:42:01Z",
+      "summary": "The transition has been expected for some time and ends one of the longer and more impactful runs a CEO has had at any company. Cook had inherited a company that many industry watchers and enthusiasts struggled to separate from its famed founder. What he leaves behind is a $4 trillion business with annual revenue that…",
+      "company": null,
+      "signal_level": "A",
+      "include_keywords": [],
+      "tracks": [
+        "general"
+      ],
+      "language": "en"
+    },
+    {
+      "platform": "hackernews",
+      "platform_key": "hackernews",
+      "source_type": "rss",
+      "title": "John Ternus to become Apple CEO",
+      "title_norm": "john ternus to become apple ceo",
+      "url": "https://www.apple.com/newsroom/2026/04/tim-cook-to-become-apple-executive-chairman-john-ternus-to-become-apple-ceo/",
+      "published_at": "2026-04-20T20:39:32Z",
+      "summary": "<a href=\"https://news.ycombinator.com/item?id=47840219\">Comments</a>",
+      "company": null,
+      "signal_level": "A",
+      "include_keywords": [],
+      "tracks": [
+        "general"
+      ],
+      "language": "en"
+    },
+    {
+      "platform": "techcrunch",
+      "platform_key": "techcrunch",
+      "source_type": "rss",
+      "title": "Google Photos adds new touch-up tools for ‘quick’ fixes",
+      "title_norm": "google photos adds new touch up tools for quick fixes",
+      "url": "https://techcrunch.com/2026/04/20/google-photos-adds-new-touch-up-tools-for-quick-fixes/",
+      "published_at": "2026-04-20T20:20:29Z",
+      "summary": "You can use the new tools to remove blemishes, refine skin texture, brighten eyes, or whiten teeth in photos.",
+      "company": null,
+      "signal_level": "A",
+      "include_keywords": [],
+      "tracks": [
+        "general"
+      ],
+      "language": "en"
+    },
+    {
+      "platform": "techcrunch",
+      "platform_key": "techcrunch",
+      "source_type": "rss",
+      "title": "It’s not just one thing — it’s another thing",
+      "title_norm": "it s not just one thing it s another thing",
+      "url": "https://techcrunch.com/2026/04/20/ai-writing-its-not-just-this-its-that-barrons/",
+      "published_at": "2026-04-20T19:37:07Z",
+      "summary": "This sentence construction (\"It's not just this — it's that\") has become so common in AI-generated writing that it's no longer just a clue that a piece of writing may be synthetic — it's almost a guarantee.",
+      "company": null,
+      "signal_level": "A",
+      "include_keywords": [],
+      "tracks": [
+        "general"
+      ],
+      "language": "en"
+    },
+    {
+      "platform": "producthunt",
+      "platform_key": "producthunt",
+      "source_type": "rss",
+      "title": "Chronicle",
+      "title_norm": "chronicle",
+      "url": "https://www.producthunt.com/products/openai",
+      "published_at": "2026-04-20T19:29:35Z",
+      "summary": "<p> Build Codex memories from recent screen context. </p> <p> <a href=\"https://www.producthunt.com/products/openai?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=producthunt-atom-posts-feed\">Discussion</a> | <a href=\"https://www.producthunt.com/r/p/1128347?app_id=339\">Link</a> </p>",
+      "company": null,
+      "signal_level": "A",
+      "include_keywords": [],
+      "tracks": [
+        "general"
+      ],
+      "language": "en"
+    },
+    {
+      "platform": "lobsters",
+      "platform_key": "lobsters",
+      "source_type": "rss",
+      "title": "Command Execution via Drag-and-Drop in Terminal Emulators",
+      "title_norm": "command execution via drag and drop in terminal emulators",
+      "url": "https://sdushantha.github.io/post/drop-it-like-its-hot",
+      "published_at": "2026-04-21T05:43:49Z",
+      "summary": "<p><a href=\"https://lobste.rs/s/mfy7oi/command_execution_via_drag_drop_terminal\">Comments</a></p>",
+      "company": null,
+      "signal_level": "B",
+      "include_keywords": [],
+      "tracks": [
+        "general"
+      ],
+      "language": "en"
+    },
+    {
+      "platform": "techcrunch",
+      "platform_key": "techcrunch",
+      "source_type": "rss",
+      "title": "North Korean hackers blamed for $290M crypto theft",
+      "title_norm": "north korean hackers blamed for 290m crypto theft",
+      "url": "https://techcrunch.com/2026/04/20/north-korea-hackers-blamed-for-290m-crypto-theft/",
+      "published_at": "2026-04-20T17:04:05Z",
+      "summary": "The hack against Kelp DAO is the largest crypto heist of the year so far.",
+      "company": null,
+      "signal_level": "A",
+      "include_keywords": [],
+      "tracks": [
+        "general"
+      ],
+      "language": "en"
+    },
+    {
+      "platform": "techcrunch",
+      "platform_key": "techcrunch",
+      "source_type": "rss",
+      "title": "Mastodon says its flagship server was hit by a DDoS attack",
+      "title_norm": "mastodon says its flagship server was hit by a ddos attack",
+      "url": "https://techcrunch.com/2026/04/20/mastodon-says-its-flagship-server-was-hit-by-a-ddos-attack/",
+      "published_at": "2026-04-20T16:58:33Z",
+      "summary": "The DDoS attack against Mastodon's flagship server comes less than a week after Bluesky was targeted with junk web traffic.",
+      "company": null,
+      "signal_level": "A",
+      "include_keywords": [],
+      "tracks": [
+        "general"
+      ],
+      "language": "en"
+    },
+    {
+      "platform": "techcrunch",
+      "platform_key": "techcrunch",
+      "source_type": "rss",
+      "title": "FAA orders investigation into Blue Origin’s New Glenn mishap",
+      "title_norm": "faa orders investigation into blue origin s new glenn mishap",
+      "url": "https://techcrunch.com/2026/04/20/faa-orders-investigation-into-blue-origins-new-glenn-mishap/",
+      "published_at": "2026-04-20T16:11:41Z",
+      "summary": "The New Glenn rocket will have to stay grounded while the company investigates what caused the apparent failure of its upper stage.",
+      "company": null,
+      "signal_level": "A",
+      "include_keywords": [],
+      "tracks": [
+        "general"
+      ],
+      "language": "en"
+    },
+    {
+      "platform": "techcrunch",
+      "platform_key": "techcrunch",
+      "source_type": "rss",
+      "title": "NSA spies are reportedly using Anthropic’s Mythos, despite Pentagon feud",
+      "title_norm": "nsa spies are reportedly using anthropic s mythos despite pentagon feud",
+      "url": "https://techcrunch.com/2026/04/20/nsa-spies-are-reportedly-using-anthropics-mythos-despite-pentagon-feud/",
+      "published_at": "2026-04-20T16:06:21Z",
+      "summary": "NSA is said to be using Anthropic's restricted Mythos AI model.",
+      "company": null,
+      "signal_level": "A",
+      "include_keywords": [],
+      "tracks": [
+        "general"
+      ],
+      "language": "en"
+    },
+    {
+      "platform": "lobsters",
+      "platform_key": "lobsters",
+      "source_type": "rss",
+      "title": "256 Lines or Less: Test Case Minimization",
+      "title_norm": "256 lines or less test case minimization",
+      "url": "https://matklad.github.io/2026/04/20/test-case-minimization.html",
+      "published_at": "2026-04-21T03:38:21Z",
+      "summary": "<p><a href=\"https://lobste.rs/s/eu5n2j/256_lines_less_test_case_minimization\">Comments</a></p>",
+      "company": null,
+      "signal_level": "B",
+      "include_keywords": [],
+      "tracks": [
+        "general"
+      ],
+      "language": "en"
+    },
+    {
+      "platform": "infoq",
+      "platform_key": "infoq",
+      "source_type": "rss",
+      "title": "Cloudflare Introduces Project Think: A Durable Runtime for AI Agents",
+      "title_norm": "cloudflare introduces project think a durable runtime for ai agents",
+      "url": "https://www.infoq.com/news/2026/04/cloudflare-project-think/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+      "published_at": "2026-04-21T02:34:00Z",
+      "summary": "<img src=\"https://www.infoq.com/styles/static/images/logo/logo_bigger.jpg\" /><p>Cloudflare's Project Think introduces a new framework for AI agents, shifting from stateless orchestration to a durable actor-based infrastructure. It features a kernel-like runtime enabling agents to manage memory and run code securely. I…",
+      "company": null,
+      "signal_level": "B",
+      "include_keywords": [],
+      "tracks": [
+        "general"
+      ],
+      "language": "en"
+    },
+    {
+      "platform": "arstechnica",
+      "platform_key": "arstechnica",
+      "source_type": "rss",
+      "title": "Pentagon pulls the plug on one of the military's most troubled space programs",
+      "title_norm": "pentagon pulls the plug on one of the military s most troubled space programs",
+      "url": "https://arstechnica.com/space/2026/04/pentagon-pulls-the-plug-on-one-of-the-militarys-most-troubled-space-programs/",
+      "published_at": "2026-04-21T02:27:52Z",
+      "summary": "Problems with the ground system would have \"put current GPS military and civilian capabilities at risk.\"",
+      "company": null,
+      "signal_level": "B",
+      "include_keywords": [],
+      "tracks": [
+        "general"
+      ],
+      "language": "en"
+    },
+    {
+      "platform": "lobsters",
+      "platform_key": "lobsters",
+      "source_type": "rss",
+      "title": "good-egg: Trust scoring for GitHub PR authors based on contribution history",
+      "title_norm": "good egg trust scoring for github pr authors based on contribution history",
+      "url": "https://github.com/2ndSetAI/good-egg",
+      "published_at": "2026-04-21T01:45:20Z",
+      "summary": "<p><a href=\"https://lobste.rs/s/axllpn/good_egg_trust_scoring_for_github_pr\">Comments</a></p>",
+      "company": null,
+      "signal_level": "B",
+      "include_keywords": [],
+      "tracks": [
+        "general"
+      ],
+      "language": "en"
+    },
+    {
+      "platform": "lobsters",
+      "platform_key": "lobsters",
+      "source_type": "rss",
+      "title": "Signal Shot: a project to verify the Signal protocol and its Rust implementation using Lean",
+      "title_norm": "signal shot a project to verify the signal protocol and its rust implementation using lean",
+      "url": "https://leodemoura.github.io/blog/2026-4-20-signal-shot-the-platform-is-ready/",
+      "published_at": "2026-04-21T01:14:08Z",
+      "summary": "<p><a href=\"https://lobste.rs/s/jnl6e7/signal_shot_project_verify_signal\">Comments</a></p>",
+      "company": null,
+      "signal_level": "B",
+      "include_keywords": [],
+      "tracks": [
+        "general"
+      ],
+      "language": "en"
+    },
+    {
+      "platform": "wired",
+      "platform_key": "wired",
+      "source_type": "rss",
+      "title": "A Humanoid Robot Set a Half-Marathon Record in China",
+      "title_norm": "a humanoid robot set a half marathon record in china",
+      "url": "https://www.wired.com/story/a-humanoid-robot-set-a-half-marathon-record-in-china/",
+      "published_at": "2026-04-20T22:33:27Z",
+      "summary": "An autonomous robot from the company Honor ran a half marathon in 50:26, beating the human record by 7 minutes.",
+      "company": null,
+      "signal_level": "B",
+      "include_keywords": [],
+      "tracks": [
+        "general"
+      ],
+      "language": "en"
+    },
+    {
+      "platform": "lobsters",
+      "platform_key": "lobsters",
+      "source_type": "rss",
+      "title": "Jujutsu megamerges for fun and profit",
+      "title_norm": "jujutsu megamerges for fun and profit",
+      "url": "https://isaaccorbrey.com/notes/jujutsu-megamerges-for-fun-and-profit",
+      "published_at": "2026-04-20T22:08:39Z",
+      "summary": "<p><a href=\"https://lobste.rs/s/etrtmp/jujutsu_megamerges_for_fun_profit\">Comments</a></p>",
+      "company": null,
+      "signal_level": "B",
+      "include_keywords": [],
+      "tracks": [
+        "general"
+      ],
+      "language": "en"
+    },
+    {
+      "platform": "wired",
+      "platform_key": "wired",
+      "source_type": "rss",
+      "title": "Best Kitchen Composters and Food Recyclers (2026)",
+      "title_norm": "best kitchen composters and food recyclers 2026",
+      "url": "https://www.wired.com/story/home-composters-buying-guide/",
+      "published_at": "2026-04-20T21:38:00Z",
+      "summary": "Responsibly dispose of your food scraps with one of these indoor, (mostly) odor-free, WIRED-tested devices.",
+      "company": null,
+      "signal_level": "B",
+      "include_keywords": [],
+      "tracks": [
+        "general"
+      ],
+      "language": "en"
+    },
+    {
+      "platform": "arstechnica",
+      "platform_key": "arstechnica",
+      "source_type": "rss",
+      "title": "John Ternus will replace Tim Cook as Apple CEO",
+      "title_norm": "john ternus will replace tim cook as apple ceo",
+      "url": "https://arstechnica.com/apple/2026/04/john-ternus-will-replace-tim-cook-as-apple-ceo/",
+      "published_at": "2026-04-20T21:05:35Z",
+      "summary": "Cook will be executive chairman but will no longer run the company day to day.",
+      "company": null,
+      "signal_level": "B",
+      "include_keywords": [],
+      "tracks": [
+        "general"
+      ],
+      "language": "en"
+    },
+    {
+      "platform": "wired",
+      "platform_key": "wired",
+      "source_type": "rss",
+      "title": "Apple CEO Tim Cook Is Stepping Down",
+      "title_norm": "apple ceo tim cook is stepping down",
+      "url": "https://www.wired.com/story/tim-cook-stepping-down-ceo-apple-john-ternus/",
+      "published_at": "2026-04-20T21:02:18Z",
+      "summary": "John Ternus, the company’s senior vice president of hardware engineering, will replace Cook as CEO on September 1. Cook will stay on as executive chairman.",
+      "company": null,
+      "signal_level": "B",
+      "include_keywords": [],
+      "tracks": [
+        "general"
+      ],
+      "language": "en"
+    },
+    {
+      "platform": "lobsters",
+      "platform_key": "lobsters",
+      "source_type": "rss",
+      "title": "Stalwart v0.16: A New Foundation",
+      "title_norm": "stalwart v0 16 a new foundation",
+      "url": "https://stalw.art/blog/stalwart-0-16",
+      "published_at": "2026-04-20T20:54:37Z",
+      "summary": "<p><a href=\"https://lobste.rs/s/47iclr/stalwart_v0_16_new_foundation\">Comments</a></p>",
+      "company": null,
+      "signal_level": "B",
+      "include_keywords": [],
+      "tracks": [
+        "general"
+      ],
+      "language": "en"
+    },
+    {
+      "platform": "arstechnica",
+      "platform_key": "arstechnica",
+      "source_type": "rss",
+      "title": "Absurd study suggests eating fruits and vegetables leads to cancer",
+      "title_norm": "absurd study suggests eating fruits and vegetables leads to cancer",
+      "url": "https://arstechnica.com/health/2026/04/absurdly-bad-study-spurs-headlines-linking-healthy-diet-to-lung-cancer/",
+      "published_at": "2026-04-20T20:53:04Z",
+      "summary": "Experts point out a series of flaws, including small size and no control group.",
+      "company": null,
+      "signal_level": "B",
+      "include_keywords": [],
+      "tracks": [
+        "general"
+      ],
+      "language": "en"
+    },
+    {
+      "platform": "wired",
+      "platform_key": "wired",
+      "source_type": "rss",
+      "title": "Ben McKenzie Says Crypto Has a Secret Ingredient: Male Loneliness",
+      "title_norm": "ben mckenzie says crypto has a secret ingredient male loneliness",
+      "url": "https://www.wired.com/story/wired-at-night-event-ben-mckenzie-reads-mean-tweets/",
+      "published_at": "2026-04-20T20:52:22Z",
+      "summary": "The actor-director discussed his least favorite currency and read a series of mean tweets—about us!—at our inaugural WIRED@Night event.",
+      "company": null,
+      "signal_level": "B",
+      "include_keywords": [],
+      "tracks": [
+        "general"
+      ],
+      "language": "en"
+    },
+    {
+      "platform": "wired",
+      "platform_key": "wired",
+      "source_type": "rss",
+      "title": "A Hot-Air Balloon Landed in a California Backyard. The Owner Says It's a 'Very Rare' Event",
+      "title_norm": "a hot air balloon landed in a california backyard the owner says it s a very rare event",
+      "url": "https://www.wired.com/story/a-brief-interview-with-the-owner-of-the-hot-air-balloon-that-landed-in-someones-backyard/",
+      "published_at": "2026-04-20T18:54:44Z",
+      "summary": "The CEO of Magical Adventures Balloon Rides tells WIRED how the pilot made a safe landing after they got stranded over a neighborhood.",
+      "company": null,
+      "signal_level": "B",
+      "include_keywords": [],
+      "tracks": [
+        "general"
+      ],
+      "language": "en"
+    },
+    {
+      "platform": "arstechnica",
+      "platform_key": "arstechnica",
+      "source_type": "rss",
+      "title": "US opens refund portal to start paying back Trump's illegal tariffs",
+      "title_norm": "us opens refund portal to start paying back trump s illegal tariffs",
+      "url": "https://arstechnica.com/tech-policy/2026/04/us-opens-refund-portal-to-start-paying-back-trumps-illegal-tariffs/",
+      "published_at": "2026-04-20T18:53:21Z",
+      "summary": "Importers can now request refunds, two months after Trump's Supreme Court loss.",
+      "company": null,
+      "signal_level": "B",
+      "include_keywords": [],
+      "tracks": [
+        "general"
+      ],
+      "language": "en"
+    },
+    {
+      "platform": "wired",
+      "platform_key": "wired",
+      "source_type": "rss",
+      "title": "War Memes Are Turning Conflict Into Content",
+      "title_norm": "war memes are turning conflict into content",
+      "url": "https://www.wired.com/story/war-memes-turn-conflict-into-content/",
+      "published_at": "2026-04-20T18:42:59Z",
+      "summary": "The jokes were funny. The systems behind them—and the reasons we keep passing around war memes as entertainment—are more serious.",
+      "company": null,
+      "signal_level": "B",
+      "include_keywords": [],
+      "tracks": [
+        "general"
+      ],
+      "language": "en"
+    },
+    {
+      "platform": "lobsters",
+      "platform_key": "lobsters",
+      "source_type": "rss",
+      "title": "Quantum Computers Are Not a Threat to 128-bit Symmetric Keys",
+      "title_norm": "quantum computers are not a threat to 128 bit symmetric keys",
+      "url": "https://words.filippo.io/128-bits/",
+      "published_at": "2026-04-20T18:40:55Z",
+      "summary": "<p><a href=\"https://lobste.rs/s/ea0xug/quantum_computers_are_not_threat_128_bit\">Comments</a></p>",
+      "company": null,
+      "signal_level": "B",
+      "include_keywords": [],
+      "tracks": [
+        "general"
+      ],
+      "language": "en"
+    },
+    {
+      "platform": "arstechnica",
+      "platform_key": "arstechnica",
+      "source_type": "rss",
+      "title": "Here's how F1 is tweaking its hybrid systems to try to save the show",
+      "title_norm": "here s how f1 is tweaking its hybrid systems to try to save the show",
+      "url": "https://arstechnica.com/cars/2026/04/f1-new-hybrid-rules-will-come-into-effect-at-the-miami-grand-prix-in-may/",
+      "published_at": "2026-04-20T18:15:50Z",
+      "summary": "Energy management and speed differentials are the problems of the day.",
+      "company": null,
+      "signal_level": "B",
+      "include_keywords": [],
+      "tracks": [
+        "general"
+      ],
+      "language": "en"
+    },
+    {
+      "platform": "arstechnica",
+      "platform_key": "arstechnica",
+      "source_type": "rss",
+      "title": "Robot runner handily beats humans in half-marathon, setting new record",
+      "title_norm": "robot runner handily beats humans in half marathon setting new record",
+      "url": "https://arstechnica.com/ai/2026/04/robot-runner-handily-beats-humans-in-half-marathon-setting-new-record/",
+      "published_at": "2026-04-20T17:56:27Z",
+      "summary": "A humanoid robot's record half-marathon run shows China's speed in robotics.",
+      "company": null,
+      "signal_level": "B",
+      "include_keywords": [],
+      "tracks": [
+        "general"
+      ],
+      "language": "en"
+    },
+    {
+      "platform": "arstechnica",
+      "platform_key": "arstechnica",
+      "source_type": "rss",
+      "title": "Deezer says 44% of new music uploads are AI-generated, most streams are fraudulent",
+      "title_norm": "deezer says 44 of new music uploads are ai generated most streams are fraudulent",
+      "url": "https://arstechnica.com/ai/2026/04/deezer-says-44-of-new-music-uploads-are-ai-generated-most-streams-are-fraudulent/",
+      "published_at": "2026-04-20T17:15:51Z",
+      "summary": "AI tracks account for a small fraction of Deezer streams, and most are demonetized for fraud.",
+      "company": null,
+      "signal_level": "B",
+      "include_keywords": [],
+      "tracks": [
+        "general"
+      ],
+      "language": "en"
+    },
+    {
+      "platform": "arstechnica",
+      "platform_key": "arstechnica",
+      "source_type": "rss",
+      "title": "Rogue Trooper brings the Genetic Infantry to the silver screen",
+      "title_norm": "rogue trooper brings the genetic infantry to the silver screen",
+      "url": "https://arstechnica.com/culture/2026/04/rogue-trooper-brings-the-genetic-infantry-to-the-silver-screen/",
+      "published_at": "2026-04-20T16:58:28Z",
+      "summary": "The future war film, from the director of <em>Moon</em>, is adapted from 2000 AD's comic series.",
+      "company": null,
+      "signal_level": "B",
+      "include_keywords": [],
+      "tracks": [
+        "general"
+      ],
+      "language": "en"
+    },
+    {
+      "platform": "lobsters",
+      "platform_key": "lobsters",
+      "source_type": "rss",
+      "title": "PyTexas 2026 Recap",
+      "title_norm": "pytexas 2026 recap",
+      "url": "https://bernat.tech/posts/pytexas-2026-recap/",
+      "published_at": "2026-04-20T16:02:35Z",
+      "summary": "<p><a href=\"https://lobste.rs/s/ugbrsp/pytexas_2026_recap\">Comments</a></p>",
+      "company": null,
+      "signal_level": "B",
+      "include_keywords": [],
+      "tracks": [
+        "general"
+      ],
+      "language": "en"
+    }
+  ]
+}
