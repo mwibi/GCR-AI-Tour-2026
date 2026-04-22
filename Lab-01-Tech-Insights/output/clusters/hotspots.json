@@ -4,69 +4,49 @@
   "hotspots": [
     {
       "hotspot_id": "H01",
-      "title": "Apple CEO大换届：Tim Cook卸任，John Ternus接棒",
-      "summary": "苹果宣布Tim Cook将于9月1日卸任CEO，转任执行董事长，硬件工程SVP John Ternus接任CEO。消息在多平台同步引发高度关注，分析聚焦于苹果AI战略能否在新任产品型CEO带领下破局。",
+      "title": "SpaceX 以 600 亿美元收购 AI 代码编辑器 Cursor",
+      "summary": "SpaceX 据报已与 Cursor（Anysphere）达成收购协议，估值约 600 亿美元。Cursor 是目前最受开发者欢迎的 AI 代码编辑器之一。此次交易若成真，将成为 AI 开发工具领域有史以来最大并购案。",
       "category": "trend",
-      "overall_heat_score": 98,
+      "overall_heat_score": 95,
       "coverage": {
-        "source_count": 7,
+        "source_count": 3,
         "companies": [
-          "Apple"
+          "SpaceX"
         ],
         "platforms": [
           "techcrunch",
           "hackernews",
-          "theverge",
-          "wired",
-          "arstechnica",
-          "producthunt",
-          "lobsters"
+          "theverge"
         ]
       },
       "should_chase": "yes",
       "chase_rationale": [
-        "苹果全球最高市值公司CEO交接，影响力巨大",
-        "Ternus以硬件产品见长，市场关注其AI战略取向",
-        "多家媒体深度报道，持续发酵中"
+        "多家顶级科技媒体同时报道",
+        "估值规模创 AI 工具赛道纪录",
+        "直接影响开发者生态"
       ],
       "samples": [
         {
           "platform": "techcrunch",
-          "title": "Tim Cook stepping down as Apple CEO, John Ternus taking over",
-          "url": "https://techcrunch.com/2026/04/20/tim-cook-stepping-down-as-apple-ceo-john-ternus-taking-over/",
-          "published_at": "2026-04-20T20:42:01Z",
-          "company": "Apple",
+          "title": "SpaceX is working with Cursor and has an option to buy the startup for $60B",
+          "url": "https://techcrunch.com/2026/04/21/spacex-is-working-with-cursor-and-has-an-option-to-buy-the-startup-for-60b/",
+          "published_at": "2026-04-21T22:58:22Z",
+          "company": null,
           "signal_level": "A"
         },
         {
           "platform": "hackernews",
-          "title": "John Ternus to become Apple CEO",
-          "url": "https://www.apple.com/newsroom/2026/04/tim-cook-to-become-apple-executive-chairman-john-ternus-to-become-apple-ceo/",
-          "published_at": "2026-04-20T20:39:32Z",
+          "title": "SpaceX says it has agreement to acquire Cursor for $60B",
+          "url": "https://news.ycombinator.com/item?id=47857477",
+          "published_at": "2026-04-22T01:22:13Z",
           "company": null,
           "signal_level": "A"
         },
         {
           "platform": "theverge",
-          "title": "John Ternus first big problem is AI",
-          "url": "https://www.theverge.com/ai-artificial-intelligence/915662/john-ternus-apple-ceo-tim-cook-ai-problem-siri",
-          "published_at": "2026-04-21T13:37:55Z",
-          "company": null,
-          "signal_level": "B"
-        },
-        {
-          "platform": "wired",
-          "title": "Apple CEO Tim Cook Is Stepping Down",
-          "url": "https://www.wired.com/story/tim-cook-stepping-down-ceo-apple-john-ternus/",
-          "published_at": "2026-04-20T21:02:18Z",
-          "company": null,
-          "signal_level": "B"
-        },
-        {
-          "platform": "arstechnica",
-          "title": "John Ternus will replace Tim Cook as Apple CEO",
-          "url": "https://arstechnica.com/apple/2026/04/john-ternus-will-replace-tim-cook-as-apple-ceo/",
-          "published_at": "2026-04-20T21:05:35Z",
+          "title": "SpaceX cuts a deal to maybe buy Cursor for $60 billion",
+          "url": "https://www.theverge.com/news/657264/spacex-cursor-acquisition-deal-60-billion",
+          "published_at": "2026-04-21T22:45:37Z",
           "company": null,
           "signal_level": "B"
         }
@@ -74,15 +54,191 @@
     },
     {
       "hotspot_id": "H02",
-      "title": "Anthropic获亚马逊50亿美元追加投资，承诺1000亿AWS云消费",
-      "summary": "亚马逊再度向Anthropic注资50亿美元，换取Anthropic承诺在AWS上消费1000亿美元，形成典型循环AI投资结构。NSA据报已在使用Anthropic的机密Mythos模型。",
+      "title": "苹果 CEO 更迭：Tim Cook 退位，John Ternus 接班",
+      "summary": "苹果公司宣布 Tim Cook 将卸任 CEO 职位，由硬件工程 SVP John Ternus 接任。Cook 在任期间苹果市值从 3600 亿增长至约 3 万亿美元，此次交棒标志苹果进入新时代。",
       "category": "trend",
       "overall_heat_score": 92,
       "coverage": {
         "source_count": 3,
         "companies": [
+          "Apple"
+        ],
+        "platforms": [
+          "techcrunch",
+          "theverge",
+          "wired"
+        ]
+      },
+      "should_chase": "yes",
+      "chase_rationale": [
+        "苹果全球影响力极大",
+        "领导层更替对产品战略影响深远",
+        "多媒体高度关注"
+      ],
+      "samples": [
+        {
+          "platform": "techcrunch",
+          "title": "Tim Cook is stepping down as CEO of Apple",
+          "url": "https://techcrunch.com/2026/04/21/tim-cook-is-stepping-down-as-ceo-of-apple/",
+          "published_at": "2026-04-21T20:00:00Z",
+          "company": "Apple",
+          "signal_level": "A"
+        },
+        {
+          "platform": "techcrunch",
+          "title": "Apple's John Ternus will run one of the world's most powerful companies",
+          "url": "https://techcrunch.com/2026/04/21/apples-john-ternus-will-run-one-of-the-worlds-most-powerful-companies/",
+          "published_at": "2026-04-21T20:30:00Z",
+          "company": "Apple",
+          "signal_level": "A"
+        },
+        {
+          "platform": "theverge",
+          "title": "Tim Cook was an innovator — just not the Jobs kind",
+          "url": "https://www.theverge.com/apple/657068/tim-cook-apple-ceo-stepping-down-innovation-legacy",
+          "published_at": "2026-04-21T20:12:02Z",
+          "company": "Apple",
+          "signal_level": "B"
+        },
+        {
+          "platform": "wired",
+          "title": "Tim Cook's Legacy Is Turning Apple Into a Subscription Company",
+          "url": "https://www.wired.com/story/tim-cook-apple-ceo-legacy/",
+          "published_at": "2026-04-21T19:09:11Z",
+          "company": "Apple",
+          "signal_level": "B"
+        }
+      ]
+    },
+    {
+      "hotspot_id": "H03",
+      "title": "ChatGPT Images 2.0：OpenAI 图像生成能力大幅升级",
+      "summary": "OpenAI 推出 ChatGPT Images 2.0，新模型可从网络实时拉取信息并生成图像，文字渲染能力显著改善。多位测试者称其在生成带文字图像时表现超越同类产品。",
+      "category": "trend",
+      "overall_heat_score": 88,
+      "coverage": {
+        "source_count": 4,
+        "companies": [
+          "OpenAI"
+        ],
+        "platforms": [
+          "techcrunch",
+          "hackernews",
+          "theverge",
+          "wired"
+        ]
+      },
+      "should_chase": "yes",
+      "chase_rationale": [
+        "OpenAI 官方能力迭代",
+        "多媒体同步报道",
+        "直接影响 AI 内容创作场景"
+      ],
+      "samples": [
+        {
+          "platform": "techcrunch",
+          "title": "ChatGPT's new Images 2.0 model is surprisingly good at generating text",
+          "url": "https://techcrunch.com/2026/04/21/chatgpts-new-images-2-0-model-is-surprisingly-good-at-generating-text/",
+          "published_at": "2026-04-21T21:00:00Z",
+          "company": "OpenAI",
+          "signal_level": "A"
+        },
+        {
+          "platform": "hackernews",
+          "title": "ChatGPT Images 2.0",
+          "url": "https://news.ycombinator.com/item?id=47857212",
+          "published_at": "2026-04-21T18:50:00Z",
+          "company": null,
+          "signal_level": "A"
+        },
+        {
+          "platform": "theverge",
+          "title": "OpenAI's updated image generator can now pull information from the web",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/657180/openai-chatgpt-images-2-web-search-generator",
+          "published_at": "2026-04-21T21:06:21Z",
+          "company": "OpenAI",
+          "signal_level": "B"
+        },
+        {
+          "platform": "wired",
+          "title": "OpenAI Beefs Up ChatGPT's Image Generation Model",
+          "url": "https://www.wired.com/story/openai-chatgpt-images-2-0/",
+          "published_at": "2026-04-21T19:00:00Z",
+          "company": "OpenAI",
+          "signal_level": "B"
+        }
+      ]
+    },
+    {
+      "hotspot_id": "H04",
+      "title": "Anthropic Mythos 安全模型遭未授权访问 & Mozilla 发现 271 个漏洞",
+      "summary": "未授权组织访问了 Anthropic 的专用网络安全模型 Mythos；Mozilla 借助 Mythos 在 Firefox 中发现并修复了 271 个安全漏洞。Sam Altman 批评 Mythos 为恐惧式营销。此事引发 AI 安全模型访问控制与双重用途风险讨论。",
+      "category": "trend",
+      "overall_heat_score": 90,
+      "coverage": {
+        "source_count": 4,
+        "companies": [
           "Anthropic",
-          "Amazon"
+          "Mozilla"
+        ],
+        "platforms": [
+          "techcrunch",
+          "hackernews",
+          "arstechnica",
+          "wired"
+        ]
+      },
+      "should_chase": "yes",
+      "chase_rationale": [
+        "AI 安全领域重大事件",
+        "多家主流媒体同步报道",
+        "直接影响 AI 模型访问政策讨论"
+      ],
+      "samples": [
+        {
+          "platform": "techcrunch",
+          "title": "Unauthorized group has gained access to Anthropic's exclusive cyber tool Mythos",
+          "url": "https://techcrunch.com/2026/04/21/unauthorized-group-has-gained-access-to-anthropics-exclusive-cyber-tool-mythos/",
+          "published_at": "2026-04-21T23:26:45Z",
+          "company": "Anthropic",
+          "signal_level": "A"
+        },
+        {
+          "platform": "arstechnica",
+          "title": "Mozilla: Anthropic's Mythos found 271 security vulnerabilities in Firefox",
+          "url": "https://arstechnica.com/security/2026/04/mozilla-anthropics-mythos-found-271-security-vulnerabilities-in-firefox/",
+          "published_at": "2026-04-21T21:40:41Z",
+          "company": "Anthropic",
+          "signal_level": "B"
+        },
+        {
+          "platform": "wired",
+          "title": "Mozilla Used Anthropic's Mythos to Find and Fix 271 Bugs in Firefox",
+          "url": "https://www.wired.com/story/mozilla-anthropic-mythos-firefox-security/",
+          "published_at": "2026-04-21T18:30:00Z",
+          "company": "Anthropic",
+          "signal_level": "B"
+        },
+        {
+          "platform": "techcrunch",
+          "title": "Sam Altman throws shade at Anthropic's cyber model, Mythos: fear-based marketing",
+          "url": "https://techcrunch.com/2026/04/21/sam-altman-throws-shade-at-anthropics-cyber-model-mythos/",
+          "published_at": "2026-04-21T21:30:00Z",
+          "company": "OpenAI",
+          "signal_level": "A"
+        }
+      ]
+    },
+    {
+      "hotspot_id": "H05",
+      "title": "Meta 监控员工键鼠操作以训练 AI 代理",
+      "summary": "Meta 宣布将记录员工鼠标移动轨迹、键盘输入等行为数据，用于训练其 AI 代理系统。引发员工隐私担忧与业界伦理讨论。",
+      "category": "trend",
+      "overall_heat_score": 85,
+      "coverage": {
+        "source_count": 3,
+        "companies": [
+          "Meta"
         ],
         "platforms": [
           "techcrunch",
@@ -92,84 +248,111 @@
       },
       "should_chase": "yes",
       "chase_rationale": [
-        "规模空前的循环AI投资协议",
-        "政府采购信号：NSA已用Anthropic专属模型",
-        "AI基础设施投资格局重塑"
+        "大厂 AI 训练数据来源新动向",
+        "员工隐私 vs AI 能力的伦理争议",
+        "可能影响业界效仿"
       ],
       "samples": [
         {
           "platform": "techcrunch",
-          "title": "Anthropic takes 5B from Amazon and pledges 100B in cloud spending in return",
-          "url": "https://techcrunch.com/2026/04/20/anthropic-takes-5b-from-amazon-and-pledges-100b-in-cloud-spending-in-return/",
-          "published_at": "2026-04-20T23:10:27Z",
-          "company": null,
+          "title": "Meta will record employees' keystrokes and use it to train its AI models",
+          "url": "https://techcrunch.com/2026/04/21/meta-will-record-employees-keystrokes-and-use-it-to-train-its-ai-models/",
+          "published_at": "2026-04-21T23:45:21Z",
+          "company": "Meta",
           "signal_level": "A"
         },
         {
           "platform": "hackernews",
-          "title": "Anthropic takes 5B from Amazon and pledges 100B in cloud spending in return",
-          "url": "https://techcrunch.com/2026/04/20/anthropic-takes-5b-from-amazon-and-pledges-100b-in-cloud-spending-in-return/",
-          "published_at": "2026-04-21T13:08:25Z",
-          "company": null,
+          "title": "Meta to start capturing employee mouse movements, keystrokes for AI training",
+          "url": "https://news.ycombinator.com/item?id=47856892",
+          "published_at": "2026-04-21T20:00:00Z",
+          "company": "Meta",
           "signal_level": "A"
         },
         {
-          "platform": "techcrunch",
-          "title": "NSA spies are reportedly using Anthropic Mythos, despite Pentagon feud",
-          "url": "https://techcrunch.com/2026/04/20/nsa-spies-are-reportedly-using-anthropics-mythos-despite-pentagon-feud/",
-          "published_at": "2026-04-20T16:06:21Z",
-          "company": null,
-          "signal_level": "A"
+          "platform": "arstechnica",
+          "title": "Report: Meta will train AI agents by tracking employees' mouse, keyboard activity",
+          "url": "https://arstechnica.com/ai/2026/04/meta-will-train-ai-agents-by-tracking-employee-mouse-keyboard/",
+          "published_at": "2026-04-21T21:28:27Z",
+          "company": "Meta",
+          "signal_level": "B"
         }
       ]
     },
     {
-      "hotspot_id": "H03",
-      "title": "OpenAI Codex企业化大提速：Codex Labs上线，WAU突破400万",
-      "summary": "OpenAI宣布成立Codex Labs，与Accenture、PwC、Infosys等企业伙伴合作，推动Codex在软件开发全生命周期的企业级部署，每周活跃用户已达400万。",
-      "category": "single",
-      "overall_heat_score": 88,
+      "hotspot_id": "H06",
+      "title": "Framework Laptop 13 Pro 发布：Linux 用户的模块化旗舰本",
+      "summary": "Framework 发布 Laptop 13 Pro（Intel Core Ultra 3 + LPCAMM2），定位可维修、可升级模块化高性能笔记本，CEO 称其为 Linux 用户的 MacBook Pro。同时发布 Laptop 16 升级版和首款 eGPU。",
+      "category": "trend",
+      "overall_heat_score": 82,
       "coverage": {
-        "source_count": 2,
+        "source_count": 5,
         "companies": [
-          "OpenAI"
+          "Framework"
         ],
         "platforms": [
-          "openai",
-          "producthunt"
+          "hackernews",
+          "lobsters",
+          "wired",
+          "arstechnica",
+          "theverge"
         ]
       },
       "should_chase": "yes",
       "chase_rationale": [
-        "S级官方信号，OpenAI旗舰产品企业化路线关键节点",
-        "400万WAU里程碑意义重大",
-        "与头部咨询/外包巨头联手，标志AI编码正式进入企业级IT采购"
+        "多平台高热度讨论",
+        "开发者社区高度关注",
+        "模块化硬件趋势重要里程碑"
       ],
       "samples": [
         {
-          "platform": "openai",
-          "title": "Scaling Codex to enterprises worldwide",
-          "url": "https://openai.com/index/scaling-codex-to-enterprises-worldwide",
-          "published_at": "2026-04-21T00:00:00Z",
-          "company": "OpenAI",
-          "signal_level": "S"
+          "platform": "wired",
+          "title": "Framework Has a Better, More Take-Apartable Laptop",
+          "url": "https://www.wired.com/review/framework-laptop-13-pro/",
+          "published_at": "2026-04-21T19:09:11Z",
+          "company": "Framework",
+          "signal_level": "B"
         },
         {
-          "platform": "producthunt",
-          "title": "Chronicle - Build Codex memories from recent screen context",
-          "url": "https://www.producthunt.com/products/openai",
-          "published_at": "2026-04-20T19:29:35Z",
+          "platform": "arstechnica",
+          "title": "Framework Laptop 13 Pro is a major overhaul for the modular, upgradeable laptop",
+          "url": "https://arstechnica.com/gadgets/2026/04/framework-laptop-13-pro-review/",
+          "published_at": "2026-04-21T17:00:00Z",
+          "company": "Framework",
+          "signal_level": "B"
+        },
+        {
+          "platform": "theverge",
+          "title": "Framework announces Laptop 13 Pro, the MacBook Pro for Linux users",
+          "url": "https://www.theverge.com/hardware/657050/framework-laptop-13-pro-announced-linux-macbook-pro",
+          "published_at": "2026-04-21T16:00:00Z",
+          "company": "Framework",
+          "signal_level": "B"
+        },
+        {
+          "platform": "lobsters",
+          "title": "Framework Laptop 13 Pro: Intel Core Ultra 3 & LPCAMM2",
+          "url": "https://lobste.rs/s/framework-laptop-13-pro",
+          "published_at": "2026-04-21T19:24:03Z",
+          "company": "Framework",
+          "signal_level": "B"
+        },
+        {
+          "platform": "hackernews",
+          "title": "Framework Laptop 13 Pro",
+          "url": "https://news.ycombinator.com/item?id=47856700",
+          "published_at": "2026-04-21T17:14:35Z",
           "company": null,
           "signal_level": "A"
         }
       ]
     },
     {
-      "hotspot_id": "H04",
-      "title": "AI Agent基础设施竞速：Anthropic托管Agent、Cloudflare Project Think同日发布",
-      "summary": "Anthropic推出Managed Agents托管执行层，将Agent逻辑与运行时解耦；Cloudflare发布Project Think，引入持久化Actor模型替代无状态编排。两者同日公告，标志AI Agent从原型走向生产级基础设施。",
+      "hotspot_id": "H07",
+      "title": "AI Agent 基础设施加速：Anthropic Managed Agents & Cloudflare Project Think",
+      "summary": "Anthropic 推出 Managed Agents 简化企业 AI Agent 部署；Cloudflare 推出 Project Think 持久运行时；开源社区涌现 GoModel、CrabTrap 等 LLM 网关工具，用于生产环境安全隔离。",
       "category": "trend",
-      "overall_heat_score": 85,
+      "overall_heat_score": 80,
       "coverage": {
         "source_count": 3,
         "companies": [
@@ -178,15 +361,15 @@
         ],
         "platforms": [
           "infoq",
-          "cloudflare",
-          "hackernews"
+          "hackernews",
+          "cloudflare"
         ]
       },
       "should_chase": "yes",
       "chase_rationale": [
-        "两大平台同日发布生产级Agent基础设施",
-        "持久化状态管理是Agent落地的核心卡点",
-        "预示2026年AI Agent工程化竞争主战场"
+        "企业 AI Agent 部署趋势",
+        "开源工具快速增长",
+        "Cloudflare 官方发布支撑"
       ],
       "samples": [
         {
@@ -194,160 +377,133 @@
           "title": "Anthropic Introduces Managed Agents to Simplify AI Agent Deployment",
           "url": "https://www.infoq.com/news/2026/04/anthropic-managed-agents/",
           "published_at": "2026-04-21T14:36:00Z",
-          "company": null,
-          "signal_level": "B"
-        },
-        {
-          "platform": "infoq",
-          "title": "Cloudflare Introduces Project Think: A Durable Runtime for AI Agents",
-          "url": "https://www.infoq.com/news/2026/04/cloudflare-project-think/",
-          "published_at": "2026-04-21T02:34:00Z",
-          "company": null,
+          "company": "Anthropic",
           "signal_level": "B"
         },
         {
           "platform": "cloudflare",
           "title": "Moving past bots vs. humans",
-          "url": "https://blog.cloudflare.com/past-bots-and-humans/",
+          "url": "https://blog.cloudflare.com/moving-past-bots-vs-humans/",
           "published_at": "2026-04-21T13:00:00Z",
           "company": "Cloudflare",
           "signal_level": "A"
-        }
-      ]
-    },
-    {
-      "hotspot_id": "H05",
-      "title": "GitHub Copilot个人版计划调整 + Git 2.54发布",
-      "summary": "GitHub宣布调整Copilot个人版计划定价与权益结构，以保障现有客户体验；与此同时Git 2.54正式发布，GitHub对新特性进行详细解析。",
-      "category": "single",
-      "overall_heat_score": 82,
-      "coverage": {
-        "source_count": 1,
-        "companies": [
-          "GitHub"
-        ],
-        "platforms": [
-          "github-blog"
-        ]
-      },
-      "should_chase": "yes",
-      "chase_rationale": [
-        "S级官方信号，直接影响全球数百万开发者订阅",
-        "Copilot定价策略调整是GitHub变现战略信号",
-        "Git 2.54是开发者工具链必要更新"
-      ],
-      "samples": [
-        {
-          "platform": "github-blog",
-          "title": "Changes to GitHub Copilot Individual plans",
-          "url": "https://github.blog/news-insights/company-news/changes-to-github-copilot-individual-plans/",
-          "published_at": "2026-04-20T18:15:28Z",
-          "company": "GitHub",
-          "signal_level": "S"
         },
         {
-          "platform": "github-blog",
-          "title": "Highlights from Git 2.54",
-          "url": "https://github.blog/open-source/git/highlights-from-git-2-54/",
-          "published_at": "2026-04-20T16:43:57Z",
-          "company": "GitHub",
-          "signal_level": "S"
-        }
-      ]
-    },
-    {
-      "hotspot_id": "H06",
-      "title": "AI Deepfake泛滥：YouTube名人保护、音乐平台44%AI上传",
-      "summary": "YouTube将AI形象识别扩展至明星群体，允许权益方申请下架深伪内容；Deezer披露新音乐上传中44%为AI生成，大多数流量为欺诈性流量；Wired记录利用AI生成虚假身份进行诈骗的案例。",
-      "category": "trend",
-      "overall_heat_score": 80,
-      "coverage": {
-        "source_count": 3,
-        "companies": [],
-        "platforms": [
-          "techcrunch",
-          "arstechnica",
-          "wired"
-        ]
-      },
-      "should_chase": "yes",
-      "chase_rationale": [
-        "多平台同时触发内容真实性危机",
-        "44%AI上传比例数据将引发监管讨论",
-        "平台治理与AI内容政策进入执行阶段"
-      ],
-      "samples": [
+          "platform": "infoq",
+          "title": "Cloudflare Introduces Project Think: A Durable Runtime for AI Agents",
+          "url": "https://www.infoq.com/news/2026/04/cloudflare-project-think/",
+          "published_at": "2026-04-21T16:00:00Z",
+          "company": "Cloudflare",
+          "signal_level": "B"
+        },
         {
-          "platform": "techcrunch",
-          "title": "YouTube expands its AI likeness detection technology to celebrities",
-          "url": "https://techcrunch.com/2026/04/21/youtube-expands-its-ai-likeness-detection-technology-to-celebrities/",
-          "published_at": "2026-04-21T15:02:06Z",
+          "platform": "hackernews",
+          "title": "CrabTrap: An LLM-as-a-judge HTTP proxy to secure agents in production",
+          "url": "https://news.ycombinator.com/item?id=47857100",
+          "published_at": "2026-04-21T19:00:00Z",
           "company": null,
           "signal_level": "A"
-        },
-        {
-          "platform": "arstechnica",
-          "title": "Deezer says 44 percent of new music uploads are AI-generated, most streams are fraudulent",
-          "url": "https://arstechnica.com/ai/2026/04/deezer-says-44-of-new-music-uploads-are-ai-generated-most-streams-are-fraudulent/",
-          "published_at": "2026-04-20T17:15:51Z",
-          "company": null,
-          "signal_level": "B"
-        },
-        {
-          "platform": "wired",
-          "title": "This Scammer Used an AI-Generated MAGA Girl to Grift Super Dumb Men",
-          "url": "https://www.wired.com/story/ai-generated-maga-girls/",
-          "published_at": "2026-04-21T11:00:00Z",
-          "company": null,
-          "signal_level": "B"
-        }
-      ]
-    },
-    {
-      "hotspot_id": "H07",
-      "title": "人形机器人创半马世界纪录，中国机器人崛起引关注",
-      "summary": "中国公司Honor旗下人形机器人以50:26完成半程马拉松，比人类纪录快7分钟。多媒体报道聚焦于中国机器人产业加速追赶，引发对AI+具身智能赛道的广泛讨论。",
-      "category": "trend",
-      "overall_heat_score": 78,
-      "coverage": {
-        "source_count": 2,
-        "companies": [],
-        "platforms": [
-          "wired",
-          "arstechnica"
-        ]
-      },
-      "should_chase": "yes",
-      "chase_rationale": [
-        "具身智能里程碑事件，象征意义强",
-        "标志中国机器人赛道突破性进展",
-        "与AI芯片、训练数据议题深度关联"
-      ],
-      "samples": [
-        {
-          "platform": "wired",
-          "title": "A Humanoid Robot Set a Half-Marathon Record in China",
-          "url": "https://www.wired.com/story/a-humanoid-robot-set-a-half-marathon-record-in-china/",
-          "published_at": "2026-04-20T22:33:27Z",
-          "company": null,
-          "signal_level": "B"
-        },
-        {
-          "platform": "arstechnica",
-          "title": "Robot runner handily beats humans in half-marathon, setting new record",
-          "url": "https://arstechnica.com/ai/2026/04/robot-runner-handily-beats-humans-in-half-marathon-setting-new-record/",
-          "published_at": "2026-04-20T17:56:27Z",
-          "company": null,
-          "signal_level": "B"
         }
       ]
     },
     {
       "hotspot_id": "H08",
-      "title": "GitHub大规模宕机，官方坦承架构瓶颈与扩展挑战",
-      "summary": "GitHub公开回应近期多次可用性故障，承认快速增长导致架构耦合缺陷，并说明恢复路径。InfoQ等技术媒体深度分析，引发DevOps社区对大规模平台韧性的广泛讨论。",
+      "title": "TypeScript 7.0 Beta 发布",
+      "summary": "TypeScript 7.0 Beta 正式发布，带来重要类型系统改进和性能优化，受到开发者社区高度关注。",
       "category": "single",
-      "overall_heat_score": 74,
+      "overall_heat_score": 78,
+      "coverage": {
+        "source_count": 1,
+        "companies": [
+          "Microsoft"
+        ],
+        "platforms": [
+          "lobsters"
+        ]
+      },
+      "should_chase": "yes",
+      "chase_rationale": [
+        "TypeScript 是前端生态核心工具链",
+        "大版本 Beta 对开发者影响显著"
+      ],
+      "samples": [
+        {
+          "platform": "lobsters",
+          "title": "Announcing TypeScript 7.0 Beta",
+          "url": "https://lobste.rs/s/typescript-7-beta",
+          "published_at": "2026-04-21T19:11:02Z",
+          "company": "Microsoft",
+          "signal_level": "B"
+        }
+      ]
+    },
+    {
+      "hotspot_id": "H09",
+      "title": "pnpm 11 RC：ESM 分发与供应链安全默认配置",
+      "summary": "pnpm 11 发布 Release Candidate，主要变化包括 ESM 优先分发、供应链安全默认设置增强，对 Node.js 生态依赖管理有直接影响。",
+      "category": "single",
+      "overall_heat_score": 72,
+      "coverage": {
+        "source_count": 1,
+        "companies": [],
+        "platforms": [
+          "infoq"
+        ]
+      },
+      "should_chase": "yes",
+      "chase_rationale": [
+        "pnpm 是 monorepo 主流包管理器",
+        "供应链安全设置变更影响生产部署"
+      ],
+      "samples": [
+        {
+          "platform": "infoq",
+          "title": "pnpm 11 Release Candidate: ESM Distribution, Supply Chain Defaults and More",
+          "url": "https://www.infoq.com/news/2026/04/pnpm-11-rc/",
+          "published_at": "2026-04-21T16:00:00Z",
+          "company": null,
+          "signal_level": "B"
+        }
+      ]
+    },
+    {
+      "hotspot_id": "H10",
+      "title": "Vercel OAuth 漏洞：平台环境变量安全风险暴露",
+      "summary": "Vercel 遭遇 OAuth 攻击，攻击者利用平台环境变量配置漏洞获取敏感信息。此事件警示依赖 PaaS 环境变量存储密钥的开发者注意安全隔离。",
+      "category": "single",
+      "overall_heat_score": 75,
+      "coverage": {
+        "source_count": 1,
+        "companies": [
+          "Vercel"
+        ],
+        "platforms": [
+          "hackernews"
+        ]
+      },
+      "should_chase": "yes",
+      "chase_rationale": [
+        "Vercel 用户量大",
+        "OAuth + 环境变量漏洞组合风险高",
+        "需要开发者立即评估"
+      ],
+      "samples": [
+        {
+          "platform": "hackernews",
+          "title": "The Vercel breach: OAuth attack exposes risk in platform environment variables",
+          "url": "https://news.ycombinator.com/item?id=47856960",
+          "published_at": "2026-04-21T17:14:35Z",
+          "company": "Vercel",
+          "signal_level": "A"
+        }
+      ]
+    },
+    {
+      "hotspot_id": "H11",
+      "title": "GitHub 承认近期故障并披露架构扩展挑战",
+      "summary": "GitHub 官方承认近期多次服务中断，披露底层架构在高规模扩展时遇到的挑战，承诺推进架构改进。对依赖 GitHub 的企业 DevOps 流程有直接影响。",
+      "category": "single",
+      "overall_heat_score": 70,
       "coverage": {
         "source_count": 1,
         "companies": [
@@ -359,192 +515,47 @@
       },
       "should_chase": "yes",
       "chase_rationale": [
-        "官方坦承架构弱点，罕见透明度",
-        "影响全球数亿开发者",
-        "为平台工程和大规模架构提供参考案例"
+        "GitHub 是全球最大代码托管平台",
+        "官方透明度报告影响企业采购决策"
       ],
       "samples": [
         {
           "platform": "infoq",
-          "title": "GitHub Acknowledges Recent Outages, Cites Scaling Challenges and Architectural Weaknesses",
+          "title": "GitHub Acknowledges Recent Outages, Cites Scaling Challenges and Architecture Improvements",
           "url": "https://www.infoq.com/news/2026/04/github-outages-scaling/",
-          "published_at": "2026-04-21T12:00:00Z",
-          "company": null,
-          "signal_level": "B"
-        }
-      ]
-    },
-    {
-      "hotspot_id": "H09",
-      "title": "AI编码工具的理解鸿沟：速度提升 vs. 代码理解退化",
-      "summary": "多篇技术文章聚焦AI编码助手带来的开发效率提升背后的隐患：开发者对AI生成代码的理解深度不足，潜在积累技术债务。HN社区也出现对AI Agent去人性化的反思。",
-      "category": "trend",
-      "overall_heat_score": 70,
-      "coverage": {
-        "source_count": 3,
-        "companies": [],
-        "platforms": [
-          "devto",
-          "hackernews",
-          "lobsters"
-        ]
-      },
-      "should_chase": "yes",
-      "chase_rationale": [
-        "技术社区对AI编码的反思热度持续上升",
-        "触达开发者身份认同与技能发展核心议题",
-        "与GitHub Copilot计划调整形成呼应"
-      ],
-      "samples": [
-        {
-          "platform": "devto",
-          "title": "The AI Coding Comprehension Gap: Why Faster Is Not Always Better",
-          "url": "https://dev.to/sarkar_305d0d2ab4f21cebb7/the-ai-coding-comprehension-gap-why-faster-isnt-always-better-140f",
-          "published_at": "2026-04-21T15:41:11Z",
-          "company": null,
-          "signal_level": "B"
-        },
-        {
-          "platform": "hackernews",
-          "title": "Less human AI agents, please",
-          "url": "https://nial.se/blog/less-human-ai-agents-please/",
-          "published_at": "2026-04-21T06:58:08Z",
-          "company": null,
-          "signal_level": "A"
-        },
-        {
-          "platform": "devto",
-          "title": "Build a No-Code AI Agent in 30 Minutes Using n8n + Claude (Full Walkthrough)",
-          "url": "https://dev.to/dextralabs/build-a-no-code-ai-agent-in-30-minutes-using-n8n-claude-full-walkthrough-3cid",
-          "published_at": "2026-04-21T15:43:31Z",
-          "company": null,
-          "signal_level": "B"
-        }
-      ]
-    },
-    {
-      "hotspot_id": "H10",
-      "title": "能源基础设施竞赛：核反应堆融资380M美元、CATL 7分钟快充电池、太阳能装机纪录",
-      "summary": "Blue Energy获3.8亿美元融资在船厂建造电网级核反应堆；CATL发布可7分钟充满的LFP电池；IEA报告显示太阳能新增装机为有史以来最高，标志人类进入电力时代。",
-      "category": "trend",
-      "overall_heat_score": 68,
-      "coverage": {
-        "source_count": 2,
-        "companies": [
-          "CATL"
-        ],
-        "platforms": [
-          "techcrunch",
-          "arstechnica"
-        ]
-      },
-      "should_chase": "yes",
-      "chase_rationale": [
-        "AI数据中心能源需求驱动能源投资浪潮",
-        "三类技术同步突破，能源转型加速",
-        "与AI算力扩张需求高度关联"
-      ],
-      "samples": [
-        {
-          "platform": "techcrunch",
-          "title": "Blue Energy raises 380M to build grid-scale nuclear reactors in shipyards",
-          "url": "https://techcrunch.com/2026/04/21/blue-energy-raises-380m-to-build-grid-scale-nuclear-reactors-in-shipyards/",
-          "published_at": "2026-04-21T10:00:00Z",
-          "company": null,
-          "signal_level": "A"
-        },
-        {
-          "platform": "arstechnica",
-          "title": "CATL new LFP battery can charge from 10 to 98 percent in less than 7 minutes",
-          "url": "https://arstechnica.com/cars/2026/04/catls-new-lfp-battery-can-charge-from-10-to-98-in-less-than-7-minutes/",
-          "published_at": "2026-04-21T15:01:43Z",
-          "company": null,
-          "signal_level": "B"
-        },
-        {
-          "platform": "arstechnica",
-          "title": "Global growth in solar the largest ever observed for any source",
-          "url": "https://arstechnica.com/science/2026/04/global-growth-in-solar-the-largest-ever-observed-for-any-source/",
-          "published_at": "2026-04-21T11:00:16Z",
-          "company": null,
-          "signal_level": "B"
-        }
-      ]
-    },
-    {
-      "hotspot_id": "H11",
-      "title": "后量子安全辟谣：AES-128对量子计算机仍然安全",
-      "summary": "多位安全专家和研究者发文澄清关于量子计算机威胁AES-128的迷思，指出这一误解正在阻碍实际的量子安全迁移工作。Lobsters和Ars Technica均有深度讨论。",
-      "category": "trend",
-      "overall_heat_score": 62,
-      "coverage": {
-        "source_count": 2,
-        "companies": [],
-        "platforms": [
-          "arstechnica",
-          "lobsters"
-        ]
-      },
-      "should_chase": "no",
-      "chase_rationale": [
-        "有助于澄清安全社区的关键误解",
-        "量子就绪迁移是未来1-3年企业安全重点"
-      ],
-      "samples": [
-        {
-          "platform": "arstechnica",
-          "title": "Contrary to popular superstition, AES 128 is just fine in a post-quantum world",
-          "url": "https://arstechnica.com/security/2026/04/contrary-to-popular-superstition-aes-128-is-just-fine-in-a-post-quantum-world/",
-          "published_at": "2026-04-21T12:35:20Z",
-          "company": null,
-          "signal_level": "B"
-        },
-        {
-          "platform": "lobsters",
-          "title": "Quantum Computers Are Not a Threat to 128-bit Symmetric Keys",
-          "url": "https://words.filippo.io/128-bits/",
-          "published_at": "2026-04-20T18:40:55Z",
-          "company": null,
+          "published_at": "2026-04-21T14:05:00Z",
+          "company": "GitHub",
           "signal_level": "B"
         }
       ]
     },
     {
       "hotspot_id": "H12",
-      "title": "Hugging Face发布阿拉伯语LLM排行榜QIMMA与AI网络安全开放性报告",
-      "summary": "Hugging Face推出QIMMA阿拉伯语大模型质量排行榜，填补非英语语言评估空白；同时发布关于AI在网络安全领域开放性重要性的深度报告，探讨安全模型开源与封闭的权衡。",
-      "category": "trend",
-      "overall_heat_score": 58,
+      "title": "Google Ads Advisor AI 三项新能力发布",
+      "summary": "Google 宣布 Ads Advisor 新增三项 AI 能力，使 Google Ads 更安全高效。这是 Google Marketing Live（5 月 20 日）前的预热官方更新。",
+      "category": "single",
+      "overall_heat_score": 65,
       "coverage": {
         "source_count": 1,
         "companies": [
-          "Hugging Face"
+          "Google"
         ],
         "platforms": [
-          "huggingface"
+          "google-ai"
         ]
       },
       "should_chase": "no",
       "chase_rationale": [
-        "A级官方信号，填补多语言LLM评估空白",
-        "AI安全开放性议题具有政策意涵"
+        "官方 S 级信号，但受众主要为广告主"
       ],
       "samples": [
         {
-          "platform": "huggingface",
-          "title": "QIMMA A Quality-First Arabic LLM Leaderboard",
-          "url": "https://huggingface.co/blog/tiiuae/qimma-arabic-leaderboard",
-          "published_at": "2026-04-21T10:09:58Z",
-          "company": "Hugging Face",
-          "signal_level": "A"
-        },
-        {
-          "platform": "huggingface",
-          "title": "AI and the Future of Cybersecurity: Why Openness Matters",
-          "url": "https://huggingface.co/blog/cybersecurity-openness",
-          "published_at": "2026-04-21T00:00:00Z",
-          "company": "Hugging Face",
-          "signal_level": "A"
+          "platform": "google-ai",
+          "title": "3 new ways Ads Advisor is making Google Ads safer and faster",
+          "url": "https://blog.google/products/ads-commerce/ads-advisor-google-ads/",
+          "published_at": "2026-04-21T14:30:00Z",
+          "company": "Google",
+          "signal_level": "S"
         }
       ]
     }
