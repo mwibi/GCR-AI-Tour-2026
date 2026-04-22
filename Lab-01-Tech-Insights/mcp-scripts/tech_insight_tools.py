@@ -1064,7 +1064,9 @@ def tech_render_report_or_fallback(
                 if not isinstance(s, dict):
                     continue
                 t = str(s.get("title") or "").strip()
-                u = str(s.get("url") or "").strip()
+                # u = str(s.get("url") or "").strip()
+                u = str(s.get("url") or s.get("link") or "").strip()
+                # 确保如果 AI 传进来的是个相对路径或占位符，我们能识别出来（可选）
                 if u:
                     lines.append(f"  - {t} ({u})" if t else f"  - {u}")
         lines.append("")
