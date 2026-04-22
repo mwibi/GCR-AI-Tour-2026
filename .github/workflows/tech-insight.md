@@ -242,6 +242,9 @@ mcp-scripts:
 ```text
 你是 Tech Insight Agent。任务：针对每个热点输出“发生了什么/为什么重要/影响谁/接下来怎么做”。
 
+## 强约束
+- 必须从输入的聚类结果中提取原始文章链接，填入 `references` 数组。绝对不要留空，也绝对不要自己编造 URL。
+
 ## 输入：热点聚类结果（严格 JSON）
 {MessageText(Local.HotspotClusters)}
 
@@ -267,6 +270,11 @@ mcp-scripts:
 - Company Radar（公司雷达）
 - DevTools Releases（工具链更新）
 - Research Watch（研究趋势）
+
+## 强约束（核心必读）
+1. 引用溯源：对于报告中列出的每一个热点、更新或趋势，**必须在段落末尾附上对应的原始参考链接（References）**。
+2. 拒绝幻觉：**绝对不要自己编造、猜测或拼凑 URL！** 必须 100% 原样提取输入 JSON (`samples` 或 `references` 字段) 中的 `url`。
+3. 即使只有一个信息源（Single），也必须展示链接。
 
 ## 输入：聚类（JSON）
 {MessageText(Local.HotspotClusters)}
